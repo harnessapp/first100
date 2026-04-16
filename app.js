@@ -107,11 +107,16 @@ function rebuildRaceOptions() {
     return;
   }
 
-  selectedRaceKey = meeting.races.some((r) => r.raceKey === selectedRaceKey)
-    ? selectedRaceKey
-    : meeting.races[0].raceKey;
+  const sortedRaces = [...meeting.races].sort(
+    (a, b) => raceNoSortValue(a.raceNo) - raceNoSortValue(b.raceNo)
+  );
 
-  for (const race of meeting.races) {
+  selectedRaceKey = sortedRaces.some((r) => r.raceKey === selectedRaceKey)
+    ? selectedRaceKey
+    : sortedRaces[0].raceKey;
+
+  for (const race of sortedRaces) {
+
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "race-tab";
@@ -132,7 +137,11 @@ function renderSelectedRace() {
   const meeting = filteredMeetings.find((m) => m.meetingKey === selectedMeetingKey);
   if (!meeting) return;
 
-  const race = meeting.races.find((r) => r.raceKey === selectedRaceKey);
+  const sortedRaces = [...meeting.races].sort(
+    (a, b) => raceNoSortValue(a.raceNo) - raceNoSortValue(b.raceNo)
+  );
+
+  const race = sortedRaces.find((r) => r.raceKey === selectedRaceKey);
   if (!race) return;
 
   document.getElementById("raceTitle").textContent = buildRaceTitle(meeting, race);
@@ -152,6 +161,11 @@ function buildRaceTitle(meeting, race) {
     .join(" ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function raceNoSortValue(v) {
+  const n = Number(String(v ?? "").trim());
+  return Number.isFinite(n) ? n : 9999;
 }
 
 function renderEarlySpeedMap(race) {
