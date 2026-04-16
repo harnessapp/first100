@@ -1,31 +1,2988 @@
 {
-  "states": ["QLD"],
+  "states": [
+    "QLD"
+  ],
   "meetings": [
     {
       "state": "QLD",
-      "meetingKey": "albion_park_2026-04-17",
-      "meetingLabel": "Albion Park — 17/04/2026",
-      "venue": "Albion Park",
+      "meetingKey": "qld_redcliffe_2026-04-16",
+      "meetingLabel": "Redcliffe — 2026-04-16",
+      "venue": "Redcliffe",
+      "date": "2026-04-16",
       "races": [
         {
-          "raceKey": "albion_park_2026-04-17_r2",
+          "raceKey": "qld_redcliffe_2026-04-16_r1",
+          "raceNo": "1",
+          "raceName": "BECOME A REDCLIFFE HRC MEMBER 3YO NO SEASON WINS PATHWAY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "12:34 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "STAY DREAMY",
+              "Barrier": "FR1",
+              "Driver": "Pete McMullen",
+              "F100Med": 7.26,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 2,
+              "Horse": "WHERES MY BLING",
+              "Barrier": "FR2",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.82,
+              "F100Qty": 6
+            },
+            {
+              "Horse No": 3,
+              "Horse": "QILIN",
+              "Barrier": "FR3",
+              "Driver": "Angus Garrard",
+              "F100Med": 7.08,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MACK ATTACK",
+              "Barrier": "FR4",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.36,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 5,
+              "Horse": "SASSABA",
+              "Barrier": "FR5",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.01,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 6,
+              "Horse": "OPALLANE",
+              "Barrier": "FR6",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.85,
+              "F100Qty": 7
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r10",
+          "raceNo": "10",
+          "raceName": "STEVIE REDBACK PEST CONTROL PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "5:52 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "JO ROCKS",
+              "Barrier": "FR1",
+              "Driver": "Damon Watson",
+              "F100Med": 7.03,
+              "F100Qty": 25
+            },
+            {
+              "Horse No": 2,
+              "Horse": "TIGER TOMMY NZ",
+              "Barrier": "FR2",
+              "Driver": "Paige Bevan",
+              "F100Med": 7.25,
+              "F100Qty": 35
+            },
+            {
+              "Horse No": 3,
+              "Horse": "ILLBEWATCHING",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.86,
+              "F100Qty": 82
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MULLUM DOC",
+              "Barrier": "FR4",
+              "Driver": "Matt Crone",
+              "F100Med": 6.82,
+              "F100Qty": 73
+            },
+            {
+              "Horse No": 5,
+              "Horse": "ART JESTER",
+              "Barrier": "FR5",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.88,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 6,
+              "Horse": "BURNS BAY",
+              "Barrier": "FR6",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.93,
+              "F100Qty": 54
+            },
+            {
+              "Horse No": 7,
+              "Horse": "SHEREACTS",
+              "Barrier": "SR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 6.8,
+              "F100Qty": 74
+            },
+            {
+              "Horse No": 8,
+              "Horse": "BETTYS GOLD CLASS",
+              "Barrier": "SR2",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.02,
+              "F100Qty": 76
+            },
+            {
+              "Horse No": 9,
+              "Horse": "THE HARRIS HAWK",
+              "Barrier": "SR3",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.08,
+              "F100Qty": 64
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r2",
           "raceNo": "2",
-          "raceName": "Early Speed Map Demo",
+          "raceName": "DAN COSTELLO PHOTOGRAPHY MAIDEN PATHWAY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "1:12 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "SWEET CHARMER",
+              "Barrier": "FR1",
+              "Driver": "Gary Bond",
+              "F100Med": 6.94,
+              "F100Qty": 6
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BETTOR BE BRONSKI",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SHEMOZZLE",
+              "Barrier": "FR3",
+              "Driver": "Rod Wingrave",
+              "F100Med": 7.27,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ROCKY OUTLOOK",
+              "Barrier": "FR4",
+              "Driver": "Paige Bevan",
+              "F100Med": 7.19,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 5,
+              "Horse": "KISS MY CLASS",
+              "Barrier": "FR5",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.88,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 6,
+              "Horse": "PERFECT LOU",
+              "Barrier": "FR6",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.09,
+              "F100Qty": 6
+            },
+            {
+              "Horse No": 7,
+              "Horse": "ZORBA DAN",
+              "Barrier": "SR1",
+              "Driver": "Pete McMullen",
+              "F100Med": NaN,
+              "F100Qty": 0
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r3",
+          "raceNo": "3",
+          "raceName": "COMFORT INN & SUITES NORTHGATE 1 WIN PATHWAY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "1:47 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "WEE BONNIE",
+              "Barrier": "FR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.98,
+              "F100Qty": 24
+            },
+            {
+              "Horse No": 2,
+              "Horse": "THE POST OFFICE",
+              "Barrier": "FR2",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": 7.35,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 3,
+              "Horse": "VICTREE BUSTA",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.91,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ALSROKSTAR",
+              "Barrier": "FR4",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.64,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 5,
+              "Horse": "HEZA DIRTY DANCER",
+              "Barrier": "FR5",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.74,
+              "F100Qty": 1
+            },
+            {
+              "Horse No": 6,
+              "Horse": "KIA ORA LOU NZ",
+              "Barrier": "FR6",
+              "Driver": "Pete McMullen",
+              "F100Med": 7.24,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 7,
+              "Horse": "MULLUM JUDITH",
+              "Barrier": "SR1",
+              "Driver": "Layne Dwyer",
+              "F100Med": 6.8,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 8,
+              "Horse": "DOUG STEWART",
+              "Barrier": "SR2",
+              "Driver": "Jayson Finnis",
+              "F100Med": 6.82,
+              "F100Qty": 4
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r4",
+          "raceNo": "4",
+          "raceName": "LADBROKES ODDS SURGE UP TO 2 WINS AS 3YO+ PATHWAY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "2:22 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "WECANONLYDREAM",
+              "Barrier": "FR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 7.16,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 2,
+              "Horse": "PLANET DOWNS",
+              "Barrier": "FR2",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.75,
+              "F100Qty": 18
+            },
+            {
+              "Horse No": 3,
+              "Horse": "PLAYING FOR KEEPS",
+              "Barrier": "FR3",
+              "Driver": "Damon Watson",
+              "F100Med": 7.36,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 4,
+              "Horse": "LOUISE LUCK",
+              "Barrier": "FR4",
+              "Driver": "Jayson Finnis",
+              "F100Med": 7.3,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 6,
+              "Horse": "SHES MY MISTAKE",
+              "Barrier": "FR5",
+              "Driver": "Pete McMullen",
+              "F100Med": 7.0,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 7,
+              "Horse": "CHEEKY BABY",
+              "Barrier": "SR1",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.02,
+              "F100Qty": 23
+            },
+            {
+              "Horse No": 8,
+              "Horse": "IM BUSTED",
+              "Barrier": "SR2",
+              "Driver": "Dean Belford",
+              "F100Med": 7.3,
+              "F100Qty": 11
+            },
+            {
+              "Horse No": 9,
+              "Horse": "SATURDAY DANCE",
+              "Barrier": "SR3",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.15,
+              "F100Qty": 10
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r5",
+          "raceNo": "5",
+          "raceName": "MAZDA ASPLEY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "3:07 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "JILLIBY PANDA",
+              "Barrier": "FR1",
+              "Driver": "Noel Parrish",
+              "F100Med": 7.18,
+              "F100Qty": 46
+            },
+            {
+              "Horse No": 2,
+              "Horse": "GHOST TRAIN",
+              "Barrier": "FR2",
+              "Driver": "Matt Crone",
+              "F100Med": 6.94,
+              "F100Qty": 75
+            },
+            {
+              "Horse No": 3,
+              "Horse": "KIWI ROYALTY",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.02,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 4,
+              "Horse": "VANITY BAY",
+              "Barrier": "FR4",
+              "Driver": "Paige Bevan",
+              "F100Med": 6.94,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 5,
+              "Horse": "THE CASUAL GOOSE",
+              "Barrier": "FR5",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.0,
+              "F100Qty": 50
+            },
+            {
+              "Horse No": 6,
+              "Horse": "GIDUP CAPTAIN",
+              "Barrier": "FR6",
+              "Driver": "Bryse McElhinney",
+              "F100Med": 7.0,
+              "F100Qty": 36
+            },
+            {
+              "Horse No": 7,
+              "Horse": "GOOD WORD THAT",
+              "Barrier": "SR1",
+              "Driver": "Jayson Finnis",
+              "F100Med": 7.02,
+              "F100Qty": 19
+            },
+            {
+              "Horse No": 8,
+              "Horse": "DIAMOND DEANO",
+              "Barrier": "SR2",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.01,
+              "F100Qty": 40
+            },
+            {
+              "Horse No": 9,
+              "Horse": "VODKA EN ICE",
+              "Barrier": "SR3",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.71,
+              "F100Qty": 51
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r6",
+          "raceNo": "6",
+          "raceName": "WOLF SIGNS UP TO NR40 PATHWAY PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "3:38 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "BETTOR DREAM SWEET",
+              "Barrier": "FR1",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": 7.24,
+              "F100Qty": 51
+            },
+            {
+              "Horse No": 2,
+              "Horse": "SINGER SNAP",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.09,
+              "F100Qty": 94
+            },
+            {
+              "Horse No": 3,
+              "Horse": "THE BLACK FOX",
+              "Barrier": "FR3",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.04,
+              "F100Qty": 24
+            },
+            {
+              "Horse No": 4,
+              "Horse": "JOE CAVALIER",
+              "Barrier": "FR4",
+              "Driver": "Paige Bevan",
+              "F100Med": 6.98,
+              "F100Qty": 47
+            },
+            {
+              "Horse No": 5,
+              "Horse": "SHEZA LENNY",
+              "Barrier": "FR5",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.13,
+              "F100Qty": 13
+            },
+            {
+              "Horse No": 6,
+              "Horse": "SAYCHELLES",
+              "Barrier": "FR6",
+              "Driver": "Ricky Gordon",
+              "F100Med": 7.19,
+              "F100Qty": 29
+            },
+            {
+              "Horse No": 7,
+              "Horse": "ESTIVAL",
+              "Barrier": "SR1",
+              "Driver": "Noel Parrish",
+              "F100Med": 6.93,
+              "F100Qty": 41
+            },
+            {
+              "Horse No": 8,
+              "Horse": "BAHAMAS MISS",
+              "Barrier": "SR2",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.31,
+              "F100Qty": 37
+            },
+            {
+              "Horse No": 9,
+              "Horse": "TAURUS BROMAC NZ",
+              "Barrier": "SR3",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.98,
+              "F100Qty": 24
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r7",
+          "raceNo": "7",
+          "raceName": "GARRARDS HERE ON TRACK PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "4:13 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "SAN SABA",
+              "Barrier": "FR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.61,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 2,
+              "Horse": "CAPTAIN OH CAPTAIN",
+              "Barrier": "FR2",
+              "Driver": "Ricky Gordon",
+              "F100Med": 6.93,
+              "F100Qty": 55
+            },
+            {
+              "Horse No": 3,
+              "Horse": "OYSTER STRIDE",
+              "Barrier": "FR3",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.8,
+              "F100Qty": 88
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MYSTICALFANTASY",
+              "Barrier": "FR4",
+              "Driver": "Angus Garrard",
+              "F100Med": 7.19,
+              "F100Qty": 27
+            },
+            {
+              "Horse No": 5,
+              "Horse": "LOCHINVAR JEWELLS",
+              "Barrier": "FR5",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 7.08,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 6,
+              "Horse": "MAYWYN TROUBADOUR",
+              "Barrier": "FR6",
+              "Driver": "Damon Watson",
+              "F100Med": 6.75,
+              "F100Qty": 64
+            },
+            {
+              "Horse No": 7,
+              "Horse": "PRECOCIOUS KATE",
+              "Barrier": "SR1",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.03,
+              "F100Qty": 53
+            },
+            {
+              "Horse No": 8,
+              "Horse": "PRINCE JOY",
+              "Barrier": "SR2",
+              "Driver": "Luke Thirgood",
+              "F100Med": 6.97,
+              "F100Qty": 83
+            },
+            {
+              "Horse No": 9,
+              "Horse": "SUBTLE DELIGHT",
+              "Barrier": "SR3",
+              "Driver": "Jordan Topping",
+              "F100Med": 7.06,
+              "F100Qty": 48
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r8",
+          "raceNo": "8",
+          "raceName": "LADBROKES RACING EXTRAS IN MULTI UP TO NR75 HEAT 4",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "4:48 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "DOCTA FEELGOOD",
+              "Barrier": "FR1",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.7,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 2,
+              "Horse": "SWEET LAD JUJON",
+              "Barrier": "FR2",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.94,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 3,
+              "Horse": "BLUE SUEDE ROCKA",
+              "Barrier": "FR3",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.93,
+              "F100Qty": 26
+            },
+            {
+              "Horse No": 4,
+              "Horse": "HES SWEET",
+              "Barrier": "FR4",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.69,
+              "F100Qty": 69
+            },
+            {
+              "Horse No": 5,
+              "Horse": "MARDIBRINGSAPARTY",
+              "Barrier": "FR5",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.54,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 6,
+              "Horse": "COMMODORE JUJON",
+              "Barrier": "FR6",
+              "Driver": "Mathew Neilson",
+              "F100Med": 6.66,
+              "F100Qty": 103
+            },
+            {
+              "Horse No": 7,
+              "Horse": "ROCK HAMMER",
+              "Barrier": "SR1",
+              "Driver": "Layne Dwyer",
+              "F100Med": 6.68,
+              "F100Qty": 80
+            },
+            {
+              "Horse No": 8,
+              "Horse": "PUNTERS JEWEL",
+              "Barrier": "SR2",
+              "Driver": "Trent Moffat",
+              "F100Med": 6.74,
+              "F100Qty": 45
+            },
+            {
+              "Horse No": 9,
+              "Horse": "TRALEE SNICKAS",
+              "Barrier": "SR3",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.21,
+              "F100Qty": 3
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r9",
+          "raceNo": "9",
+          "raceName": "ELDERS PROPERTY MANAGEMENT PACE",
+          "distance": "2040",
+          "start": "Mobile",
+          "time": "5:25 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MY ULTIMATE COBBER",
+              "Barrier": "FR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 7.07,
+              "F100Qty": 39
+            },
+            {
+              "Horse No": 2,
+              "Horse": "EPIC ERNIE",
+              "Barrier": "FR2",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": 7.28,
+              "F100Qty": 25
+            },
+            {
+              "Horse No": 3,
+              "Horse": "QUIK CHANGE",
+              "Barrier": "FR3",
+              "Driver": "Holly Chalmers",
+              "F100Med": 7.16,
+              "F100Qty": 35
+            },
+            {
+              "Horse No": 4,
+              "Horse": "B MAC C NZ",
+              "Barrier": "FR4",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.81,
+              "F100Qty": 73
+            },
+            {
+              "Horse No": 5,
+              "Horse": "BARRETT",
+              "Barrier": "FR5",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.88,
+              "F100Qty": 56
+            },
+            {
+              "Horse No": 6,
+              "Horse": "IMPERMISSIBLE",
+              "Barrier": "FR6",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.85,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 7,
+              "Horse": "HARPERVILLE",
+              "Barrier": "SR1",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.68,
+              "F100Qty": 8
+            },
+            {
+              "Horse No": 8,
+              "Horse": "OUR UNCLE NEV",
+              "Barrier": "SR2",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.81,
+              "F100Qty": 22
+            },
+            {
+              "Horse No": 9,
+              "Horse": "DEE TERROR",
+              "Barrier": "SR3",
+              "Driver": "Paige Bevan",
+              "F100Med": 7.0,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 10,
+              "Horse": "MY ULTIMATE BUDDHA",
+              "Barrier": "SR4",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.71,
+              "F100Qty": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "QLD",
+      "meetingKey": "qld_albion_park_2026-04-17",
+      "meetingLabel": "Albion Park — 2026-04-17",
+      "venue": "Albion Park",
+      "date": "2026-04-17",
+      "races": [
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r1",
+          "raceNo": "1",
+          "raceName": "BECOME A CREEK MEMBER  JOIN NOW PACE (SKY 2)",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "5:27 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MAJOR CRUNCH",
+              "Barrier": "FR1",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.44,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 2,
+              "Horse": "RACE FOR RICHES",
+              "Barrier": "FR2",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.96,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 3,
+              "Horse": "LOCHINVAR CAMARO",
+              "Barrier": "FR3",
+              "Driver": "Matt Elkins",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MOOPS",
+              "Barrier": "FR4",
+              "Driver": "Matt Elkins",
+              "F100Med": 6.86,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 5,
+              "Horse": "GLENEAGLE VEE CEE",
+              "Barrier": "FR5",
+              "Driver": "Leonard Cain",
+              "F100Med": 6.64,
+              "F100Qty": 44
+            },
+            {
+              "Horse No": 6,
+              "Horse": "AMAMI",
+              "Barrier": "FR6",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.88,
+              "F100Qty": 71
+            },
+            {
+              "Horse No": 7,
+              "Horse": "CALLING BUDDY",
+              "Barrier": "FR7",
+              "Driver": "Luke Thirgood",
+              "F100Med": 6.67,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 8,
+              "Horse": "HOT ROD HARRY",
+              "Barrier": "SR1",
+              "Driver": "Trent Dawson",
+              "F100Med": 7.04,
+              "F100Qty": 34
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r2",
+          "raceNo": "2",
+          "raceName": "LADBROKES POPULAR SRM PACE",
           "distance": "1660",
           "start": "Mobile",
           "time": "6:07 PM",
           "venue": "Albion Park",
           "runners": [
-            { "Horse No": 1, "Horse": "IMANI", "Barrier": "FR1", "Driver": "Trent Dawson", "F100Med": 6.70, "F100Qty": 22 },
-            { "Horse No": 7, "Horse": "KALASA NZ", "Barrier": "FR7", "Driver": "Adam Sanderson", "F100Med": 6.56, "F100Qty": 13 },
-            { "Horse No": 3, "Horse": "BAIL DENIED", "Barrier": "FR3", "Driver": "Leonard Cain", "F100Med": 6.87, "F100Qty": 32 },
-            { "Horse No": 2, "Horse": "KONNYMARA", "Barrier": "FR2", "Driver": "Zac Chappenden", "F100Med": 7.17, "F100Qty": 22 },
-            { "Horse No": 4, "Horse": "LITTLELIONELJAMES", "Barrier": "FR4", "Driver": "Leonard Cain", "F100Med": 6.83, "F100Qty": 77 },
-            { "Horse No": 5, "Horse": "BUBBA NAY", "Barrier": "FR5", "Driver": "Ben Battle", "F100Med": 7.14, "F100Qty": 14 },
-            { "Horse No": 6, "Horse": "CHAMONIX", "Barrier": "FR6", "Driver": "Jack Chapple", "F100Med": 6.88, "F100Qty": 74 },
-            { "Horse No": 10, "Horse": "THE MAHARANI NZ", "Barrier": "SR3", "Driver": "Pete McMullen", "F100Med": 6.84, "F100Qty": 27 },
-            { "Horse No": 8, "Horse": "MONOPOLLIE", "Barrier": "SR1", "Driver": "Pete McMullen", "F100Med": 6.56, "F100Qty": 19 },
-            { "Horse No": 9, "Horse": "VINCENT TIME", "Barrier": "SR2", "Driver": "Matt Elkins", "F100Med": 7.09, "F100Qty": 44 }
+            {
+              "Horse No": 1,
+              "Horse": "IMANI",
+              "Barrier": "FR1",
+              "Driver": "Trent Dawson",
+              "F100Med": 6.7,
+              "F100Qty": 22
+            },
+            {
+              "Horse No": 2,
+              "Horse": "KONNYMARA",
+              "Barrier": "FR2",
+              "Driver": "Zac Chappenden",
+              "F100Med": 7.17,
+              "F100Qty": 22
+            },
+            {
+              "Horse No": 3,
+              "Horse": "BAIL DENIED",
+              "Barrier": "FR3",
+              "Driver": "Leonard Cain",
+              "F100Med": 6.87,
+              "F100Qty": 32
+            },
+            {
+              "Horse No": 4,
+              "Horse": "LITTLELIONELJAMES",
+              "Barrier": "FR4",
+              "Driver": "Leonard Cain",
+              "F100Med": 6.83,
+              "F100Qty": 77
+            },
+            {
+              "Horse No": 5,
+              "Horse": "BUBBA NAY",
+              "Barrier": "FR5",
+              "Driver": "Ben Battle",
+              "F100Med": 7.14,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 6,
+              "Horse": "CHAMONIX",
+              "Barrier": "FR6",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.88,
+              "F100Qty": 74
+            },
+            {
+              "Horse No": 7,
+              "Horse": "KALASA NZ",
+              "Barrier": "FR7",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.56,
+              "F100Qty": 13
+            },
+            {
+              "Horse No": 8,
+              "Horse": "MONOPOLLIE",
+              "Barrier": "SR1",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.56,
+              "F100Qty": 19
+            },
+            {
+              "Horse No": 9,
+              "Horse": "VINCENT TIME",
+              "Barrier": "SR2",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.09,
+              "F100Qty": 44
+            },
+            {
+              "Horse No": 10,
+              "Horse": "THE MAHARANI NZ",
+              "Barrier": "SR3",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.84,
+              "F100Qty": 27
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r3",
+          "raceNo": "3",
+          "raceName": "GARRARDS HORSE & HOUND PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "6:40 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MACS A DUDE",
+              "Barrier": "FR1",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.77,
+              "F100Qty": 40
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BOSTON BEAUTY",
+              "Barrier": "FR2",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": 7.17,
+              "F100Qty": 11
+            },
+            {
+              "Horse No": 3,
+              "Horse": "MY ULTIMATE VICTOR",
+              "Barrier": "FR3",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.68,
+              "F100Qty": 98
+            },
+            {
+              "Horse No": 4,
+              "Horse": "BE GOOD MIKI",
+              "Barrier": "FR4",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.6,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 5,
+              "Horse": "FRANCO MACHO NZ",
+              "Barrier": "FR5",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.85,
+              "F100Qty": 59
+            },
+            {
+              "Horse No": 6,
+              "Horse": "SO MANY MOMENTS",
+              "Barrier": "FR6",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.3,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 7,
+              "Horse": "OAKLEY SHARD NZ",
+              "Barrier": "FR7",
+              "Driver": "Matt Elkins",
+              "F100Med": 6.71,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 8,
+              "Horse": "LLANFAIR LLEWELLAN",
+              "Barrier": "SR1",
+              "Driver": "Tom Callaghan",
+              "F100Med": 6.78,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 9,
+              "Horse": "EDWARD JAY",
+              "Barrier": "SR2",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.7,
+              "F100Qty": 27
+            },
+            {
+              "Horse No": 10,
+              "Horse": "SPORTY ZARA",
+              "Barrier": "SR3",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.0,
+              "F100Qty": 29
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r4",
+          "raceNo": "4",
+          "raceName": "YABBY DAM FARMS PACE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "7:10 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "ROLLING BONUS",
+              "Barrier": "FR1",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.74,
+              "F100Qty": 36
+            },
+            {
+              "Horse No": 2,
+              "Horse": "MISS MUNCH",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.83,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 3,
+              "Horse": "DOLLAR BROWNIE",
+              "Barrier": "FR3",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.99,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 4,
+              "Horse": "JUSTROLLINGAROUND",
+              "Barrier": "FR4",
+              "Driver": "Damon Watson",
+              "F100Med": 6.82,
+              "F100Qty": 92
+            },
+            {
+              "Horse No": 5,
+              "Horse": "SPORTS BOUNTY",
+              "Barrier": "FR5",
+              "Driver": "Chris Watson",
+              "F100Med": 6.92,
+              "F100Qty": 72
+            },
+            {
+              "Horse No": 6,
+              "Horse": "LITTLE SURFER GIRL",
+              "Barrier": "FR6",
+              "Driver": "Leonard Cain",
+              "F100Med": 6.87,
+              "F100Qty": 27
+            },
+            {
+              "Horse No": 7,
+              "Horse": "ROSTOVA",
+              "Barrier": "FR7",
+              "Driver": "Matt Elkins",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 8,
+              "Horse": "TAKE A CHANCE",
+              "Barrier": "SR1",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": 6.96,
+              "F100Qty": 42
+            },
+            {
+              "Horse No": 9,
+              "Horse": "HES REGAL",
+              "Barrier": "SR2",
+              "Driver": "Alanah Richardson",
+              "F100Med": 6.86,
+              "F100Qty": 33
+            },
+            {
+              "Horse No": 10,
+              "Horse": "ROSIE POLLEN",
+              "Barrier": "SR3",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.68,
+              "F100Qty": 8
+            },
+            {
+              "Horse No": 11,
+              "Horse": "ARKUNA",
+              "Barrier": "SR4",
+              "Driver": "Grant Dixon",
+              "F100Med": 7.1,
+              "F100Qty": 41
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r5",
+          "raceNo": "5",
+          "raceName": "PSP FRIDAY FRENZY PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "7:40 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "THREE CHORD RIFF",
+              "Barrier": "FR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.92,
+              "F100Qty": 32
+            },
+            {
+              "Horse No": 2,
+              "Horse": "ALWAYS BE A TORQUE",
+              "Barrier": "FR2",
+              "Driver": "nan",
+              "F100Med": 7.24,
+              "F100Qty": 63
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SIGNOR JUJON",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.88,
+              "F100Qty": 40
+            },
+            {
+              "Horse No": 4,
+              "Horse": "JIMMY JOYCE",
+              "Barrier": "FR4",
+              "Driver": "Gary Whitaker",
+              "F100Med": 6.82,
+              "F100Qty": 46
+            },
+            {
+              "Horse No": 5,
+              "Horse": "SPORTY AZZ",
+              "Barrier": "FR5",
+              "Driver": "Alanah Richardson",
+              "F100Med": 7.28,
+              "F100Qty": 57
+            },
+            {
+              "Horse No": 6,
+              "Horse": "PROSPECTUS",
+              "Barrier": "FR6",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.12,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 7,
+              "Horse": "BETA THAN LOVE NZ",
+              "Barrier": "FR7",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.99,
+              "F100Qty": 22
+            },
+            {
+              "Horse No": 8,
+              "Horse": "MAJOR GENERALJUJON",
+              "Barrier": "SR1",
+              "Driver": "Grant Dixon",
+              "F100Med": 7.32,
+              "F100Qty": 38
+            },
+            {
+              "Horse No": 9,
+              "Horse": "AMERICAN BOULEVARD",
+              "Barrier": "SR2",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.31,
+              "F100Qty": 9
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r6",
+          "raceNo": "6",
+          "raceName": "LEADING EDGE SECURITY 1 WIN PATHWAY PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "8:10 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "TAKING STOCK",
+              "Barrier": "FR1",
+              "Driver": "nan",
+              "F100Med": 6.95,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 2,
+              "Horse": "PARIS ROUGE",
+              "Barrier": "FR2",
+              "Driver": "nan",
+              "F100Med": 6.77,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SERENUS",
+              "Barrier": "FR3",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.09,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MALARKY",
+              "Barrier": "FR4",
+              "Driver": "Grant Dixon",
+              "F100Med": 7.11,
+              "F100Qty": 13
+            },
+            {
+              "Horse No": 5,
+              "Horse": "BETTOR BE BODHI",
+              "Barrier": "FR5",
+              "Driver": "Narissa Elkins",
+              "F100Med": 7.6,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 6,
+              "Horse": "TILLY DUNNAGE NZ",
+              "Barrier": "FR6",
+              "Driver": "Pete McMullen",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 7,
+              "Horse": "LEOTA",
+              "Barrier": "FR7",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.39,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 8,
+              "Horse": "CHINCHAGA BLAZE",
+              "Barrier": "SR1",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.65,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 9,
+              "Horse": "KASH FUND",
+              "Barrier": "SR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.96,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 10,
+              "Horse": "JUSTANOTHER TORQUE",
+              "Barrier": "SR3",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.72,
+              "F100Qty": 4
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r7",
+          "raceNo": "7",
+          "raceName": "OUTKAST NATIONAL DESIGN & CONSTRUCTION 2 TO 3 WINS PATHWAY PACE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "8:40 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "SEE THE DREAM",
+              "Barrier": "FR1",
+              "Driver": "Tamara Battle",
+              "F100Med": 7.14,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 2,
+              "Horse": "MISTER FREEMAN",
+              "Barrier": "FR2",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.02,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 3,
+              "Horse": "DUKE OF ARGYLL",
+              "Barrier": "FR3",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.79,
+              "F100Qty": 8
+            },
+            {
+              "Horse No": 4,
+              "Horse": "WINDY HILL WHISKEY",
+              "Barrier": "FR4",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.5,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 5,
+              "Horse": "COOL DUDE JOEY",
+              "Barrier": "FR5",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.36,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 6,
+              "Horse": "HIGHNMIGHTY",
+              "Barrier": "FR6",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 7.08,
+              "F100Qty": 11
+            },
+            {
+              "Horse No": 7,
+              "Horse": "IMA BOOTY SHAKER NZ",
+              "Barrier": "FR7",
+              "Driver": "Pete McMullen",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 8,
+              "Horse": "ZEEZEEZOOM",
+              "Barrier": "SR1",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.79,
+              "F100Qty": 5
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r8",
+          "raceNo": "8",
+          "raceName": "SOMERSET FARMS UP TO NR45 PATHWAY PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "9:11 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "STONES",
+              "Barrier": "FR1",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.06,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BLACK GEMSTONE",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.4,
+              "F100Qty": 33
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SKYLAR BREE",
+              "Barrier": "FR3",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.05,
+              "F100Qty": 35
+            },
+            {
+              "Horse No": 4,
+              "Horse": "WECANONLYDREAM",
+              "Barrier": "FR4",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.16,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 5,
+              "Horse": "THREENTWO",
+              "Barrier": "FR5",
+              "Driver": "Edd Bailey",
+              "F100Med": 6.73,
+              "F100Qty": 27
+            },
+            {
+              "Horse No": 6,
+              "Horse": "BELMER BETTY",
+              "Barrier": "FR6",
+              "Driver": "Alan Donohoe",
+              "F100Med": 6.96,
+              "F100Qty": 34
+            },
+            {
+              "Horse No": 7,
+              "Horse": "VICTREE CHARLIE",
+              "Barrier": "FR7",
+              "Driver": "Darren McCall",
+              "F100Med": 7.47,
+              "F100Qty": 39
+            },
+            {
+              "Horse No": 8,
+              "Horse": "ICANANDIWILL",
+              "Barrier": "SR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 6.86,
+              "F100Qty": 31
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-17_r9",
+          "raceNo": "9",
+          "raceName": "PRYDE'S EASIFEED EASILYTE UP TO NR60 TROTTERS MOBILE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "9:39 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "PLEASE LAYLA",
+              "Barrier": "FR1",
+              "Driver": "Matt Elkins",
+              "F100Med": 15.39,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 2,
+              "Horse": "CASCATA",
+              "Barrier": "FR2",
+              "Driver": "Layne Dwyer",
+              "F100Med": 10.93,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 3,
+              "Horse": "ILLUSORY FEAT",
+              "Barrier": "FR3",
+              "Driver": "Adam Richardson",
+              "F100Med": 10.59,
+              "F100Qty": 25
+            },
+            {
+              "Horse No": 4,
+              "Horse": "TUNBRIDGE",
+              "Barrier": "FR4",
+              "Driver": "Angus Garrard",
+              "F100Med": 10.14,
+              "F100Qty": 8
+            },
+            {
+              "Horse No": 5,
+              "Horse": "FLASH KYVALLEY",
+              "Barrier": "FR5",
+              "Driver": "Leonard Cain",
+              "F100Med": 9.65,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 6,
+              "Horse": "MAJESTIC PARTY BOY",
+              "Barrier": "FR6",
+              "Driver": "Gavin Crone",
+              "F100Med": 10.61,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 7,
+              "Horse": "GAZ MAN NZ",
+              "Barrier": "FR7",
+              "Driver": "Adam Sanderson",
+              "F100Med": 9.82,
+              "F100Qty": 11
+            },
+            {
+              "Horse No": 8,
+              "Horse": "WHIRLWIND WILBUR",
+              "Barrier": "SR1",
+              "Driver": "Nathan Dawson",
+              "F100Med": 10.64,
+              "F100Qty": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "QLD",
+      "meetingKey": "qld_albion_park_2026-04-18",
+      "meetingLabel": "Albion Park — 2026-04-18",
+      "venue": "Albion Park",
+      "date": "2026-04-18",
+      "races": [
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r1",
+          "raceNo": "1",
+          "raceName": "BENSTUD STANDARDBREDS QUALIFYING PACE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "5:04 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MY ULTIMATE COSSIE",
+              "Barrier": "FR1",
+              "Driver": "Gary Bond",
+              "F100Med": 6.86,
+              "F100Qty": 46
+            },
+            {
+              "Horse No": 2,
+              "Horse": "MIKIS JOE",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.01,
+              "F100Qty": 30
+            },
+            {
+              "Horse No": 3,
+              "Horse": "LA CAVALLETTA",
+              "Barrier": "FR3",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.56,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 4,
+              "Horse": "PRINCE OF PAIN NZ",
+              "Barrier": "FR4",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.68,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 5,
+              "Horse": "MARTY THE MARTIAN",
+              "Barrier": "FR5",
+              "Driver": "Adam Sanderson",
+              "F100Med": 7.13,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 6,
+              "Horse": "MY PURPLE PATCH",
+              "Barrier": "FR6",
+              "Driver": "Jayson Finnis",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 7,
+              "Horse": "MY ULTIMATE MARIO NZ",
+              "Barrier": "FR7",
+              "Driver": "Jonah Hutchinson",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 8,
+              "Horse": "SPLASHNDASH",
+              "Barrier": "SR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.78,
+              "F100Qty": 60
+            },
+            {
+              "Horse No": 9,
+              "Horse": "DUAL CAM",
+              "Barrier": "SR2",
+              "Driver": "Jack Chapple",
+              "F100Med": 6.96,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 10,
+              "Horse": "GREAT ACHIEVER",
+              "Barrier": "SR3",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.16,
+              "F100Qty": 36
+            },
+            {
+              "Horse No": 11,
+              "Horse": "TYSON NZ",
+              "Barrier": "SR4",
+              "Driver": "Trista Dixon",
+              "F100Med": 6.96,
+              "F100Qty": 5
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r2",
+          "raceNo": "2",
+          "raceName": "LADBROKES QUICK MULTI BAND 5 PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "5:34 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "CHARGE AHEAD",
+              "Barrier": "FR1",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.8,
+              "F100Qty": 18
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BANGKOK DEEJAY",
+              "Barrier": "FR2",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.19,
+              "F100Qty": 26
+            },
+            {
+              "Horse No": 3,
+              "Horse": "XPRESS PARTY",
+              "Barrier": "FR3",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.91,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 4,
+              "Horse": "COOL NIGHT",
+              "Barrier": "FR4",
+              "Driver": "Tom Callaghan",
+              "F100Med": 6.61,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 5,
+              "Horse": "MIRACLE MOOSE NZ",
+              "Barrier": "FR5",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.37,
+              "F100Qty": 89
+            },
+            {
+              "Horse No": 6,
+              "Horse": "APPLIED NZ",
+              "Barrier": "FR6",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.75,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 7,
+              "Horse": "TARGARYEN NZ",
+              "Barrier": "FR7",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 7.0,
+              "F100Qty": 66
+            },
+            {
+              "Horse No": 8,
+              "Horse": "BUDDY PERFECT",
+              "Barrier": "SR1",
+              "Driver": "Matt Elkins",
+              "F100Med": 6.54,
+              "F100Qty": 18
+            },
+            {
+              "Horse No": 9,
+              "Horse": "SAINT CRUSADER",
+              "Barrier": "SR2",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.7,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 10,
+              "Horse": "OUR INDIFFERENCE NZ",
+              "Barrier": "SR3",
+              "Driver": "Shane Graham",
+              "F100Med": NaN,
+              "F100Qty": 0
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r3",
+          "raceNo": "3",
+          "raceName": "WOODLANDS STUD  YOUR GENETIC EDGE JUNIOR FFA",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "6:09 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MOSSDALE TERRY NZ",
+              "Barrier": "FR1",
+              "Driver": "Shane Graham",
+              "F100Med": 6.64,
+              "F100Qty": 39
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BIGGER THE BETTOR NZ",
+              "Barrier": "FR2",
+              "Driver": "Adam Richardson",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 3,
+              "Horse": "ROCK SUPREME",
+              "Barrier": "FR3",
+              "Driver": "Bryse McElhinney",
+              "F100Med": 6.82,
+              "F100Qty": 73
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ELLIS STREET",
+              "Barrier": "FR4",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.75,
+              "F100Qty": 36
+            },
+            {
+              "Horse No": 5,
+              "Horse": "WHOS DELIGHT NZ",
+              "Barrier": "FR5",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.5,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 6,
+              "Horse": "CALL TO ORDER",
+              "Barrier": "FR6",
+              "Driver": "Trista Dixon",
+              "F100Med": 6.98,
+              "F100Qty": 38
+            },
+            {
+              "Horse No": 7,
+              "Horse": "MANILA PLAYBOY",
+              "Barrier": "FR7",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.58,
+              "F100Qty": 22
+            },
+            {
+              "Horse No": 8,
+              "Horse": "OZZIE PUNTA",
+              "Barrier": "SR1",
+              "Driver": "Leonard Cain",
+              "F100Med": 6.56,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 9,
+              "Horse": "CONGO LINE",
+              "Barrier": "SR2",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.02,
+              "F100Qty": 52
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r4",
+          "raceNo": "4",
+          "raceName": "LUNCHBOX LODGE SPELLING FARM MARES QUALIFYING PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "6:41 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "OUT OF EDEN",
+              "Barrier": "FR1",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.04,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 2,
+              "Horse": "SWEET DIOR NZ",
+              "Barrier": "FR2",
+              "Driver": "Narissa Elkins",
+              "F100Med": 6.65,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 3,
+              "Horse": "RAKERO ICE NZ",
+              "Barrier": "FR3",
+              "Driver": "Angus Garrard",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 4,
+              "Horse": "FEAR THE PAIN NZ",
+              "Barrier": "FR4",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.64,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 5,
+              "Horse": "COOL AND CLASSY",
+              "Barrier": "FR5",
+              "Driver": "Trista Dixon",
+              "F100Med": 6.76,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 6,
+              "Horse": "SEASIDE GLORY",
+              "Barrier": "FR6",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.92,
+              "F100Qty": 29
+            },
+            {
+              "Horse No": 7,
+              "Horse": "GOLDEN SHOOZ",
+              "Barrier": "FR7",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.69,
+              "F100Qty": 1
+            },
+            {
+              "Horse No": 8,
+              "Horse": "LULLABY NZ",
+              "Barrier": "SR1",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.93,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 9,
+              "Horse": "CRUSADER MISS",
+              "Barrier": "SR2",
+              "Driver": "Alanah Richardson",
+              "F100Med": 6.82,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 10,
+              "Horse": "SALLY BIGTIME",
+              "Barrier": "SR3",
+              "Driver": "Tom Callaghan",
+              "F100Med": NaN,
+              "F100Qty": 0
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r5",
+          "raceNo": "5",
+          "raceName": "RACING & SPORTS.COM QUALIFYING PACE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "7:09 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "STUDLEIGH MARK",
+              "Barrier": "FR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.57,
+              "F100Qty": 81
+            },
+            {
+              "Horse No": 2,
+              "Horse": "JEKAMIAS NZ",
+              "Barrier": "FR2",
+              "Driver": "Lola Weidemann",
+              "F100Med": 6.94,
+              "F100Qty": 18
+            },
+            {
+              "Horse No": 3,
+              "Horse": "IM BOO NZ",
+              "Barrier": "FR3",
+              "Driver": "Dannielle McMullen",
+              "F100Med": 6.57,
+              "F100Qty": 58
+            },
+            {
+              "Horse No": 4,
+              "Horse": "THE RIZZLER",
+              "Barrier": "FR4",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.09,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 5,
+              "Horse": "ARKIN WICKED",
+              "Barrier": "FR5",
+              "Driver": "Trista Dixon",
+              "F100Med": 7.26,
+              "F100Qty": 70
+            },
+            {
+              "Horse No": 6,
+              "Horse": "AQUA SANCTA NZ",
+              "Barrier": "FR6",
+              "Driver": "Adam Sanderson",
+              "F100Med": 7.25,
+              "F100Qty": 30
+            },
+            {
+              "Horse No": 7,
+              "Horse": "FAKISTRA",
+              "Barrier": "FR7",
+              "Driver": "Grant Dixon",
+              "F100Med": 7.02,
+              "F100Qty": 21
+            },
+            {
+              "Horse No": 8,
+              "Horse": "GREAT WHITE NZ",
+              "Barrier": "SR1",
+              "Driver": "Leonard Cain",
+              "F100Med": 7.08,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 9,
+              "Horse": "SOHO CASABLANCA",
+              "Barrier": "SR2",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.76,
+              "F100Qty": 40
+            },
+            {
+              "Horse No": 10,
+              "Horse": "GETAGRIP",
+              "Barrier": "SR3",
+              "Driver": "Angus Garrard",
+              "F100Med": 6.87,
+              "F100Qty": 13
+            },
+            {
+              "Horse No": 11,
+              "Horse": "BETTOR CHEER NZ",
+              "Barrier": "SR4",
+              "Driver": "Mitch Cox",
+              "F100Med": 7.14,
+              "F100Qty": 14
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r6",
+          "raceNo": "6",
+          "raceName": "GARRARDS HORSE & HOUND MARES OPEN PACE",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "7:42 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MISSED CONSEQUENCES",
+              "Barrier": "FR1",
+              "Driver": "Matt Elkins",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 2,
+              "Horse": "AURORA JOY",
+              "Barrier": "FR2",
+              "Driver": "Alanah Richardson",
+              "F100Med": 7.06,
+              "F100Qty": 68
+            },
+            {
+              "Horse No": 3,
+              "Horse": "ZAHRA LOU",
+              "Barrier": "FR3",
+              "Driver": "Narissa Elkins",
+              "F100Med": 6.58,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 4,
+              "Horse": "TILLY JAYNE",
+              "Barrier": "FR4",
+              "Driver": "Jayson Finnis",
+              "F100Med": 7.0,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 5,
+              "Horse": "ILOVEACALENDERGIRL",
+              "Barrier": "FR5",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.5,
+              "F100Qty": 6
+            },
+            {
+              "Horse No": 6,
+              "Horse": "DAISY DIANA NZ",
+              "Barrier": "FR6",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.64,
+              "F100Qty": 14
+            },
+            {
+              "Horse No": 7,
+              "Horse": "SWEET MIA NZ",
+              "Barrier": "FR7",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.39,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 8,
+              "Horse": "SERGIOS ROCKET",
+              "Barrier": "SR1",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.85,
+              "F100Qty": 66
+            },
+            {
+              "Horse No": 9,
+              "Horse": "REASON TO SHINE",
+              "Barrier": "SR2",
+              "Driver": "Adam Sanderson",
+              "F100Med": 6.95,
+              "F100Qty": 37
+            },
+            {
+              "Horse No": 10,
+              "Horse": "IMA QUEEN BEE",
+              "Barrier": "SR3",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.85,
+              "F100Qty": 16
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r7",
+          "raceNo": "7",
+          "raceName": "PRYDE'S EASIFEED RACING CUBE TROTTERS MOBILE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "8:10 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "MAJESTIC LAVROS NZ",
+              "Barrier": "FR1",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.1,
+              "F100Qty": 24
+            },
+            {
+              "Horse No": 2,
+              "Horse": "ALDEBARANSTILINSKI",
+              "Barrier": "FR2",
+              "Driver": "Angus Garrard",
+              "F100Med": 10.66,
+              "F100Qty": 28
+            },
+            {
+              "Horse No": 3,
+              "Horse": "LOVE GUN",
+              "Barrier": "FR3",
+              "Driver": "Grant Dixon",
+              "F100Med": 7.66,
+              "F100Qty": 32
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ZEALOUS SPUR NZ",
+              "Barrier": "FR4",
+              "Driver": "Trista Dixon",
+              "F100Med": 7.41,
+              "F100Qty": 69
+            },
+            {
+              "Horse No": 5,
+              "Horse": "MUFASA METRO NZ",
+              "Barrier": "FR5",
+              "Driver": "Matt Elkins",
+              "F100Med": 6.88,
+              "F100Qty": 8
+            },
+            {
+              "Horse No": 6,
+              "Horse": "NOT AS PROMISED",
+              "Barrier": "FR6",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.55,
+              "F100Qty": 25
+            },
+            {
+              "Horse No": 7,
+              "Horse": "HIDE AND SEEK",
+              "Barrier": "FR7",
+              "Driver": "Mathew Neilson",
+              "F100Med": 8.89,
+              "F100Qty": 25
+            },
+            {
+              "Horse No": 8,
+              "Horse": "GOLDEN SUNSET",
+              "Barrier": "SR1",
+              "Driver": "Shane Graham",
+              "F100Med": 6.92,
+              "F100Qty": 25
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r8",
+          "raceNo": "8",
+          "raceName": "SOMERSET FARMS MARES QUALIFYING PACE (B DIV)",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "8:44 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "AT THE POINTY END",
+              "Barrier": "FR1",
+              "Driver": "Gary Bond",
+              "F100Med": 7.06,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 2,
+              "Horse": "TWO TICKS NZ",
+              "Barrier": "FR2",
+              "Driver": "Narissa Elkins",
+              "F100Med": 6.98,
+              "F100Qty": 3
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SHES IN LINE NZ",
+              "Barrier": "FR3",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.75,
+              "F100Qty": 58
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MISS BAY KING COLE",
+              "Barrier": "FR4",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.87,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 5,
+              "Horse": "WARRAWEE FLYER",
+              "Barrier": "FR5",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.0,
+              "F100Qty": 13
+            },
+            {
+              "Horse No": 6,
+              "Horse": "MAID OF MONEY NZ",
+              "Barrier": "FR6",
+              "Driver": "Angus Garrard",
+              "F100Med": 7.04,
+              "F100Qty": 2
+            },
+            {
+              "Horse No": 7,
+              "Horse": "TIGER SHIRL NZ",
+              "Barrier": "FR7",
+              "Driver": "Jordan Topping",
+              "F100Med": 7.02,
+              "F100Qty": 11
+            },
+            {
+              "Horse No": 8,
+              "Horse": "SHES CRYSTAL NZ",
+              "Barrier": "SR1",
+              "Driver": "Layne Dwyer",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 9,
+              "Horse": "QUEEN LILIBET",
+              "Barrier": "SR2",
+              "Driver": "Jayson Finnis",
+              "F100Med": 6.7,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 10,
+              "Horse": "STUDLEIGH ANNE",
+              "Barrier": "SR3",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.68,
+              "F100Qty": 32
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_albion_park_2026-04-18_r9",
+          "raceNo": "9",
+          "raceName": "R1 SYNDICATIONS MARES BAND 5 PACE",
+          "distance": "2138",
+          "start": "Mobile",
+          "time": "9:17 PM",
+          "venue": "Albion Park",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "TOUGH SHAZ",
+              "Barrier": "FR1",
+              "Driver": "Pete McMullen",
+              "F100Med": 6.78,
+              "F100Qty": 6
+            },
+            {
+              "Horse No": 2,
+              "Horse": "HELL OF A HAND",
+              "Barrier": "FR2",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.14,
+              "F100Qty": 56
+            },
+            {
+              "Horse No": 3,
+              "Horse": "MAJORITA JUJON",
+              "Barrier": "FR3",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.02,
+              "F100Qty": 47
+            },
+            {
+              "Horse No": 4,
+              "Horse": "OHANA DANCER",
+              "Barrier": "FR4",
+              "Driver": "Pete McMullen",
+              "F100Med": 7.01,
+              "F100Qty": 19
+            },
+            {
+              "Horse No": 5,
+              "Horse": "CHEER LEADER",
+              "Barrier": "FR5",
+              "Driver": "Grant Dixon",
+              "F100Med": 6.87,
+              "F100Qty": 44
+            },
+            {
+              "Horse No": 6,
+              "Horse": "LULU MAE",
+              "Barrier": "FR6",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.68,
+              "F100Qty": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "QLD",
+      "meetingKey": "qld_marburg_2026-04-19",
+      "meetingLabel": "Marburg — 2026-04-19",
+      "venue": "Marburg",
+      "date": "2026-04-19",
+      "races": [
+        {
+          "raceKey": "qld_marburg_2026-04-19_r1",
+          "raceNo": "1",
+          "raceName": "GOLDBET.COM.AU REWARDS MAIDEN PATHWAY PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "12:13 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "KEAYANG LACEY",
+              "Barrier": "FR1",
+              "Driver": "Noel Parrish",
+              "F100Med": 7.23,
+              "F100Qty": 41
+            },
+            {
+              "Horse No": 2,
+              "Horse": "SCHMIKI",
+              "Barrier": "FR2",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.07,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 3,
+              "Horse": "PAMPERED ART",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 7.23,
+              "F100Qty": 1
+            },
+            {
+              "Horse No": 4,
+              "Horse": "FEARLESS DOLLY",
+              "Barrier": "FR4",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.34,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 5,
+              "Horse": "MACMUFF",
+              "Barrier": "FR5",
+              "Driver": "Lola Weidemann",
+              "F100Med": 7.34,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 6,
+              "Horse": "RESPECT THE MIKI",
+              "Barrier": "SR1",
+              "Driver": "nan",
+              "F100Med": 6.98,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 7,
+              "Horse": "SIYA NZ",
+              "Barrier": "SR2",
+              "Driver": "nan",
+              "F100Med": 7.3,
+              "F100Qty": 7
+            },
+            {
+              "Horse No": 8,
+              "Horse": "PINK BONUS",
+              "Barrier": "SR3",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.91,
+              "F100Qty": 1
+            },
+            {
+              "Horse No": 9,
+              "Horse": "BROADWAYBEAUTY",
+              "Barrier": "SR4",
+              "Driver": "Dayl March",
+              "F100Med": 6.97,
+              "F100Qty": 2
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r2",
+          "raceNo": "2",
+          "raceName": "BURWOOD STUD 1 WIN PATHWAY PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "12:52 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "GLENEAGLE HUNTER",
+              "Barrier": "FR1",
+              "Driver": "Jordan Topping",
+              "F100Med": 7.01,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 2,
+              "Horse": "WEE BONNIE",
+              "Barrier": "FR2",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.98,
+              "F100Qty": 24
+            },
+            {
+              "Horse No": 3,
+              "Horse": "TIGER ATTACK",
+              "Barrier": "FR3",
+              "Driver": "Noel Parrish",
+              "F100Med": 7.21,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 4,
+              "Horse": "TWOSIPSALLY",
+              "Barrier": "FR4",
+              "Driver": "nan",
+              "F100Med": 7.22,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 5,
+              "Horse": "BLUE CHIP DANCE",
+              "Barrier": "FR5",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.14,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 6,
+              "Horse": "ONEANDONLY",
+              "Barrier": "SR1",
+              "Driver": "Gary Bond",
+              "F100Med": NaN,
+              "F100Qty": 0
+            },
+            {
+              "Horse No": 7,
+              "Horse": "ALLSHECANBE",
+              "Barrier": "SR2",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.08,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 8,
+              "Horse": "DOUG STEWART",
+              "Barrier": "SR3",
+              "Driver": "Jayson Finnis",
+              "F100Med": 6.82,
+              "F100Qty": 4
+            },
+            {
+              "Horse No": 9,
+              "Horse": "KEEPING IT SIMPLE",
+              "Barrier": "SR4",
+              "Driver": "Clint Sneddon",
+              "F100Med": 6.82,
+              "F100Qty": 10
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r3",
+          "raceNo": "3",
+          "raceName": "DOWNUNDER SULKIES 2 TO 3 WINS PATHWAY PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "1:32 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "BLING THE NOISE",
+              "Barrier": "FR1",
+              "Driver": "David Stewart",
+              "F100Med": 7.06,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 2,
+              "Horse": "RAINBOW GAMBLER",
+              "Barrier": "FR2",
+              "Driver": "nan",
+              "F100Med": 7.02,
+              "F100Qty": 23
+            },
+            {
+              "Horse No": 3,
+              "Horse": "SAYCHELLES",
+              "Barrier": "FR3",
+              "Driver": "nan",
+              "F100Med": 7.19,
+              "F100Qty": 29
+            },
+            {
+              "Horse No": 4,
+              "Horse": "SKYLAR BREE",
+              "Barrier": "FR4",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.05,
+              "F100Qty": 35
+            },
+            {
+              "Horse No": 5,
+              "Horse": "PISCINA",
+              "Barrier": "FR5",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.94,
+              "F100Qty": 18
+            },
+            {
+              "Horse No": 6,
+              "Horse": "ICANANDIWILL",
+              "Barrier": "SR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 6.86,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 7,
+              "Horse": "THE REAL VANESSA",
+              "Barrier": "SR2",
+              "Driver": "Peter Greig",
+              "F100Med": 7.22,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 8,
+              "Horse": "OUR SWEET JESS",
+              "Barrier": "SR3",
+              "Driver": "Dayl March",
+              "F100Med": 6.93,
+              "F100Qty": 24
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r4",
+          "raceNo": "4",
+          "raceName": "GOLDBET.COM.AU MULTIBETS PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "2:15 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "B MAC C NZ",
+              "Barrier": "FR1",
+              "Driver": "Dannielle McMullen",
+              "F100Med": 6.81,
+              "F100Qty": 73
+            },
+            {
+              "Horse No": 2,
+              "Horse": "ART JESTER",
+              "Barrier": "FR2",
+              "Driver": "Jayson Finnis",
+              "F100Med": 6.88,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 3,
+              "Horse": "THE TIGER ARMY",
+              "Barrier": "FR3",
+              "Driver": "Jordan Topping",
+              "F100Med": 7.1,
+              "F100Qty": 38
+            },
+            {
+              "Horse No": 4,
+              "Horse": "BONNIES CAM",
+              "Barrier": "FR4",
+              "Driver": "Dayl March",
+              "F100Med": 6.69,
+              "F100Qty": 68
+            },
+            {
+              "Horse No": 5,
+              "Horse": "PUMPKIN PAT",
+              "Barrier": "FR5",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.86,
+              "F100Qty": 35
+            },
+            {
+              "Horse No": 6,
+              "Horse": "TURBO TOMMY",
+              "Barrier": "SR1",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.08,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 7,
+              "Horse": "VINCENT TIME",
+              "Barrier": "SR2",
+              "Driver": "Matt Elkins",
+              "F100Med": 7.09,
+              "F100Qty": 44
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r5",
+          "raceNo": "5",
+          "raceName": "MARBURG COFFEE SHACK 2 TO 3 WINS PATHWAY PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "2:55 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "BOLD PERSONALITY",
+              "Barrier": "FR1",
+              "Driver": "Dallas Wilkins",
+              "F100Med": 7.19,
+              "F100Qty": 21
+            },
+            {
+              "Horse No": 2,
+              "Horse": "BAHAMAS MISS",
+              "Barrier": "FR2",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.31,
+              "F100Qty": 37
+            },
+            {
+              "Horse No": 3,
+              "Horse": "STONES",
+              "Barrier": "FR3",
+              "Driver": "Zac Chappenden",
+              "F100Med": 7.06,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ROCKNROLL KNIGHT",
+              "Barrier": "FR4",
+              "Driver": "nan",
+              "F100Med": 7.1,
+              "F100Qty": 9
+            },
+            {
+              "Horse No": 5,
+              "Horse": "LADY ALLEGRA",
+              "Barrier": "FR5",
+              "Driver": "Gary Bond",
+              "F100Med": 7.14,
+              "F100Qty": 16
+            },
+            {
+              "Horse No": 6,
+              "Horse": "KINGSBURY",
+              "Barrier": "SR1",
+              "Driver": "Holly Chalmers",
+              "F100Med": 7.28,
+              "F100Qty": 15
+            },
+            {
+              "Horse No": 7,
+              "Horse": "SATURDAY DANCE",
+              "Barrier": "SR2",
+              "Driver": "Jayson Finnis",
+              "F100Med": 7.15,
+              "F100Qty": 10
+            },
+            {
+              "Horse No": 8,
+              "Horse": "TARIFF TIME",
+              "Barrier": "SR3",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.05,
+              "F100Qty": 5
+            },
+            {
+              "Horse No": 9,
+              "Horse": "WATCH YOUR BACK NZ",
+              "Barrier": "SR4",
+              "Driver": "nan",
+              "F100Med": 6.56,
+              "F100Qty": 1
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r6",
+          "raceNo": "6",
+          "raceName": "CONGRATULATIONS MATT ELKINS/MARTIN MAGIC PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "3:35 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "BEYONSKI",
+              "Barrier": "FR1",
+              "Driver": "Taleah McMullen",
+              "F100Med": 7.21,
+              "F100Qty": 30
+            },
+            {
+              "Horse No": 2,
+              "Horse": "DOOLITTLE DOOZZIE",
+              "Barrier": "FR2",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.12,
+              "F100Qty": 59
+            },
+            {
+              "Horse No": 3,
+              "Horse": "OUTER CHANGE",
+              "Barrier": "FR3",
+              "Driver": "Zac Chappenden",
+              "F100Med": 7.09,
+              "F100Qty": 52
+            },
+            {
+              "Horse No": 4,
+              "Horse": "WILLROBY",
+              "Barrier": "FR4",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 7.2,
+              "F100Qty": 36
+            },
+            {
+              "Horse No": 5,
+              "Horse": "CHARLIE CHUCKLES",
+              "Barrier": "FR5",
+              "Driver": "Holly Chalmers",
+              "F100Med": 7.01,
+              "F100Qty": 31
+            },
+            {
+              "Horse No": 6,
+              "Horse": "COULD IT BE ME",
+              "Barrier": "SR1",
+              "Driver": "Dallas Wilkins",
+              "F100Med": 7.24,
+              "F100Qty": 37
+            },
+            {
+              "Horse No": 7,
+              "Horse": "CONVAIR HUSTLER NZ",
+              "Barrier": "SR2",
+              "Driver": "Hannah Anforth",
+              "F100Med": 6.78,
+              "F100Qty": 57
+            },
+            {
+              "Horse No": 8,
+              "Horse": "MOLLIDOR",
+              "Barrier": "SR3",
+              "Driver": "Adam Richardson",
+              "F100Med": 7.0,
+              "F100Qty": 93
+            },
+            {
+              "Horse No": 9,
+              "Horse": "SHES BEWITCHED",
+              "Barrier": "SR4",
+              "Driver": "Noel Parrish",
+              "F100Med": 6.97,
+              "F100Qty": 33
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r7",
+          "raceNo": "7",
+          "raceName": "GOLDBET.COM.AU BONUS BETS PACE",
+          "distance": "2200",
+          "start": "Mobile",
+          "time": "4:07 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "LULU LUCIFER",
+              "Barrier": "FR1",
+              "Driver": "nan",
+              "F100Med": 7.01,
+              "F100Qty": 67
+            },
+            {
+              "Horse No": 2,
+              "Horse": "JIMMY BLING",
+              "Barrier": "FR2",
+              "Driver": "Gary Bond",
+              "F100Med": 6.85,
+              "F100Qty": 26
+            },
+            {
+              "Horse No": 3,
+              "Horse": "GRACENAVA",
+              "Barrier": "FR3",
+              "Driver": "nan",
+              "F100Med": 7.02,
+              "F100Qty": 49
+            },
+            {
+              "Horse No": 4,
+              "Horse": "ONE LAST ROLL",
+              "Barrier": "FR4",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 6.89,
+              "F100Qty": 73
+            },
+            {
+              "Horse No": 5,
+              "Horse": "ASCOT ANNIE",
+              "Barrier": "FR5",
+              "Driver": "Peter Greig",
+              "F100Med": 7.29,
+              "F100Qty": 12
+            },
+            {
+              "Horse No": 6,
+              "Horse": "SAN SABA",
+              "Barrier": "SR1",
+              "Driver": "Dannielle McMullen",
+              "F100Med": 6.61,
+              "F100Qty": 17
+            },
+            {
+              "Horse No": 7,
+              "Horse": "BEAU STEELE",
+              "Barrier": "SR2",
+              "Driver": "nan",
+              "F100Med": 7.09,
+              "F100Qty": 32
+            },
+            {
+              "Horse No": 8,
+              "Horse": "THE REAL ROCKETMAN NZ",
+              "Barrier": "SR3",
+              "Driver": "Jack Chapple",
+              "F100Med": NaN,
+              "F100Qty": 0
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_marburg_2026-04-19_r8",
+          "raceNo": "8",
+          "raceName": "ONE LAST ROLL  THREE PEAT HORSE OF THE YEAR PACE",
+          "distance": "1850",
+          "start": "Mobile",
+          "time": "4:47 PM",
+          "venue": "Marburg",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "SAINT LOUIS BEAT",
+              "Barrier": "FR1",
+              "Driver": "Gary Whitaker",
+              "F100Med": 6.92,
+              "F100Qty": 62
+            },
+            {
+              "Horse No": 2,
+              "Horse": "MALIBU DREAM",
+              "Barrier": "FR2",
+              "Driver": "Layne Dwyer",
+              "F100Med": 7.24,
+              "F100Qty": 40
+            },
+            {
+              "Horse No": 3,
+              "Horse": "YOGI",
+              "Barrier": "FR3",
+              "Driver": "Adam Richardson",
+              "F100Med": 6.99,
+              "F100Qty": 23
+            },
+            {
+              "Horse No": 4,
+              "Horse": "SHADYS DELIGHT",
+              "Barrier": "FR4",
+              "Driver": "Hannah Anforth",
+              "F100Med": 7.28,
+              "F100Qty": 52
+            },
+            {
+              "Horse No": 5,
+              "Horse": "LA SABINA NZ",
+              "Barrier": "FR5",
+              "Driver": "Zac Chappenden",
+              "F100Med": 6.82,
+              "F100Qty": 57
+            },
+            {
+              "Horse No": 6,
+              "Horse": "PINK RIVER DIAMOND",
+              "Barrier": "SR1",
+              "Driver": "Gary Bond",
+              "F100Med": 7.33,
+              "F100Qty": 32
+            },
+            {
+              "Horse No": 7,
+              "Horse": "KEAYANG TARA",
+              "Barrier": "SR2",
+              "Driver": "Lola Weidemann",
+              "F100Med": 7.08,
+              "F100Qty": 89
+            },
+            {
+              "Horse No": 8,
+              "Horse": "ROCKNROLL DA GAMA",
+              "Barrier": "SR3",
+              "Driver": "Lola Weidemann",
+              "F100Med": 7.42,
+              "F100Qty": 68
+            },
+            {
+              "Horse No": 9,
+              "Horse": "MAJOR SLIP UP",
+              "Barrier": "SR4",
+              "Driver": "Nathan Rothwell",
+              "F100Med": 7.01,
+              "F100Qty": 52
+            }
           ]
         }
       ]
