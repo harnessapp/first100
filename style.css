@@ -261,6 +261,12 @@ body {
   border-color: #111;
 }
 
+#distanceTabs .metric-tab.active {
+  background: #5b95e6;
+  color: #fff;
+  border-color: #4a7fd1;
+}
+
 #distanceTabs .metric-tab {
   width: 72px;
   text-align: center;
