@@ -38,10 +38,6 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
-.panel-header {
-  margin-bottom: 14px;
-}
-
 .filters-grid {
   display: flex;
   gap: 14px;
@@ -221,12 +217,21 @@ body {
   opacity: 0.55;
 }
 
+.panel-header {
+  position: relative;
+  margin-bottom: 14px;
+  min-height: 34px;
+}
+
 .metric-tabs {
+  position: absolute;
+  left: 0;
+  top: 48px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 10px;
   width: 120px;
+  z-index: 5;
 }
 
 .metric-tab {
@@ -243,4 +248,8 @@ body {
   background: #111;
   color: white;
   border-color: #111;
+}
+
+.speed-map {
+  margin-left: 150px;
 }
