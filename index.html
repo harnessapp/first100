@@ -1,10 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>First 100</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First100 - powered by Trotify</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>First100 coming soon</h1>
+  <div class="page">
+    <header class="topbar">
+      <div>
+        <h1>First100 - powered by Trotify</h1>
+        <div class="topbar-sub">Early-speed visual for mobile-start harness races</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Filters</h2>
+        </div>
+
+        <div class="filters-grid">
+          <div class="filter-block">
+            <label>State</label>
+            <div id="stateTabs" class="state-tabs"></div>
+          </div>
+
+          <div class="filter-block">
+            <label>Meeting</label>
+            <select id="meetingSelect"></select>
+          </div>
+
+          <div class="filter-block">
+            <label>Race</label>
+            <div id="raceTabs" class="race-tabs"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div id="raceTitle" class="subtitle">Loading...</div>
+        </div>
+
+        <div id="mapContainer">
+          <div class="empty">(loading)</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
