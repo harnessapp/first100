@@ -460,12 +460,12 @@ function renderEarlySpeedMap(race) {
 function getPostX() {
   switch (selectedDistance) {
     case "50":
-      return 420;
+      return 620;
     case "100":
-      return 680;
+      return 760;
     case "200":
-      return 930;
+      return 1040;
     default:
-      return 680;
+      return 760;
   }
 }
