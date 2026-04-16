@@ -43,13 +43,13 @@
         <div class="panel-header">
           <div id="raceTitle" class="subtitle">Loading...</div>
 
-          <select id="metricSelect" style="margin-left:12px; padding:6px 10px; border-radius:8px;">
-            <option value="med">Median</option>
-            <option value="fast">Fastest</option>
-            <option value="avg123">Average FR1-3</option>
-            <option value="last5">Last 5</option>
-            <option value="avg">Average</option>
-          </select>
+          <div id="metricTabs" class="metric-tabs">
+            <button type="button" class="metric-tab active" data-metric="med">Median</button>
+            <button type="button" class="metric-tab" data-metric="fast">Fastest</button>
+            <button type="button" class="metric-tab" data-metric="avg123">Avg FR1-3</button>
+            <button type="button" class="metric-tab" data-metric="last5">Last 5</button>
+            <button type="button" class="metric-tab" data-metric="avg">Average</button>
+          </div>
         </div>
 
         <div id="mapContainer">

@@ -19,6 +19,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       rebuildRaceOptions();
     });
 
+
+    // metric button clicks
+    document.querySelectorAll(".metric-tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        selectedMetric = btn.dataset.metric || "med";
+
+        // toggle active button
+        document.querySelectorAll(".metric-tab").forEach((b) => {
+          b.classList.toggle("active", b.dataset.metric === selectedMetric);
+        });
+
+        renderSelectedRace();
+      });
+    });
+
     selectedState = "QLD";
 
     buildStateOptions();
