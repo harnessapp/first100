@@ -3,6 +3,7 @@ let filteredMeetings = [];
 let selectedState = "";
 let selectedMeetingKey = "";
 let selectedRaceKey = "";
+let selectedMetric = "med";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -159,8 +160,20 @@ function renderSelectedRace() {
   const race = sortedRaces.find((r) => r.raceKey === selectedRaceKey);
   if (!race) return;
 
-  document.getElementById("raceTitle").textContent = buildRaceTitle(meeting, race);
+  document.getElementById("raceTitle").textContent =
+    `${buildRaceTitle(meeting, race)} — ${metricTitle()}`;
   renderEarlySpeedMap(race);
+}
+
+function metricTitle() {
+  switch (selectedMetric) {
+    case "fast": return "Fastest";
+    case "avg123": return "Average FR1-3";
+    case "last5": return "Last 5";
+    case "avg": return "Average";
+    case "med":
+    default: return "Median";
+  }
 }
 
 function buildRaceTitle(meeting, race) {
@@ -183,6 +196,50 @@ function raceNoSortValue(v) {
   return Number.isFinite(n) ? n : 9999;
 }
 
+
+function getMetricForRunner(r) {
+  switch (selectedMetric) {
+    case "fast":
+      return {
+        value: Number(r["F100Fast"] ?? r.F100Fast),
+        qty: Number(r["F100FastQty"] ?? r.F100FastQty)
+      };
+    case "avg123":
+      return {
+        value: Number(r["F100Avg123"] ?? r.F100Avg123),
+        qty: Number(r["F100Avg123Qty"] ?? r.F100Avg123Qty)
+      };
+    case "last5":
+      return {
+        value: Number(r["F100Last5"] ?? r.F100Last5),
+        qty: Number(r["F100Last5Qty"] ?? r.F100Last5Qty)
+      };
+    case "avg":
+      return {
+        value: Number(r["F100Avg"] ?? r.F100Avg),
+        qty: Number(r["F100AvgQty"] ?? r.F100AvgQty)
+      };
+    case "med":
+    default:
+      return {
+        value: Number(r["F100Med"] ?? r.F100Med),
+        qty: Number(r["F100Qty"] ?? r.F100Qty)
+      };
+  }
+}
+
+function metricLabel() {
+  switch (selectedMetric) {
+    case "fast": return "Fast";
+    case "avg123": return "Avg FR1-3";
+    case "last5": return "Last 5";
+    case "avg": return "Avg";
+    case "med":
+    default: return "Med";
+  }
+}
+
+
 function renderEarlySpeedMap(race) {
   const container = document.getElementById("mapContainer");
   container.innerHTML = "";
@@ -193,14 +250,18 @@ function renderEarlySpeedMap(race) {
     return;
   }
 
-  const runners = (race.runners || []).map(r => ({
+const runners = (race.runners || []).map(r => {
+  const metric = getMetricForRunner(r);
+
+  return {
     no: Number(r["Horse No"] ?? r.no),
     name: r["Horse"] ?? r.name,
     barrier: r["Barrier"] ?? r.barrier,
     driver: r["Driver"] ?? r.driver,
-    med: Number(r["F100Med"] ?? r.med),
-    qty: Number(r["F100Qty"] ?? r.qty)
-  })).filter(r => r.barrier && r.barrier !== "SCR");
+    med: metric.value,
+    qty: metric.qty
+  };
+}).filter(r => r.barrier && r.barrier !== "SCR");
 
   if (!runners.length) {
     container.innerHTML = `<div class="empty">(no runners)</div>`;
@@ -295,7 +356,7 @@ function renderEarlySpeedMap(race) {
       </div>
       <div class="tooltip">
         <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">Med: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
+        <div class="tooltip-body">${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
         <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
       </div>
     `;
