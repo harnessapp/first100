@@ -318,18 +318,18 @@ function renderEarlySpeedMap(race) {
   // Ignore FR-/SR- emergencies and SCR
   const runners = runnersRaw.filter(r => r.barrierValid && !r.emergency);
 
-  // Ensure the map renders even if no valid runners
-  const effectiveRunners = runners.length ? runners : [{
-    no: "-",
-    name: "(no qualifying runners)",
-    driver: "-",
-    med: 0,
-    qty: 0,
-    slot: 1,
-    row: "SR",
-    barrierValid: true,
-    isKnown: false
-  }];
+const effectiveRunners = runners.length ? runners : [
+  { no: "-", name: "(no qualifying runners)", driver: "-", med: 0, qty: 0, slot: 1, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 2, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 3, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 4, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 5, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 6, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 7, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 8, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 9, row: "SR", barrierValid: true, isKnown: false },
+  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 10, row: "SR", barrierValid: true, isKnown: false }
+];
 
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
