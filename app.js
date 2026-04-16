@@ -313,9 +313,9 @@ const runners = (race.runners || []).map(r => {
   const HORSE_LENGTH_M = 4;
   const HORSE_LENGTH_PX = HORSE_LENGTH_M * PX_PER_METRE;
 
-  // this is where the horse's NOSE sits relative to the left edge of the PNG
-  // tweak slightly later if needed
-  const ICON_NOSE_OFFSET_PX = 92;
+// this is where the horse's NOSE sits relative to the left edge of the PNG
+// tweak slightly later if needed
+const ICON_NOSE_OFFSET_PX = 92;
 
   const valid = runners.filter(r => Number.isFinite(r.med) && r.qty > 0);
   if (!valid.length) {
@@ -334,55 +334,44 @@ const runners = (race.runners || []).map(r => {
   const knownGaps = valid.map(r => (r.med - fastest) * 14.5);
   const slowestKnownGap = Math.max(...knownGaps);
 
-const frMap = {};
-const srList = [];
+  const frMap = {};
+  const srList = [];
 
-runners.forEach(r => {
-  const p = parseBarrier(r.barrier);
-  r.row = p.row;
-  r.slot = p.slot;
+  runners.forEach(r => {
+    const p = parseBarrier(r.barrier);
+    r.row = p.row;
+    r.slot = p.slot;
 
-  r.isKnown = Number.isFinite(r.med) && r.qty > 0;
+    r.isKnown = Number.isFinite(r.med) && r.qty > 0;
 
-  if (r.isKnown) {
-    r.rawGap = (r.med - fastest) * 14.5;
-  } else {
-    r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
-  }
+    if (r.isKnown) {
+      r.rawGap = (r.med - fastest) * 14.5;
+    } else {
+      r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
+    }
 
-  r.rawGapPx = r.rawGap * PX_PER_METRE;
+    const laneY = r.slot * LANE_GAP;
+    r.displayY = laneY + SAME_LANE_Y_OFFSET;
 
-  const laneY = r.slot * LANE_GAP;
-  r.displayY = laneY + SAME_LANE_Y_OFFSET;
+    if (r.row === "FR") {
+      r.displayX = 930 - (r.rawGap * PX_PER_METRE);
+      frMap[r.slot] = r;
+    } else {
+      srList.push(r);
+    }
+  });
 
-  if (r.row === "FR") {
-    // anchor by NOSE position, not image left edge
-    r.noseX = POST_X - r.rawGapPx;
-    r.displayX = r.noseX - ICON_NOSE_OFFSET_PX;
-    frMap[r.slot] = r;
-  } else {
-    srList.push(r);
-  }
-});
-
-srList.forEach(r => {
-  const fr = frMap[r.slot];
-
-  if (fr) {
-    // actual sectional gap between SR and matching FR
-    const actualBehindPx = Math.max(0, (r.rawGap - fr.rawGap) * PX_PER_METRE);
-
-    // must be at least one horse length behind, otherwise use actual gap
-    const enforcedBehindPx = Math.max(actualBehindPx, HORSE_LENGTH_PX);
-
-    r.noseX = fr.noseX - enforcedBehindPx;
-    r.displayX = r.noseX - ICON_NOSE_OFFSET_PX;
-    r.displayY = fr.displayY;
-  } else {
-    r.noseX = POST_X - r.rawGapPx;
-    r.displayX = r.noseX - ICON_NOSE_OFFSET_PX;
-  }
-});
+  srList.forEach(r => {
+    const rawX = 930 - (r.rawGap * PX_PER_METRE);
+    const fr = frMap[r.slot];
+    if (fr) {
+      const maxAllowedX = fr.displayX - HORSE_WIDTH_PX;
+      r.displayX = Math.min(rawX, maxAllowedX);
+      r.displayY = fr.displayY;
+    } else {
+      r.displayX = rawX;
+    }
+  });
 
   mapEl.innerHTML = `
     <div class="map-track">
