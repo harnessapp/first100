@@ -1,0 +1,34 @@
+{
+  "states": ["QLD"],
+  "meetings": [
+    {
+      "state": "QLD",
+      "meetingKey": "albion_park_2026-04-17",
+      "meetingLabel": "Albion Park — 17/04/2026",
+      "venue": "Albion Park",
+      "races": [
+        {
+          "raceKey": "albion_park_2026-04-17_r2",
+          "raceNo": "2",
+          "raceName": "Early Speed Map Demo",
+          "distance": "1660",
+          "start": "Mobile",
+          "time": "6:07 PM",
+          "venue": "Albion Park",
+          "runners": [
+            { "Horse No": 1, "Horse": "IMANI", "Barrier": "FR1", "Driver": "Trent Dawson", "F100Med": 6.70, "F100Qty": 22 },
+            { "Horse No": 7, "Horse": "KALASA NZ", "Barrier": "FR7", "Driver": "Adam Sanderson", "F100Med": 6.56, "F100Qty": 13 },
+            { "Horse No": 3, "Horse": "BAIL DENIED", "Barrier": "FR3", "Driver": "Leonard Cain", "F100Med": 6.87, "F100Qty": 32 },
+            { "Horse No": 2, "Horse": "KONNYMARA", "Barrier": "FR2", "Driver": "Zac Chappenden", "F100Med": 7.17, "F100Qty": 22 },
+            { "Horse No": 4, "Horse": "LITTLELIONELJAMES", "Barrier": "FR4", "Driver": "Leonard Cain", "F100Med": 6.83, "F100Qty": 77 },
+            { "Horse No": 5, "Horse": "BUBBA NAY", "Barrier": "FR5", "Driver": "Ben Battle", "F100Med": 7.14, "F100Qty": 14 },
+            { "Horse No": 6, "Horse": "CHAMONIX", "Barrier": "FR6", "Driver": "Jack Chapple", "F100Med": 6.88, "F100Qty": 74 },
+            { "Horse No": 10, "Horse": "THE MAHARANI NZ", "Barrier": "SR3", "Driver": "Pete McMullen", "F100Med": 6.84, "F100Qty": 27 },
+            { "Horse No": 8, "Horse": "MONOPOLLIE", "Barrier": "SR1", "Driver": "Pete McMullen", "F100Med": 6.56, "F100Qty": 19 },
+            { "Horse No": 9, "Horse": "VINCENT TIME", "Barrier": "SR2", "Driver": "Matt Elkins", "F100Med": 7.09, "F100Qty": 44 }
+          ]
+        }
+      ]
+    }
+  ]
+}
