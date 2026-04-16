@@ -297,6 +297,7 @@ function renderEarlySpeedMap(race) {
     return { row: m[1], slot: parseInt(m[2], 10), valid: true, emergency: false };
   };
 
+  // Step 1: Map raw runners with metrics intact
   const runnersRaw = (race.runners || []).map((r) => {
     const metric = getMetricForRunner(r);
     const barrier = r["Barrier"] ?? r.barrier;
@@ -306,7 +307,7 @@ function renderEarlySpeedMap(race) {
       name: r["Horse"] ?? r.name,
       barrier,
       driver: r["Driver"] ?? r.driver,
-      med: metric.value,
+      med: metric.value,   // preserve metric here
       qty: metric.qty,
       row: parsed.row,
       slot: parsed.slot,
@@ -315,22 +316,28 @@ function renderEarlySpeedMap(race) {
     };
   });
 
-  // Ignore FR-/SR- emergencies and SCR
-  const runners = runnersRaw.filter(r => r.barrierValid && !r.emergency);
+  // Step 2: Filter out FR-/SR- emergencies & SCR but keep metrics
+  const runners = runnersRaw
+    .filter(r => r.barrierValid && !r.emergency)
+    .map(r => {
+      r.isKnown = Number.isFinite(r.med) && r.qty > 0;
+      return r;
+    });
 
-const effectiveRunners = runners.length ? runners : [
-  { no: "-", name: "(no qualifying runners)", driver: "-", med: 0, qty: 0, slot: 1, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 2, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 3, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 4, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 5, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 6, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 7, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 8, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 9, row: "SR", barrierValid: true, isKnown: false },
-  { no: "-", name: "", driver: "", med: 0, qty: 0, slot: 10, row: "SR", barrierValid: true, isKnown: false }
-];
+  // Step 3: Create placeholders for empty races
+  const effectiveRunners = runners.length ? runners : Array.from({length: 10}, (_, i) => ({
+    no: "-",
+    name: i === 0 ? "(no qualifying runners)" : "",
+    driver: "-",
+    med: 0,
+    qty: 0,
+    slot: i + 1,
+    row: "SR",
+    barrierValid: true,
+    isKnown: false
+  }));
 
+  // Step 4: Create map
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
 
@@ -341,15 +348,15 @@ const effectiveRunners = runners.length ? runners : [
   const POST_X = 930;
 
   const maxSlot = Math.max(...effectiveRunners.map(r => Number.isFinite(r.slot) ? r.slot : 0), 0);
-  const dynamicMinHeight = Math.max(520, (maxSlot * LANE_GAP) + 180); // extra space for 10-across front
+  const dynamicMinHeight = Math.max(520, (maxSlot * LANE_GAP) + 180);
   mapEl.style.minHeight = `${dynamicMinHeight}px`;
 
   const frMap = {};
   const srList = [];
 
   effectiveRunners.forEach((r) => {
-    r.isKnown = Number.isFinite(r.med) && r.qty > 0;
-    r.rawGap = r.isKnown ? r.med * 14.5 : 6; // default gap for unknown
+    const rawGap = r.isKnown ? r.med * 14.5 : 6;
+    r.rawGap = rawGap;
     const laneY = r.slot * LANE_GAP;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
     if (r.row === "FR") frMap[r.slot] = r;
