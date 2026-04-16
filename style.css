@@ -211,3 +211,12 @@ body {
 .tooltip-body {
   color: #d8d8d8;
 }
+
+.unknown .horse-icon {
+  opacity: 0.22;
+  filter: grayscale(100%);
+}
+
+.unknown .cloth {
+  opacity: 0.55;
+}

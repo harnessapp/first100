@@ -181,9 +181,9 @@ function renderEarlySpeedMap(race) {
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
 
-  const PX_PER_METRE = 12;
+  const PX_PER_METRE = 11;
   const LANE_GAP = 52;
-  const FALLBACK = 18;
+  const UNKNOWN_BACK_MARKER_M = 6;   // place unknowns behind slowest known
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
 
@@ -200,6 +200,10 @@ function renderEarlySpeedMap(race) {
     return m ? { row: m[1], slot: parseInt(m[2], 10) } : { row: "", slot: null };
   };
 
+  // work out slowest known gap so unknowns can sit behind that
+  const knownGaps = valid.map(r => (r.med - fastest) * 14.5);
+  const slowestKnownGap = Math.max(...knownGaps);
+
   const frMap = {};
   const srList = [];
 
@@ -207,7 +211,15 @@ function renderEarlySpeedMap(race) {
     const p = parseBarrier(r.barrier);
     r.row = p.row;
     r.slot = p.slot;
-    r.rawGap = (Number.isFinite(r.med) && r.qty > 0) ? (r.med - fastest) * 14.5 : FALLBACK;
+
+    r.isKnown = Number.isFinite(r.med) && r.qty > 0;
+
+    if (r.isKnown) {
+      r.rawGap = (r.med - fastest) * 14.5;
+    } else {
+      r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
+    }
+
     const laneY = r.slot * LANE_GAP;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
 
@@ -243,6 +255,7 @@ function renderEarlySpeedMap(race) {
   runners.forEach(r => {
     const el = document.createElement("div");
     el.className = "map-runner";
+    if (!r.isKnown) el.classList.add("unknown");
     el.style.left = `${r.displayX}px`;
     el.style.top = `${r.displayY}px`;
 
@@ -253,7 +266,7 @@ function renderEarlySpeedMap(race) {
       </div>
       <div class="tooltip">
         <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">Med: ${Number.isFinite(r.med) ? r.med.toFixed(2) : "-"} (n=${r.qty})</div>
+        <div class="tooltip-body">Med: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
         <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
       </div>
     `;
