@@ -3,7 +3,7 @@ let filteredMeetings = [];
 let selectedState = "";
 let selectedMeetingKey = "";
 let selectedRaceKey = "";
-let selectedMetric = "med";
+let selectedMetric = "weighted";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -172,6 +172,7 @@ function metricTitle() {
     case "last5": return "Last 5";
     case "avg": return "Average";
     case "med":
+    case "weighted": return "Weighted";
     default: return "Median";
   }
 }
@@ -196,9 +197,37 @@ function raceNoSortValue(v) {
   return Number.isFinite(n) ? n : 9999;
 }
 
+function weightedMetric(r) {
+  const components = [
+    { value: Number(r["F100Med"] ?? r.F100Med), weight: 0.30, qty: Number(r["F100Qty"] ?? r.F100Qty) },
+    { value: Number(r["F100Fast"] ?? r.F100Fast), weight: 0.10, qty: Number(r["F100FastQty"] ?? r.F100FastQty) },
+    { value: Number(r["F100Avg123"] ?? r.F100Avg123), weight: 0.25, qty: Number(r["F100Avg123Qty"] ?? r.F100Avg123Qty) },
+    { value: Number(r["F100Last5"] ?? r.F100Last5), weight: 0.25, qty: Number(r["F100Last5Qty"] ?? r.F100Last5Qty) },
+    { value: Number(r["F100Avg"] ?? r.F100Avg), weight: 0.10, qty: Number(r["F100AvgQty"] ?? r.F100AvgQty) }
+  ];
+
+  const valid = components.filter(c => Number.isFinite(c.value) && Number.isFinite(c.qty) && c.qty > 0);
+
+  if (!valid.length) {
+    return { value: NaN, qty: 0 };
+  }
+
+  const totalWeight = valid.reduce((sum, c) => sum + c.weight, 0);
+  const weightedValue = valid.reduce((sum, c) => sum + (c.value * c.weight), 0) / totalWeight;
+
+  // use the largest qty among included components as the displayed confidence/sample
+  const qty = Math.max(...valid.map(c => c.qty));
+
+  return {
+    value: Number(weightedValue.toFixed(2)),
+    qty
+  };
+}
 
 function getMetricForRunner(r) {
   switch (selectedMetric) {
+    case "weighted":
+      return weightedMetric(r);
     case "fast":
       return {
         value: Number(r["F100Fast"] ?? r.F100Fast),
@@ -235,7 +264,8 @@ function metricLabel() {
     case "last5": return "Last 5";
     case "avg": return "Avg";
     case "med":
-    default: return "Med";
+    case "weighted": return "Weighted";
+    default: return "Weighted";
   }
 }
 
