@@ -352,7 +352,7 @@ function renderEarlySpeedMap(race) {
   const UNKNOWN_BACK_MARKER_M = 6;
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
-  const POST_X = 930;
+  const POST_X = getPostX();
 
   const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
   if (!valid.length) {
@@ -455,4 +455,17 @@ function renderEarlySpeedMap(race) {
   });
 
   container.appendChild(mapEl);
+}
+
+function getPostX() {
+  switch (selectedDistance) {
+    case "50":
+      return 420;
+    case "100":
+      return 680;
+    case "200":
+      return 930;
+    default:
+      return 680;
+  }
 }
