@@ -297,7 +297,7 @@ function renderEarlySpeedMap(race) {
     return { row: m[1], slot: parseInt(m[2], 10), valid: true, emergency: false };
   };
 
-  // Step 1: Map raw runners with metrics intact
+  // Map raw runners with metrics intact
   const runnersRaw = (race.runners || []).map((r) => {
     const metric = getMetricForRunner(r);
     const barrier = r["Barrier"] ?? r.barrier;
@@ -307,7 +307,7 @@ function renderEarlySpeedMap(race) {
       name: r["Horse"] ?? r.name,
       barrier,
       driver: r["Driver"] ?? r.driver,
-      med: metric.value,   // preserve metric here
+      med: metric.value,
       qty: metric.qty,
       row: parsed.row,
       slot: parsed.slot,
@@ -316,7 +316,7 @@ function renderEarlySpeedMap(race) {
     };
   });
 
-  // Step 2: Filter out FR-/SR- emergencies & SCR but keep metrics
+  // Filter FR-/SR- runners & preserve metrics
   const runners = runnersRaw
     .filter(r => r.barrierValid && !r.emergency)
     .map(r => {
@@ -324,8 +324,9 @@ function renderEarlySpeedMap(race) {
       return r;
     });
 
-  // Step 3: Create placeholders for empty races
-  const effectiveRunners = runners.length ? runners : Array.from({length: 10}, (_, i) => ({
+  // If all runners filtered, create placeholders
+  const maxFrontSlots = 10;
+  const effectiveRunners = runners.length ? runners : Array.from({length: maxFrontSlots}, (_, i) => ({
     no: "-",
     name: i === 0 ? "(no qualifying runners)" : "",
     driver: "-",
@@ -334,10 +335,10 @@ function renderEarlySpeedMap(race) {
     slot: i + 1,
     row: "SR",
     barrierValid: true,
-    isKnown: false
+    isKnown: false,
+    rawGap: 6
   }));
 
-  // Step 4: Create map
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
 
@@ -354,9 +355,9 @@ function renderEarlySpeedMap(race) {
   const frMap = {};
   const srList = [];
 
+  // Assign displayX/displayY for FR and SR
   effectiveRunners.forEach((r) => {
-    const rawGap = r.isKnown ? r.med * 14.5 : 6;
-    r.rawGap = rawGap;
+    r.rawGap = r.isKnown ? r.med * 14.5 : r.rawGap || 6;
     const laneY = r.slot * LANE_GAP;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
     if (r.row === "FR") frMap[r.slot] = r;
@@ -381,6 +382,7 @@ function renderEarlySpeedMap(race) {
 
   const track = mapEl.querySelector(".map-track");
 
+  // Draw runners or placeholders
   effectiveRunners.forEach((r) => {
     const el = document.createElement("div");
     el.className = "map-runner";
@@ -400,6 +402,12 @@ function renderEarlySpeedMap(race) {
         <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
       </div>
     `;
+
+    // Hide horse image for placeholder runners
+    if (r.no === "-") {
+      const img = el.querySelector(".horse-icon");
+      if (img) img.style.display = "none";
+    }
 
     const tip = el.querySelector(".tooltip");
     el.addEventListener("mouseenter", () => { tip.style.display = "block"; tip.style.left = "78px"; tip.style.top = "-8px"; });
