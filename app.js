@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     });
 
-    selectedState = "QLD";
+    selectedState = "";
 
     buildStateOptions();
     rebuildMeetingOptions();
@@ -277,6 +277,8 @@ function metricLabel() {
 }
 
 function renderEarlySpeedMap(race) {
+  console.log("renderEarlySpeedMap called:", race.venue, race.date);
+
   const container = document.getElementById("mapContainer");
   container.innerHTML = "";
 
@@ -286,102 +288,93 @@ function renderEarlySpeedMap(race) {
     return;
   }
 
-  const runners = (race.runners || []).map((r) => {
-    const metric = getMetricForRunner(r);
+  const parseBarrier = (b) => {
+    const text = String(b || "").trim().toUpperCase();
+    if (text === "SCR") return { row: "SCR", slot: null, valid: false, emergency: false };
+    if (text === "FR-" || text === "SR-") return { row: text.slice(0, 2), slot: null, valid: false, emergency: true };
+    const m = text.match(/(FR|SR)(\d+)/);
+    if (!m) return { row: "", slot: null, valid: false, emergency: false };
+    return { row: m[1], slot: parseInt(m[2], 10), valid: true, emergency: false };
+  };
 
+  const runnersRaw = (race.runners || []).map((r) => {
+    const metric = getMetricForRunner(r);
+    const barrier = r["Barrier"] ?? r.barrier;
+    const parsed = parseBarrier(barrier);
     return {
       no: Number(r["Horse No"] ?? r.no),
       name: r["Horse"] ?? r.name,
-      barrier: r["Barrier"] ?? r.barrier,
+      barrier,
       driver: r["Driver"] ?? r.driver,
       med: metric.value,
-      qty: metric.qty
+      qty: metric.qty,
+      row: parsed.row,
+      slot: parsed.slot,
+      barrierValid: parsed.valid,
+      emergency: parsed.emergency,
     };
-  }).filter((r) => r.barrier && r.barrier !== "SCR");
+  });
 
-  if (!runners.length) {
-    container.innerHTML = `<div class="empty">(no runners)</div>`;
-    return;
-  }
+  // Ignore FR-/SR- emergencies and SCR
+  const runners = runnersRaw.filter(r => r.barrierValid && !r.emergency);
+
+  // Ensure the map renders even if no valid runners
+  const effectiveRunners = runners.length ? runners : [{
+    no: "-",
+    name: "(no qualifying runners)",
+    driver: "-",
+    med: 0,
+    qty: 0,
+    slot: 1,
+    row: "SR",
+    barrierValid: true,
+    isKnown: false
+  }];
 
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
 
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
-  const UNKNOWN_BACK_MARKER_M = 6;
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
   const POST_X = 930;
 
-  const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
-  if (!valid.length) {
-    container.innerHTML = `<div class="empty">(no F100 data)</div>`;
-    return;
-  }
-
-  const fastest = Math.min(...valid.map((r) => r.med));
-
-  const parseBarrier = (b) => {
-    const m = String(b || "").trim().toUpperCase().match(/(FR|SR)(\d+)/);
-    return m ? { row: m[1], slot: parseInt(m[2], 10) } : { row: "", slot: null };
-  };
-
-  const knownGaps = valid.map((r) => (r.med - fastest) * 14.5);
-  const slowestKnownGap = Math.max(...knownGaps);
+  const maxSlot = Math.max(...effectiveRunners.map(r => Number.isFinite(r.slot) ? r.slot : 0), 0);
+  const dynamicMinHeight = Math.max(520, (maxSlot * LANE_GAP) + 180); // extra space for 10-across front
+  mapEl.style.minHeight = `${dynamicMinHeight}px`;
 
   const frMap = {};
   const srList = [];
 
-  runners.forEach((r) => {
-    const p = parseBarrier(r.barrier);
-    r.row = p.row;
-    r.slot = p.slot;
-
+  effectiveRunners.forEach((r) => {
     r.isKnown = Number.isFinite(r.med) && r.qty > 0;
-
-    if (r.isKnown) {
-      r.rawGap = (r.med - fastest) * 14.5;
-    } else {
-      r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
-    }
-
+    r.rawGap = r.isKnown ? r.med * 14.5 : 6; // default gap for unknown
     const laneY = r.slot * LANE_GAP;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
-
-    if (r.row === "FR") {
-      r.displayX = POST_X - (r.rawGap * PX_PER_METRE);
-      frMap[r.slot] = r;
-    } else {
-      srList.push(r);
-    }
+    if (r.row === "FR") frMap[r.slot] = r;
+    else srList.push(r);
   });
 
   srList.forEach((r) => {
     const fr = frMap[r.slot];
-    const rawX = POST_X - (r.rawGap * PX_PER_METRE);
-
+    const rawX = POST_X - r.rawGap * PX_PER_METRE;
     if (fr) {
       const actualGapPx = Math.max(0, (r.rawGap - fr.rawGap) * PX_PER_METRE);
       const requiredBehindPx = HORSE_WIDTH_PX + actualGapPx;
-
       r.displayX = fr.displayX - requiredBehindPx;
       r.displayY = fr.displayY;
-    } else {
-      r.displayX = rawX;
-    }
+    } else r.displayX = rawX;
   });
 
-  mapEl.innerHTML = `
-    <div class="map-track">
-      <div class="map-post"></div>
-      <div class="map-post-label">100</div>
-    </div>
-  `;
+  mapEl.innerHTML = `<div class="map-track">
+    <div class="map-post"></div>
+    <div class="map-post-label">100</div>
+  </div>`;
 
   const track = mapEl.querySelector(".map-track");
 
-  runners.forEach((r) => {
+  effectiveRunners.forEach((r) => {
     const el = document.createElement("div");
     el.className = "map-runner";
     if (!r.isKnown) el.classList.add("unknown");
@@ -402,14 +395,8 @@ function renderEarlySpeedMap(race) {
     `;
 
     const tip = el.querySelector(".tooltip");
-    el.addEventListener("mouseenter", () => {
-      tip.style.display = "block";
-      tip.style.left = "78px";
-      tip.style.top = "-8px";
-    });
-    el.addEventListener("mouseleave", () => {
-      tip.style.display = "none";
-    });
+    el.addEventListener("mouseenter", () => { tip.style.display = "block"; tip.style.left = "78px"; tip.style.top = "-8px"; });
+    el.addEventListener("mouseleave", () => { tip.style.display = "none"; });
 
     track.appendChild(el);
   });
