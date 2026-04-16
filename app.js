@@ -20,13 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       rebuildRaceOptions();
     });
 
-
-    // metric button clicks
     document.querySelectorAll(".metric-tab").forEach((btn) => {
       btn.addEventListener("click", () => {
-        selectedMetric = btn.dataset.metric || "med";
+        selectedMetric = btn.dataset.metric || "weighted";
 
-        // toggle active button
         document.querySelectorAll(".metric-tab").forEach((b) => {
           b.classList.toggle("active", b.dataset.metric === selectedMetric);
         });
@@ -68,6 +65,7 @@ function makeStateBtn(label, value) {
   btn.type = "button";
   btn.className = "state-tab";
   btn.textContent = label;
+
   btn.addEventListener("click", () => {
     selectedState = value;
     selectedMeetingKey = "";
@@ -75,6 +73,7 @@ function makeStateBtn(label, value) {
     buildStateOptions();
     rebuildMeetingOptions();
   });
+
   return btn;
 }
 
@@ -132,17 +131,22 @@ function rebuildRaceOptions() {
     : sortedRaces[0].raceKey;
 
   for (const race of sortedRaces) {
-
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "race-tab";
-    if (race.raceKey === selectedRaceKey) btn.classList.add("active");
+
+    if (race.raceKey === selectedRaceKey) {
+      btn.classList.add("active");
+    }
+
     btn.textContent = race.raceNo || "?";
+
     btn.addEventListener("click", () => {
       selectedRaceKey = race.raceKey;
       rebuildRaceOptions();
       renderSelectedRace();
     });
+
     raceTabs.appendChild(btn);
   }
 
@@ -162,19 +166,8 @@ function renderSelectedRace() {
 
   document.getElementById("raceTitle").textContent =
     `${buildRaceTitle(meeting, race)} — ${metricTitle()}`;
-  renderEarlySpeedMap(race);
-}
 
-function metricTitle() {
-  switch (selectedMetric) {
-    case "fast": return "Fastest";
-    case "avg123": return "Average FR1-3";
-    case "last5": return "Last 5";
-    case "avg": return "Average";
-    case "med":
-    case "weighted": return "Weighted";
-    default: return "Median";
-  }
+  renderEarlySpeedMap(race);
 }
 
 function buildRaceTitle(meeting, race) {
@@ -206,17 +199,19 @@ function weightedMetric(r) {
     { value: Number(r["F100Avg"] ?? r.F100Avg), weight: 0.10, qty: Number(r["F100AvgQty"] ?? r.F100AvgQty) }
   ];
 
-  const valid = components.filter(c => Number.isFinite(c.value) && Number.isFinite(c.qty) && c.qty > 0);
+  const valid = components.filter(
+    (c) => Number.isFinite(c.value) && Number.isFinite(c.qty) && c.qty > 0
+  );
 
   if (!valid.length) {
     return { value: NaN, qty: 0 };
   }
 
   const totalWeight = valid.reduce((sum, c) => sum + c.weight, 0);
-  const weightedValue = valid.reduce((sum, c) => sum + (c.value * c.weight), 0) / totalWeight;
+  const weightedValue =
+    valid.reduce((sum, c) => sum + (c.value * c.weight), 0) / totalWeight;
 
-  // use the largest qty among included components as the displayed confidence/sample
-  const qty = Math.max(...valid.map(c => c.qty));
+  const qty = Math.max(...valid.map((c) => c.qty));
 
   return {
     value: Number(weightedValue.toFixed(2)),
@@ -257,18 +252,29 @@ function getMetricForRunner(r) {
   }
 }
 
-function metricLabel() {
+function metricTitle() {
   switch (selectedMetric) {
-    case "fast": return "Fast";
-    case "avg123": return "Avg FR1-3";
-    case "last5": return "Last 5";
-    case "avg": return "Avg";
-    case "med":
     case "weighted": return "Weighted";
+    case "fast": return "Fastest";
+    case "avg123": return "Average FR1-3";
+    case "last5": return "Last 5";
+    case "avg": return "Average";
+    case "med": return "Median";
     default: return "Weighted";
   }
 }
 
+function metricLabel() {
+  switch (selectedMetric) {
+    case "weighted": return "Weighted";
+    case "fast": return "Fast";
+    case "avg123": return "Avg FR1-3";
+    case "last5": return "Last 5";
+    case "avg": return "Avg";
+    case "med": return "Med";
+    default: return "Weighted";
+  }
+}
 
 function renderEarlySpeedMap(race) {
   const container = document.getElementById("mapContainer");
@@ -280,18 +286,18 @@ function renderEarlySpeedMap(race) {
     return;
   }
 
-const runners = (race.runners || []).map(r => {
-  const metric = getMetricForRunner(r);
+  const runners = (race.runners || []).map((r) => {
+    const metric = getMetricForRunner(r);
 
-  return {
-    no: Number(r["Horse No"] ?? r.no),
-    name: r["Horse"] ?? r.name,
-    barrier: r["Barrier"] ?? r.barrier,
-    driver: r["Driver"] ?? r.driver,
-    med: metric.value,
-    qty: metric.qty
-  };
-}).filter(r => r.barrier && r.barrier !== "SCR");
+    return {
+      no: Number(r["Horse No"] ?? r.no),
+      name: r["Horse"] ?? r.name,
+      barrier: r["Barrier"] ?? r.barrier,
+      driver: r["Driver"] ?? r.driver,
+      med: metric.value,
+      qty: metric.qty
+    };
+  }).filter((r) => r.barrier && r.barrier !== "SCR");
 
   if (!runners.length) {
     container.innerHTML = `<div class="empty">(no runners)</div>`;
@@ -304,40 +310,30 @@ const runners = (race.runners || []).map(r => {
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
   const UNKNOWN_BACK_MARKER_M = 6;
+  const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
-
-  // visual anchor model
   const POST_X = 930;
 
-  // actual racing length you want to respect
-  const HORSE_LENGTH_M = 4;
-  const HORSE_LENGTH_PX = HORSE_LENGTH_M * PX_PER_METRE;
-
-// this is where the horse's NOSE sits relative to the left edge of the PNG
-// tweak slightly later if needed
-const ICON_NOSE_OFFSET_PX = 92;
-
-  const valid = runners.filter(r => Number.isFinite(r.med) && r.qty > 0);
+  const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
   if (!valid.length) {
     container.innerHTML = `<div class="empty">(no F100 data)</div>`;
     return;
   }
 
-  const fastest = Math.min(...valid.map(r => r.med));
+  const fastest = Math.min(...valid.map((r) => r.med));
 
   const parseBarrier = (b) => {
     const m = String(b || "").trim().toUpperCase().match(/(FR|SR)(\d+)/);
     return m ? { row: m[1], slot: parseInt(m[2], 10) } : { row: "", slot: null };
   };
 
-  // work out slowest known gap so unknowns can sit behind that
-  const knownGaps = valid.map(r => (r.med - fastest) * 14.5);
+  const knownGaps = valid.map((r) => (r.med - fastest) * 14.5);
   const slowestKnownGap = Math.max(...knownGaps);
 
   const frMap = {};
   const srList = [];
 
-  runners.forEach(r => {
+  runners.forEach((r) => {
     const p = parseBarrier(r.barrier);
     r.row = p.row;
     r.slot = p.slot;
@@ -354,19 +350,22 @@ const ICON_NOSE_OFFSET_PX = 92;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
 
     if (r.row === "FR") {
-      r.displayX = 930 - (r.rawGap * PX_PER_METRE);
+      r.displayX = POST_X - (r.rawGap * PX_PER_METRE);
       frMap[r.slot] = r;
     } else {
       srList.push(r);
     }
   });
 
-  srList.forEach(r => {
-    const rawX = 930 - (r.rawGap * PX_PER_METRE);
+  srList.forEach((r) => {
     const fr = frMap[r.slot];
+    const rawX = POST_X - (r.rawGap * PX_PER_METRE);
+
     if (fr) {
-      const maxAllowedX = fr.displayX - HORSE_WIDTH_PX;
-      r.displayX = Math.min(rawX, maxAllowedX);
+      const actualGapPx = Math.max(0, (r.rawGap - fr.rawGap) * PX_PER_METRE);
+      const requiredBehindPx = HORSE_WIDTH_PX + actualGapPx;
+
+      r.displayX = fr.displayX - requiredBehindPx;
       r.displayY = fr.displayY;
     } else {
       r.displayX = rawX;
@@ -382,10 +381,11 @@ const ICON_NOSE_OFFSET_PX = 92;
 
   const track = mapEl.querySelector(".map-track");
 
-  runners.forEach(r => {
+  runners.forEach((r) => {
     const el = document.createElement("div");
     el.className = "map-runner";
     if (!r.isKnown) el.classList.add("unknown");
+
     el.style.left = `${r.displayX}px`;
     el.style.top = `${r.displayY}px`;
 
