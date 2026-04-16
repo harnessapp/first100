@@ -6957,22 +6957,6 @@
           "venue": "Newcastle",
           "runners": [
             {
-              "Horse No": 1,
-              "Horse": "IM JUST SAYIN",
-              "Barrier": "FR-",
-              "Driver": "John McCarthy",
-              "F100Med": 7.64,
-              "F100Qty": 1,
-              "F100Fast": 7.64,
-              "F100FastQty": 1,
-              "F100Avg123": null,
-              "F100Avg123Qty": 0,
-              "F100Last5": 7.64,
-              "F100Last5Qty": 1,
-              "F100Avg": 7.64,
-              "F100AvgQty": 1
-            },
-            {
               "Horse No": 2,
               "Horse": "BETTOR NOT SAID",
               "Barrier": "FR1",
@@ -7328,22 +7312,6 @@
               "Horse": "DETANGLED",
               "Barrier": "FR1",
               "Driver": "Nathan Hurst",
-              "F100Med": null,
-              "F100Qty": null,
-              "F100Fast": null,
-              "F100FastQty": null,
-              "F100Avg123": null,
-              "F100Avg123Qty": null,
-              "F100Last5": null,
-              "F100Last5Qty": null,
-              "F100Avg": null,
-              "F100AvgQty": null
-            },
-            {
-              "Horse No": 2,
-              "Horse": "FREE DELIVERY",
-              "Barrier": "FR-",
-              "Driver": "Graham Betts",
               "F100Med": null,
               "F100Qty": null,
               "F100Fast": null,
@@ -11760,22 +11728,6 @@
               "F100AvgQty": 2
             },
             {
-              "Horse No": 8,
-              "Horse": "NAMAKA",
-              "Barrier": "FR-",
-              "Driver": "nan",
-              "F100Med": 6.77,
-              "F100Qty": 1,
-              "F100Fast": 6.77,
-              "F100FastQty": 1,
-              "F100Avg123": null,
-              "F100Avg123Qty": 0,
-              "F100Last5": 6.77,
-              "F100Last5Qty": 1,
-              "F100Avg": 6.77,
-              "F100AvgQty": 1
-            },
-            {
               "Horse No": 9,
               "Horse": "SMIRKIN SERENE",
               "Barrier": "FR8",
@@ -11822,22 +11774,6 @@
               "F100Last5Qty": 5,
               "F100Avg": 6.9,
               "F100AvgQty": 6
-            },
-            {
-              "Horse No": 12,
-              "Horse": "MISSAUDACIOUS",
-              "Barrier": "FR-",
-              "Driver": "James Rattray",
-              "F100Med": 6.72,
-              "F100Qty": 7,
-              "F100Fast": 6.57,
-              "F100FastQty": 7,
-              "F100Avg123": 6.57,
-              "F100Avg123Qty": 1,
-              "F100Last5": 6.66,
-              "F100Last5Qty": 5,
-              "F100Avg": 6.86,
-              "F100AvgQty": 7
             }
           ]
         },
@@ -11865,22 +11801,6 @@
               "F100Last5Qty": 5,
               "F100Avg": 6.98,
               "F100AvgQty": 13
-            },
-            {
-              "Horse No": 2,
-              "Horse": "RAYS REDEMPTION",
-              "Barrier": "FR-",
-              "Driver": "nan",
-              "F100Med": 6.75,
-              "F100Qty": 3,
-              "F100Fast": 6.59,
-              "F100FastQty": 3,
-              "F100Avg123": 6.67,
-              "F100Avg123Qty": 2,
-              "F100Last5": 6.8,
-              "F100Last5Qty": 3,
-              "F100Avg": 6.8,
-              "F100AvgQty": 3
             },
             {
               "Horse No": 3,
@@ -12134,22 +12054,6 @@
               "F100AvgQty": 4
             },
             {
-              "Horse No": 7,
-              "Horse": "ASTRAL STRIDE",
-              "Barrier": "FR-",
-              "Driver": "Scott Hewitt",
-              "F100Med": 6.56,
-              "F100Qty": 3,
-              "F100Fast": 6.49,
-              "F100FastQty": 3,
-              "F100Avg123": 6.52,
-              "F100Avg123Qty": 2,
-              "F100Last5": 6.65,
-              "F100Last5Qty": 3,
-              "F100Avg": 6.65,
-              "F100AvgQty": 3
-            },
-            {
               "Horse No": 8,
               "Horse": "ISLA ROCHELLE",
               "Barrier": "FR7",
@@ -12224,22 +12128,6 @@
           "time": "9:00 PM",
           "venue": "Menangle",
           "runners": [
-            {
-              "Horse No": 1,
-              "Horse": "AFFAIRE DE COVER",
-              "Barrier": "FR-",
-              "Driver": "Robert Morris",
-              "F100Med": 7.42,
-              "F100Qty": 16,
-              "F100Fast": 7.13,
-              "F100FastQty": 16,
-              "F100Avg123": 7.85,
-              "F100Avg123Qty": 7,
-              "F100Last5": 8.31,
-              "F100Last5Qty": 5,
-              "F100Avg": 8.06,
-              "F100AvgQty": 16
-            },
             {
               "Horse No": 2,
               "Horse": "MISTER BLINDSIDE",
@@ -12740,22 +12628,6 @@
               "Horse": "CEEJAY HAICH",
               "Barrier": "SR4",
               "Driver": "Scott Hewitt",
-              "F100Med": null,
-              "F100Qty": null,
-              "F100Fast": null,
-              "F100FastQty": null,
-              "F100Avg123": null,
-              "F100Avg123Qty": null,
-              "F100Last5": null,
-              "F100Last5Qty": null,
-              "F100Avg": null,
-              "F100AvgQty": null
-            },
-            {
-              "Horse No": 11,
-              "Horse": "EYES OFF TIGER",
-              "Barrier": "SR-",
-              "Driver": "nan",
               "F100Med": null,
               "F100Qty": null,
               "F100Fast": null,
@@ -13292,22 +13164,6 @@
           "venue": "Canberra",
           "runners": [
             {
-              "Horse No": 1,
-              "Horse": "ITS DOWN TO DIGGER",
-              "Barrier": "FR-",
-              "Driver": "Jett Turnbull",
-              "F100Med": null,
-              "F100Qty": null,
-              "F100Fast": null,
-              "F100FastQty": null,
-              "F100Avg123": null,
-              "F100Avg123Qty": null,
-              "F100Last5": null,
-              "F100Last5Qty": null,
-              "F100Avg": null,
-              "F100AvgQty": null
-            },
-            {
               "Horse No": 2,
               "Horse": "WAT EVER YOU NEED",
               "Barrier": "FR1",
@@ -13805,22 +13661,6 @@
               "F100AvgQty": null
             },
             {
-              "Horse No": 2,
-              "Horse": "SIX AGAIN",
-              "Barrier": "FR-",
-              "Driver": "Scott Osmond",
-              "F100Med": null,
-              "F100Qty": null,
-              "F100Fast": null,
-              "F100FastQty": null,
-              "F100Avg123": null,
-              "F100Avg123Qty": null,
-              "F100Last5": null,
-              "F100Last5Qty": null,
-              "F100Avg": null,
-              "F100AvgQty": null
-            },
-            {
               "Horse No": 3,
               "Horse": "HIGHLANDS WARRIOR",
               "Barrier": "FR2",
@@ -13857,22 +13697,6 @@
               "Horse": "PETES CRUNCH TIME",
               "Barrier": "FR4",
               "Driver": "Joshua Gallagher",
-              "F100Med": null,
-              "F100Qty": null,
-              "F100Fast": null,
-              "F100FastQty": null,
-              "F100Avg123": null,
-              "F100Avg123Qty": null,
-              "F100Last5": null,
-              "F100Last5Qty": null,
-              "F100Avg": null,
-              "F100AvgQty": null
-            },
-            {
-              "Horse No": 6,
-              "Horse": "MIKIBEQUICK",
-              "Barrier": "FR-",
-              "Driver": "Scott Hewitt",
               "F100Med": null,
               "F100Qty": null,
               "F100Fast": null,
