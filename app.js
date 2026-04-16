@@ -277,8 +277,6 @@ function metricLabel() {
 }
 
 function renderEarlySpeedMap(race) {
-  console.log("renderEarlySpeedMap called:", race.venue, race.date);
-
   const container = document.getElementById("mapContainer");
   container.innerHTML = "";
 
@@ -288,57 +286,22 @@ function renderEarlySpeedMap(race) {
     return;
   }
 
-  const parseBarrier = (b) => {
-    const text = String(b || "").trim().toUpperCase();
-    if (text === "SCR") return { row: "SCR", slot: null, valid: false, emergency: false };
-    if (text === "FR-" || text === "SR-") return { row: text.slice(0,2), slot: null, valid: false, emergency: true };
-    const m = text.match(/(FR|SR)(\d+)/);
-    if (!m) return { row:"", slot:null, valid:false, emergency:false };
-    return { row:m[1], slot:parseInt(m[2],10), valid:true, emergency:false };
-  };
-
-  // Step 1: Map all runners and preserve metrics
-  const runnersRaw = (race.runners || []).map((r) => {
+  const runners = (race.runners || []).map((r) => {
     const metric = getMetricForRunner(r);
-    const barrier = r["Barrier"] ?? r.barrier;
-    const parsed = parseBarrier(barrier);
+
     return {
       no: Number(r["Horse No"] ?? r.no),
       name: r["Horse"] ?? r.name,
-      barrier,
+      barrier: r["Barrier"] ?? r.barrier,
       driver: r["Driver"] ?? r.driver,
       med: metric.value,
-      qty: metric.qty,
-      row: parsed.row,
-      slot: parsed.slot,
-      barrierValid: parsed.valid,
-      emergency: parsed.emergency,
-      isKnown: Number.isFinite(metric.value) && metric.qty>0,
-      isEmergency: parsed.emergency // mark FR-/SR-
+      qty: metric.qty
     };
-  });
+  }).filter((r) => r.barrier && r.barrier !== "SCR");
 
-  // Step 2: Preserve layout — all runners stay in array
-  const allRunners = runnersRaw.map(r => ({...r}));
-
-  // Step 3: Placeholders only if no real runners
-  const realRunners = allRunners.filter(r => !r.isEmergency);
-  if(realRunners.length === 0){
-    for(let i=0;i<10;i++){
-      allRunners.push({
-        no:"-",
-        name:i===0?"(no qualifying runners)":"",
-        driver:"-",
-        med:0,
-        qty:0,
-        slot:i+1,
-        row:"SR",
-        barrierValid:true,
-        isKnown:false,
-        isEmergency:true,
-        rawGap:6
-      });
-    }
+  if (!runners.length) {
+    container.innerHTML = `<div class="empty">(no runners)</div>`;
+    return;
   }
 
   const mapEl = document.createElement("div");
@@ -346,64 +309,107 @@ function renderEarlySpeedMap(race) {
 
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
+  const UNKNOWN_BACK_MARKER_M = 6;
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
   const POST_X = 930;
 
-  const maxSlot = Math.max(...allRunners.map(r => Number.isFinite(r.slot)?r.slot:0),0);
-  mapEl.style.minHeight = `${Math.max(520,(maxSlot*LANE_GAP)+180)}px`;
+  const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
+  if (!valid.length) {
+    container.innerHTML = `<div class="empty">(no F100 data)</div>`;
+    return;
+  }
 
-  // Step 4: Calculate positions
+  const fastest = Math.min(...valid.map((r) => r.med));
+
+  const parseBarrier = (b) => {
+    const m = String(b || "").trim().toUpperCase().match(/(FR|SR)(\d+)/);
+    return m ? { row: m[1], slot: parseInt(m[2], 10) } : { row: "", slot: null };
+  };
+
+  const knownGaps = valid.map((r) => (r.med - fastest) * 14.5);
+  const slowestKnownGap = Math.max(...knownGaps);
+
   const frMap = {};
   const srList = [];
-  allRunners.forEach(r=>{
-    r.rawGap = r.isKnown?r.med*14.5:r.rawGap||6;
-    const laneY = r.slot*LANE_GAP;
-    r.displayY = laneY+SAME_LANE_Y_OFFSET;
-    if(r.row==="FR") frMap[r.slot]=r; else srList.push(r);
+
+  runners.forEach((r) => {
+    const p = parseBarrier(r.barrier);
+    r.row = p.row;
+    r.slot = p.slot;
+
+    r.isKnown = Number.isFinite(r.med) && r.qty > 0;
+
+    if (r.isKnown) {
+      r.rawGap = (r.med - fastest) * 14.5;
+    } else {
+      r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
+    }
+
+    const laneY = r.slot * LANE_GAP;
+    r.displayY = laneY + SAME_LANE_Y_OFFSET;
+
+    if (r.row === "FR") {
+      r.displayX = POST_X - (r.rawGap * PX_PER_METRE);
+      frMap[r.slot] = r;
+    } else {
+      srList.push(r);
+    }
   });
 
-  srList.forEach(r=>{
+  srList.forEach((r) => {
     const fr = frMap[r.slot];
-    const rawX = POST_X - r.rawGap*PX_PER_METRE;
-    if(fr){
-      const actualGapPx = Math.max(0,(r.rawGap-fr.rawGap)*PX_PER_METRE);
-      const requiredBehindPx = HORSE_WIDTH_PX+actualGapPx;
-      r.displayX = fr.displayX-requiredBehindPx;
+    const rawX = POST_X - (r.rawGap * PX_PER_METRE);
+
+    if (fr) {
+      const actualGapPx = Math.max(0, (r.rawGap - fr.rawGap) * PX_PER_METRE);
+      const requiredBehindPx = HORSE_WIDTH_PX + actualGapPx;
+
+      r.displayX = fr.displayX - requiredBehindPx;
       r.displayY = fr.displayY;
-    } else r.displayX = rawX;
+    } else {
+      r.displayX = rawX;
+    }
   });
 
-  mapEl.innerHTML = `<div class="map-track"><div class="map-post"></div><div class="map-post-label">100</div></div>`;
+  mapEl.innerHTML = `
+    <div class="map-track">
+      <div class="map-post"></div>
+      <div class="map-post-label">100</div>
+    </div>
+  `;
+
   const track = mapEl.querySelector(".map-track");
 
-  // Step 5: Draw runners
-  allRunners.forEach(r=>{
+  runners.forEach((r) => {
     const el = document.createElement("div");
-    el.className="map-runner";
-    if(!r.isKnown) el.classList.add("unknown");
+    el.className = "map-runner";
+    if (!r.isKnown) el.classList.add("unknown");
 
-    // Hide FR-/SR- runners visually
-    if(r.isEmergency) el.style.display="none";
+    el.style.left = `${r.displayX}px`;
+    el.style.top = `${r.displayY}px`;
 
-    el.style.left=`${r.displayX}px`;
-    el.style.top=`${r.displayY}px`;
-
-    el.innerHTML=`
+    el.innerHTML = `
       <div class="horse-wrap">
         <div class="cloth cloth-${r.no}">${r.no}</div>
         <img class="horse-icon" src="horse.png" alt="">
       </div>
       <div class="tooltip">
         <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">${metricLabel()}: ${r.isEmergency ? "-" : (r.isKnown?r.med.toFixed(2):"-")} (n=${r.qty||0})</div>
-        <div class="tooltip-body">Dr: ${r.driver||"-"}</div>
+        <div class="tooltip-body">${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
+        <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
       </div>
     `;
 
     const tip = el.querySelector(".tooltip");
-    el.addEventListener("mouseenter",()=>{tip.style.display="block";tip.style.left="78px";tip.style.top="-8px";});
-    el.addEventListener("mouseleave",()=>{tip.style.display="none";});
+    el.addEventListener("mouseenter", () => {
+      tip.style.display = "block";
+      tip.style.left = "78px";
+      tip.style.top = "-8px";
+    });
+    el.addEventListener("mouseleave", () => {
+      tip.style.display = "none";
+    });
 
     track.appendChild(el);
   });
