@@ -181,7 +181,7 @@ function renderEarlySpeedMap(race) {
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
 
-  const PX_PER_METRE = 15;
+  const PX_PER_METRE = 10;
   const LANE_GAP = 52;
   const FALLBACK = 18;
   const HORSE_WIDTH_PX = 96;
