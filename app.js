@@ -291,10 +291,10 @@ function renderEarlySpeedMap(race) {
   const parseBarrier = (b) => {
     const text = String(b || "").trim().toUpperCase();
     if (text === "SCR") return { row: "SCR", slot: null, valid: false, emergency: false };
-    if (text === "FR-" || text === "SR-") return { row: text.slice(0, 2), slot: null, valid: false, emergency: true };
+    if (text === "FR-" || text === "SR-") return { row: text.slice(0,2), slot: null, valid: false, emergency: true };
     const m = text.match(/(FR|SR)(\d+)/);
-    if (!m) return { row: "", slot: null, valid: false, emergency: false };
-    return { row: m[1], slot: parseInt(m[2], 10), valid: true, emergency: false };
+    if (!m) return { row:"", slot:null, valid:false, emergency:false };
+    return { row:m[1], slot:parseInt(m[2],10), valid:true, emergency:false };
   };
 
   // Map raw runners with metrics intact
@@ -316,102 +316,105 @@ function renderEarlySpeedMap(race) {
     };
   });
 
-  // Filter FR-/SR- runners & preserve metrics
-  const runners = runnersRaw
-    .filter(r => r.barrierValid && !r.emergency)
-    .map(r => {
-      r.isKnown = Number.isFinite(r.med) && r.qty > 0;
-      return r;
-    });
+  // For layout: keep all runners
+  const allRunners = runnersRaw.map(r => {
+    r.isKnown = Number.isFinite(r.med) && r.qty>0;
+    return r;
+  });
 
-  // If all runners filtered, create placeholders
-  const maxFrontSlots = 10;
-  const effectiveRunners = runners.length ? runners : Array.from({length: maxFrontSlots}, (_, i) => ({
-    no: "-",
-    name: i === 0 ? "(no qualifying runners)" : "",
-    driver: "-",
-    med: 0,
-    qty: 0,
-    slot: i + 1,
-    row: "SR",
-    barrierValid: true,
-    isKnown: false,
-    rawGap: 6
-  }));
+  // Build effective runners for display:
+  // Hide FR-/SR- visually and in metrics
+  const effectiveRunners = allRunners.map(r => {
+    const copy = {...r};
+    if (copy.barrier === "FR-" || copy.barrier === "SR-") {
+      copy.isKnown = false;   // metrics not shown
+      copy.hideVisual = true; // flag for hiding in DOM
+    } else {
+      copy.hideVisual = false;
+    }
+    return copy;
+  });
 
+  // If no real runners at all, add placeholder runners
+  const realCount = effectiveRunners.filter(r => !r.hideVisual).length;
+  if (realCount === 0) {
+    for (let i=0;i<10;i++) {
+      effectiveRunners.push({
+        no:"-",
+        name:i===0?"(no qualifying runners)":"",
+        driver:"-",
+        med:0,
+        qty:0,
+        slot:i+1,
+        row:"SR",
+        barrierValid:true,
+        isKnown:false,
+        hideVisual:true,
+        rawGap:6
+      });
+    }
+  }
+
+  // Map layout
   const mapEl = document.createElement("div");
   mapEl.className = "speed-map";
-
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
   const POST_X = 930;
 
-  const maxSlot = Math.max(...effectiveRunners.map(r => Number.isFinite(r.slot) ? r.slot : 0), 0);
-  const dynamicMinHeight = Math.max(520, (maxSlot * LANE_GAP) + 180);
-  mapEl.style.minHeight = `${dynamicMinHeight}px`;
+  const maxSlot = Math.max(...effectiveRunners.map(r => Number.isFinite(r.slot)?r.slot:0),0);
+  mapEl.style.minHeight = `${Math.max(520,(maxSlot*LANE_GAP)+180)}px`;
 
   const frMap = {};
   const srList = [];
-
-  // Assign displayX/displayY for FR and SR
-  effectiveRunners.forEach((r) => {
-    r.rawGap = r.isKnown ? r.med * 14.5 : r.rawGap || 6;
-    const laneY = r.slot * LANE_GAP;
-    r.displayY = laneY + SAME_LANE_Y_OFFSET;
-    if (r.row === "FR") frMap[r.slot] = r;
-    else srList.push(r);
+  effectiveRunners.forEach((r)=>{
+    r.rawGap = r.isKnown?r.med*14.5:r.rawGap||6;
+    const laneY = r.slot*LANE_GAP;
+    r.displayY = laneY+SAME_LANE_Y_OFFSET;
+    if (r.row==="FR") frMap[r.slot]=r; else srList.push(r);
   });
 
-  srList.forEach((r) => {
+  srList.forEach((r)=>{
     const fr = frMap[r.slot];
-    const rawX = POST_X - r.rawGap * PX_PER_METRE;
-    if (fr) {
-      const actualGapPx = Math.max(0, (r.rawGap - fr.rawGap) * PX_PER_METRE);
-      const requiredBehindPx = HORSE_WIDTH_PX + actualGapPx;
-      r.displayX = fr.displayX - requiredBehindPx;
+    const rawX = POST_X - r.rawGap*PX_PER_METRE;
+    if(fr){
+      const actualGapPx = Math.max(0,(r.rawGap-fr.rawGap)*PX_PER_METRE);
+      const requiredBehindPx = HORSE_WIDTH_PX+actualGapPx;
+      r.displayX = fr.displayX-requiredBehindPx;
       r.displayY = fr.displayY;
     } else r.displayX = rawX;
   });
 
-  mapEl.innerHTML = `<div class="map-track">
-    <div class="map-post"></div>
-    <div class="map-post-label">100</div>
-  </div>`;
-
+  mapEl.innerHTML = `<div class="map-track"><div class="map-post"></div><div class="map-post-label">100</div></div>`;
   const track = mapEl.querySelector(".map-track");
 
-  // Draw runners or placeholders
-  effectiveRunners.forEach((r) => {
+  // Draw runners
+  effectiveRunners.forEach((r)=>{
     const el = document.createElement("div");
-    el.className = "map-runner";
-    if (!r.isKnown) el.classList.add("unknown");
+    el.className="map-runner";
+    if(!r.isKnown) el.classList.add("unknown");
+    if(r.hideVisual) el.style.display="none"; // hide FR-/SR- or placeholder visual
 
-    el.style.left = `${r.displayX}px`;
-    el.style.top = `${r.displayY}px`;
+    el.style.left=`${r.displayX}px`;
+    el.style.top=`${r.displayY}px`;
 
-    el.innerHTML = `
+    el.innerHTML=`
       <div class="horse-wrap">
         <div class="cloth cloth-${r.no}">${r.no}</div>
         <img class="horse-icon" src="horse.png" alt="">
       </div>
       <div class="tooltip">
         <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
-        <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
+        <div class="tooltip-body">${metricLabel()}: ${r.isKnown?r.med.toFixed(2):"-"} (n=${r.qty||0})</div>
+        <div class="tooltip-body">Dr: ${r.driver||"-"}</div>
       </div>
     `;
 
-    // Hide horse image for placeholder runners
-    if (r.no === "-") {
-      const img = el.querySelector(".horse-icon");
-      if (img) img.style.display = "none";
-    }
-
     const tip = el.querySelector(".tooltip");
-    el.addEventListener("mouseenter", () => { tip.style.display = "block"; tip.style.left = "78px"; tip.style.top = "-8px"; });
-    el.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+    el.addEventListener("mouseenter",()=>{tip.style.display="block";tip.style.left="78px";tip.style.top="-8px";});
+    el.addEventListener("mouseleave",()=>{tip.style.display="none";});
 
     track.appendChild(el);
   });
