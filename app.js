@@ -4,6 +4,7 @@ let selectedState = "";
 let selectedMeetingKey = "";
 let selectedRaceKey = "";
 let selectedMetric = "weighted";
+let selectedDistance = "100";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -20,12 +21,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       rebuildRaceOptions();
     });
 
-    document.querySelectorAll(".metric-tab").forEach((btn) => {
+    document.querySelectorAll("[data-metric]").forEach((btn) => {
       btn.addEventListener("click", () => {
         selectedMetric = btn.dataset.metric || "weighted";
 
-        document.querySelectorAll(".metric-tab").forEach((b) => {
+        document.querySelectorAll("[data-metric]").forEach((b) => {
           b.classList.toggle("active", b.dataset.metric === selectedMetric);
+        });
+
+        renderSelectedRace();
+      });
+    });
+
+    document.querySelectorAll("[data-distance]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        selectedDistance = btn.dataset.distance || "100";
+
+        document.querySelectorAll("[data-distance]").forEach((b) => {
+          b.classList.toggle("active", b.dataset.distance === selectedDistance);
         });
 
         renderSelectedRace();
@@ -165,7 +178,7 @@ function renderSelectedRace() {
   if (!race) return;
 
   document.getElementById("raceTitle").textContent =
-    `${buildRaceTitle(meeting, race)} — ${metricTitle()}`;
+    `${buildRaceTitle(meeting, race)} — ${distanceTitle()} ${metricTitle()}`;
 
   renderEarlySpeedMap(race);
 }
@@ -190,13 +203,55 @@ function raceNoSortValue(v) {
   return Number.isFinite(n) ? n : 9999;
 }
 
+function currentPrefix() {
+  return `F${selectedDistance}`;
+}
+
+function metricValueKey() {
+  switch (selectedMetric) {
+    case "fast":
+      return `${currentPrefix()}Fast`;
+    case "avg123":
+      return `${currentPrefix()}Avg123`;
+    case "last5":
+      return `${currentPrefix()}Last5`;
+    case "avg":
+      return `${currentPrefix()}Avg`;
+    case "med":
+      return `${currentPrefix()}Med`;
+    case "weighted":
+    default:
+      return null;
+  }
+}
+
+function metricQtyKey() {
+  switch (selectedMetric) {
+    case "fast":
+      return `${currentPrefix()}FastQty`;
+    case "avg123":
+      return `${currentPrefix()}Avg123Qty`;
+    case "last5":
+      return `${currentPrefix()}Last5Qty`;
+    case "avg":
+      return `${currentPrefix()}AvgQty`;
+    case "med":
+      return `${currentPrefix()}Qty`;
+    case "weighted":
+    default:
+      return null;
+  }
+}
+
 function weightedMetric(r) {
+  const prefix = currentPrefix();
+
   const components = [
-    { value: Number(r["F100Med"] ?? r.F100Med), weight: 0.30, qty: Number(r["F100Qty"] ?? r.F100Qty) },
-    { value: Number(r["F100Fast"] ?? r.F100Fast), weight: 0.10, qty: Number(r["F100FastQty"] ?? r.F100FastQty) },
-    { value: Number(r["F100Avg123"] ?? r.F100Avg123), weight: 0.25, qty: Number(r["F100Avg123Qty"] ?? r.F100Avg123Qty) },
-    { value: Number(r["F100Last5"] ?? r.F100Last5), weight: 0.25, qty: Number(r["F100Last5Qty"] ?? r.F100Last5Qty) },
-    { value: Number(r["F100Avg"] ?? r.F100Avg), weight: 0.10, qty: Number(r["F100AvgQty"] ?? r.F100AvgQty) }
+    { value: Number(r[`${prefix}Med`]), weight: 0.30, qty: Number(r[`${prefix}Qty`]) },
+    { value: Number(r[`${prefix}Fast`]), weight: 0.10, qty: Number(r[`${prefix}FastQty`]) },
+    { value: Number(r[`${prefix}Avg123`]), weight: 0.25, qty: Number(r[`${prefix}Avg123Qty`]) },
+    { value: Number(r[`${prefix}Last5`]), weight: 0.25, qty: Number(r[`${prefix}Last5Qty`]) },
+    { value: Number(r[`${prefix}Avg`]), weight: 0.10, qty: Number(r[`${prefix}AvgQty`]) }
   ];
 
   const valid = components.filter(
@@ -220,36 +275,17 @@ function weightedMetric(r) {
 }
 
 function getMetricForRunner(r) {
-  switch (selectedMetric) {
-    case "weighted":
-      return weightedMetric(r);
-    case "fast":
-      return {
-        value: Number(r["F100Fast"] ?? r.F100Fast),
-        qty: Number(r["F100FastQty"] ?? r.F100FastQty)
-      };
-    case "avg123":
-      return {
-        value: Number(r["F100Avg123"] ?? r.F100Avg123),
-        qty: Number(r["F100Avg123Qty"] ?? r.F100Avg123Qty)
-      };
-    case "last5":
-      return {
-        value: Number(r["F100Last5"] ?? r.F100Last5),
-        qty: Number(r["F100Last5Qty"] ?? r.F100Last5Qty)
-      };
-    case "avg":
-      return {
-        value: Number(r["F100Avg"] ?? r.F100Avg),
-        qty: Number(r["F100AvgQty"] ?? r.F100AvgQty)
-      };
-    case "med":
-    default:
-      return {
-        value: Number(r["F100Med"] ?? r.F100Med),
-        qty: Number(r["F100Qty"] ?? r.F100Qty)
-      };
+  if (selectedMetric === "weighted") {
+    return weightedMetric(r);
   }
+
+  const valueKey = metricValueKey();
+  const qtyKey = metricQtyKey();
+
+  return {
+    value: Number(r[valueKey]),
+    qty: Number(r[qtyKey])
+  };
 }
 
 function metricTitle() {
@@ -274,6 +310,10 @@ function metricLabel() {
     case "med": return "Med";
     default: return "Weighted";
   }
+}
+
+function distanceTitle() {
+  return `${selectedDistance}m`;
 }
 
 function renderEarlySpeedMap(race) {
@@ -316,7 +356,7 @@ function renderEarlySpeedMap(race) {
 
   const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
   if (!valid.length) {
-    container.innerHTML = `<div class="empty">(no F100 data)</div>`;
+    container.innerHTML = `<div class="empty">(no ${currentPrefix()} data)</div>`;
     return;
   }
 
@@ -375,7 +415,7 @@ function renderEarlySpeedMap(race) {
   mapEl.innerHTML = `
     <div class="map-track">
       <div class="map-post"></div>
-      <div class="map-post-label">100</div>
+      <div class="map-post-label">${selectedDistance}</div>
     </div>
   `;
 
@@ -396,7 +436,7 @@ function renderEarlySpeedMap(race) {
       </div>
       <div class="tooltip">
         <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
+        <div class="tooltip-body">${distanceTitle()} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
         <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
       </div>
     `;
