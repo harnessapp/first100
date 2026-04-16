@@ -25,7 +25,15 @@
               "Barrier": "FR1",
               "Driver": "Pete McMullen",
               "F100Med": 7.26,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.73,
+              "F100FastQty": 14,
+              "F100Avg123": 7.12,
+              "F100Avg123Qty": 9,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.24,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 2,
@@ -33,7 +41,15 @@
               "Barrier": "FR2",
               "Driver": "Taleah McMullen",
               "F100Med": 6.82,
-              "F100Qty": 6
+              "F100Qty": 6,
+              "F100Fast": 6.56,
+              "F100FastQty": 6,
+              "F100Avg123": 6.74,
+              "F100Avg123Qty": 1,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.87,
+              "F100AvgQty": 6
             },
             {
               "Horse No": 3,
@@ -41,7 +57,15 @@
               "Barrier": "FR3",
               "Driver": "Angus Garrard",
               "F100Med": 7.08,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.9,
+              "F100FastQty": 2,
+              "F100Avg123": 7.08,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.08,
+              "F100Last5Qty": 2,
+              "F100Avg": 7.08,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 4,
@@ -49,7 +73,15 @@
               "Barrier": "FR4",
               "Driver": "Jack Chapple",
               "F100Med": 7.36,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.46,
+              "F100FastQty": 5,
+              "F100Avg123": 6.98,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.3,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.3,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 5,
@@ -57,7 +89,15 @@
               "Barrier": "FR5",
               "Driver": "Mathew Neilson",
               "F100Med": 7.01,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.9,
+              "F100FastQty": 5,
+              "F100Avg123": 7.01,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.05,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.05,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 6,
@@ -65,90 +105,15 @@
               "Barrier": "FR6",
               "Driver": "Nathan Dawson",
               "F100Med": 6.85,
-              "F100Qty": 7
-            }
-          ]
-        },
-        {
-          "raceKey": "qld_redcliffe_2026-04-16_r10",
-          "raceNo": "10",
-          "raceName": "STEVIE REDBACK PEST CONTROL PACE",
-          "distance": "1780",
-          "start": "Mobile",
-          "time": "5:52 PM",
-          "venue": "Redcliffe",
-          "runners": [
-            {
-              "Horse No": 1,
-              "Horse": "JO ROCKS",
-              "Barrier": "FR1",
-              "Driver": "Damon Watson",
-              "F100Med": 7.03,
-              "F100Qty": 25
-            },
-            {
-              "Horse No": 2,
-              "Horse": "TIGER TOMMY NZ",
-              "Barrier": "FR2",
-              "Driver": "Paige Bevan",
-              "F100Med": 7.25,
-              "F100Qty": 35
-            },
-            {
-              "Horse No": 3,
-              "Horse": "ILLBEWATCHING",
-              "Barrier": "FR3",
-              "Driver": "Nathan Dawson",
-              "F100Med": 6.86,
-              "F100Qty": 82
-            },
-            {
-              "Horse No": 4,
-              "Horse": "MULLUM DOC",
-              "Barrier": "FR4",
-              "Driver": "Matt Crone",
-              "F100Med": 6.82,
-              "F100Qty": 73
-            },
-            {
-              "Horse No": 5,
-              "Horse": "ART JESTER",
-              "Barrier": "FR5",
-              "Driver": "Tamara Battle",
-              "F100Med": 6.88,
-              "F100Qty": 67
-            },
-            {
-              "Horse No": 6,
-              "Horse": "BURNS BAY",
-              "Barrier": "FR6",
-              "Driver": "Taleah McMullen",
-              "F100Med": 6.93,
-              "F100Qty": 54
-            },
-            {
-              "Horse No": 7,
-              "Horse": "SHEREACTS",
-              "Barrier": "SR1",
-              "Driver": "Zac Chappenden",
-              "F100Med": 6.8,
-              "F100Qty": 74
-            },
-            {
-              "Horse No": 8,
-              "Horse": "BETTYS GOLD CLASS",
-              "Barrier": "SR2",
-              "Driver": "Mathew Neilson",
-              "F100Med": 7.02,
-              "F100Qty": 76
-            },
-            {
-              "Horse No": 9,
-              "Horse": "THE HARRIS HAWK",
-              "Barrier": "SR3",
-              "Driver": "Jack Chapple",
-              "F100Med": 7.08,
-              "F100Qty": 64
+              "F100Qty": 7,
+              "F100Fast": 6.53,
+              "F100FastQty": 7,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.85,
+              "F100AvgQty": 7
             }
           ]
         },
@@ -167,7 +132,15 @@
               "Barrier": "FR1",
               "Driver": "Gary Bond",
               "F100Med": 6.94,
-              "F100Qty": 6
+              "F100Qty": 6,
+              "F100Fast": 6.78,
+              "F100FastQty": 6,
+              "F100Avg123": 7.01,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.9,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.96,
+              "F100AvgQty": 6
             },
             {
               "Horse No": 2,
@@ -175,7 +148,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 3,
@@ -183,7 +164,15 @@
               "Barrier": "FR3",
               "Driver": "Rod Wingrave",
               "F100Med": 7.27,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.78,
+              "F100FastQty": 67,
+              "F100Avg123": 7.2,
+              "F100Avg123Qty": 38,
+              "F100Last5": 7.39,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.25,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 4,
@@ -191,7 +180,15 @@
               "Barrier": "FR4",
               "Driver": "Paige Bevan",
               "F100Med": 7.19,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.89,
+              "F100FastQty": 7,
+              "F100Avg123": 7.31,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.43,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.38,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 5,
@@ -199,7 +196,15 @@
               "Barrier": "FR5",
               "Driver": "Adam Richardson",
               "F100Med": 7.88,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 7.62,
+              "F100FastQty": 2,
+              "F100Avg123": 7.62,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.88,
+              "F100Last5Qty": 2,
+              "F100Avg": 7.88,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 6,
@@ -207,7 +212,15 @@
               "Barrier": "FR6",
               "Driver": "Layne Dwyer",
               "F100Med": 7.09,
-              "F100Qty": 6
+              "F100Qty": 6,
+              "F100Fast": 6.7,
+              "F100FastQty": 6,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.16,
+              "F100AvgQty": 6
             },
             {
               "Horse No": 7,
@@ -215,7 +228,15 @@
               "Barrier": "SR1",
               "Driver": "Pete McMullen",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             }
           ]
         },
@@ -234,7 +255,15 @@
               "Barrier": "FR1",
               "Driver": "Taleah McMullen",
               "F100Med": 6.98,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.67,
+              "F100FastQty": 24,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 17,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.04,
+              "F100AvgQty": 24
             },
             {
               "Horse No": 2,
@@ -242,7 +271,15 @@
               "Barrier": "FR2",
               "Driver": "Jonah Hutchinson",
               "F100Med": 7.35,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.69,
+              "F100FastQty": 15,
+              "F100Avg123": 7.1,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.51,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.35,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 3,
@@ -250,7 +287,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Dawson",
               "F100Med": 6.91,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.55,
+              "F100FastQty": 15,
+              "F100Avg123": 6.97,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.88,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 4,
@@ -258,7 +303,15 @@
               "Barrier": "FR4",
               "Driver": "Angus Garrard",
               "F100Med": 6.64,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.39,
+              "F100FastQty": 17,
+              "F100Avg123": 6.67,
+              "F100Avg123Qty": 8,
+              "F100Last5": 6.75,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.77,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 5,
@@ -266,7 +319,15 @@
               "Barrier": "FR5",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.74,
-              "F100Qty": 1
+              "F100Qty": 1,
+              "F100Fast": 6.74,
+              "F100FastQty": 1,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.74,
+              "F100Last5Qty": 1,
+              "F100Avg": 6.74,
+              "F100AvgQty": 1
             },
             {
               "Horse No": 6,
@@ -274,7 +335,15 @@
               "Barrier": "FR6",
               "Driver": "Pete McMullen",
               "F100Med": 7.24,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 7.07,
+              "F100FastQty": 3,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 7.28,
+              "F100Last5Qty": 3,
+              "F100Avg": 7.28,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 7,
@@ -282,7 +351,15 @@
               "Barrier": "SR1",
               "Driver": "Layne Dwyer",
               "F100Med": 6.8,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.36,
+              "F100FastQty": 17,
+              "F100Avg123": 6.95,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.12,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.87,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 8,
@@ -290,7 +367,15 @@
               "Barrier": "SR2",
               "Driver": "Jayson Finnis",
               "F100Med": 6.82,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.46,
+              "F100FastQty": 4,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.87,
+              "F100AvgQty": 4
             }
           ]
         },
@@ -309,7 +394,15 @@
               "Barrier": "FR1",
               "Driver": "Zac Chappenden",
               "F100Med": 7.16,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.88,
+              "F100FastQty": 17,
+              "F100Avg123": 7.17,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.32,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.19,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 2,
@@ -317,7 +410,15 @@
               "Barrier": "FR2",
               "Driver": "Adam Richardson",
               "F100Med": 6.75,
-              "F100Qty": 18
+              "F100Qty": 18,
+              "F100Fast": 6.49,
+              "F100FastQty": 18,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 8,
+              "F100Last5": 6.95,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.85,
+              "F100AvgQty": 18
             },
             {
               "Horse No": 3,
@@ -325,7 +426,15 @@
               "Barrier": "FR3",
               "Driver": "Damon Watson",
               "F100Med": 7.36,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.57,
+              "F100FastQty": 12,
+              "F100Avg123": 7.2,
+              "F100Avg123Qty": 7,
+              "F100Last5": 7.65,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.34,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 4,
@@ -333,7 +442,15 @@
               "Barrier": "FR4",
               "Driver": "Jayson Finnis",
               "F100Med": 7.3,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 7.09,
+              "F100FastQty": 3,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 7.27,
+              "F100Last5Qty": 3,
+              "F100Avg": 7.27,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 6,
@@ -341,7 +458,15 @@
               "Barrier": "FR5",
               "Driver": "Pete McMullen",
               "F100Med": 7.0,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.74,
+              "F100FastQty": 12,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 9,
+              "F100Last5": 7.03,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 7,
@@ -349,7 +474,15 @@
               "Barrier": "SR1",
               "Driver": "Leonard Cain",
               "F100Med": 7.02,
-              "F100Qty": 23
+              "F100Qty": 23,
+              "F100Fast": 6.64,
+              "F100FastQty": 23,
+              "F100Avg123": 7.14,
+              "F100Avg123Qty": 11,
+              "F100Last5": 6.88,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.12,
+              "F100AvgQty": 23
             },
             {
               "Horse No": 8,
@@ -357,7 +490,15 @@
               "Barrier": "SR2",
               "Driver": "Dean Belford",
               "F100Med": 7.3,
-              "F100Qty": 11
+              "F100Qty": 11,
+              "F100Fast": 6.75,
+              "F100FastQty": 11,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.09,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.3,
+              "F100AvgQty": 11
             },
             {
               "Horse No": 9,
@@ -365,7 +506,15 @@
               "Barrier": "SR3",
               "Driver": "Taleah McMullen",
               "F100Med": 7.15,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.81,
+              "F100FastQty": 10,
+              "F100Avg123": 7.11,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.3,
+              "F100AvgQty": 10
             }
           ]
         },
@@ -384,7 +533,15 @@
               "Barrier": "FR1",
               "Driver": "Noel Parrish",
               "F100Med": 7.18,
-              "F100Qty": 46
+              "F100Qty": 46,
+              "F100Fast": 6.56,
+              "F100FastQty": 46,
+              "F100Avg123": 7.09,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.01,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.29,
+              "F100AvgQty": 46
             },
             {
               "Horse No": 2,
@@ -392,7 +549,15 @@
               "Barrier": "FR2",
               "Driver": "Matt Crone",
               "F100Med": 6.94,
-              "F100Qty": 75
+              "F100Qty": 75,
+              "F100Fast": 6.35,
+              "F100FastQty": 75,
+              "F100Avg123": 7.18,
+              "F100Avg123Qty": 39,
+              "F100Last5": 7.82,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.12,
+              "F100AvgQty": 75
             },
             {
               "Horse No": 3,
@@ -400,7 +565,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Dawson",
               "F100Med": 7.02,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.54,
+              "F100FastQty": 67,
+              "F100Avg123": 7.0,
+              "F100Avg123Qty": 41,
+              "F100Last5": 7.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.21,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 4,
@@ -408,7 +581,15 @@
               "Barrier": "FR4",
               "Driver": "Paige Bevan",
               "F100Med": 6.94,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.42,
+              "F100FastQty": 31,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 12,
+              "F100Last5": 7.48,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.03,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 5,
@@ -416,7 +597,15 @@
               "Barrier": "FR5",
               "Driver": "Adam Richardson",
               "F100Med": 7.0,
-              "F100Qty": 50
+              "F100Qty": 50,
+              "F100Fast": 6.57,
+              "F100FastQty": 50,
+              "F100Avg123": 7.36,
+              "F100Avg123Qty": 28,
+              "F100Last5": 8.63,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 50
             },
             {
               "Horse No": 6,
@@ -424,7 +613,15 @@
               "Barrier": "FR6",
               "Driver": "Bryse McElhinney",
               "F100Med": 7.0,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 6.54,
+              "F100FastQty": 36,
+              "F100Avg123": 6.95,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 36
             },
             {
               "Horse No": 7,
@@ -432,7 +629,15 @@
               "Barrier": "SR1",
               "Driver": "Jayson Finnis",
               "F100Med": 7.02,
-              "F100Qty": 19
+              "F100Qty": 19,
+              "F100Fast": 6.56,
+              "F100FastQty": 19,
+              "F100Avg123": 6.88,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.2,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.27,
+              "F100AvgQty": 19
             },
             {
               "Horse No": 8,
@@ -440,7 +645,15 @@
               "Barrier": "SR2",
               "Driver": "Leonard Cain",
               "F100Med": 7.01,
-              "F100Qty": 40
+              "F100Qty": 40,
+              "F100Fast": 6.41,
+              "F100FastQty": 40,
+              "F100Avg123": 6.83,
+              "F100Avg123Qty": 23,
+              "F100Last5": 7.05,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.09,
+              "F100AvgQty": 40
             },
             {
               "Horse No": 9,
@@ -448,7 +661,15 @@
               "Barrier": "SR3",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.71,
-              "F100Qty": 51
+              "F100Qty": 51,
+              "F100Fast": 6.41,
+              "F100FastQty": 51,
+              "F100Avg123": 6.74,
+              "F100Avg123Qty": 24,
+              "F100Last5": 6.9,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.75,
+              "F100AvgQty": 51
             }
           ]
         },
@@ -467,7 +688,15 @@
               "Barrier": "FR1",
               "Driver": "Jonah Hutchinson",
               "F100Med": 7.24,
-              "F100Qty": 51
+              "F100Qty": 51,
+              "F100Fast": 6.77,
+              "F100FastQty": 51,
+              "F100Avg123": 7.12,
+              "F100Avg123Qty": 27,
+              "F100Last5": 7.31,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.32,
+              "F100AvgQty": 51
             },
             {
               "Horse No": 2,
@@ -475,7 +704,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": 7.09,
-              "F100Qty": 94
+              "F100Qty": 94,
+              "F100Fast": 6.46,
+              "F100FastQty": 94,
+              "F100Avg123": 7.3,
+              "F100Avg123Qty": 58,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.31,
+              "F100AvgQty": 94
             },
             {
               "Horse No": 3,
@@ -483,7 +720,15 @@
               "Barrier": "FR3",
               "Driver": "Adam Richardson",
               "F100Med": 7.04,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.61,
+              "F100FastQty": 24,
+              "F100Avg123": 7.0,
+              "F100Avg123Qty": 16,
+              "F100Last5": 7.01,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.08,
+              "F100AvgQty": 24
             },
             {
               "Horse No": 4,
@@ -491,7 +736,15 @@
               "Barrier": "FR4",
               "Driver": "Paige Bevan",
               "F100Med": 6.98,
-              "F100Qty": 47
+              "F100Qty": 47,
+              "F100Fast": 6.57,
+              "F100FastQty": 47,
+              "F100Avg123": 6.9,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.08,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.06,
+              "F100AvgQty": 47
             },
             {
               "Horse No": 5,
@@ -499,7 +752,15 @@
               "Barrier": "FR5",
               "Driver": "Mathew Neilson",
               "F100Med": 7.13,
-              "F100Qty": 13
+              "F100Qty": 13,
+              "F100Fast": 6.7,
+              "F100FastQty": 13,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.19,
+              "F100AvgQty": 13
             },
             {
               "Horse No": 6,
@@ -507,7 +768,15 @@
               "Barrier": "FR6",
               "Driver": "Ricky Gordon",
               "F100Med": 7.19,
-              "F100Qty": 29
+              "F100Qty": 29,
+              "F100Fast": 6.82,
+              "F100FastQty": 29,
+              "F100Avg123": 7.19,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.45,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.29,
+              "F100AvgQty": 29
             },
             {
               "Horse No": 7,
@@ -515,7 +784,15 @@
               "Barrier": "SR1",
               "Driver": "Noel Parrish",
               "F100Med": 6.93,
-              "F100Qty": 41
+              "F100Qty": 41,
+              "F100Fast": 6.47,
+              "F100FastQty": 41,
+              "F100Avg123": 6.85,
+              "F100Avg123Qty": 25,
+              "F100Last5": 7.18,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 41
             },
             {
               "Horse No": 8,
@@ -523,7 +800,15 @@
               "Barrier": "SR2",
               "Driver": "Taleah McMullen",
               "F100Med": 7.31,
-              "F100Qty": 37
+              "F100Qty": 37,
+              "F100Fast": 6.8,
+              "F100FastQty": 37,
+              "F100Avg123": 7.26,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.4,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 37
             },
             {
               "Horse No": 9,
@@ -531,7 +816,15 @@
               "Barrier": "SR3",
               "Driver": "Jack Chapple",
               "F100Med": 6.98,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.46,
+              "F100FastQty": 24,
+              "F100Avg123": 6.91,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.13,
+              "F100AvgQty": 24
             }
           ]
         },
@@ -550,7 +843,15 @@
               "Barrier": "FR1",
               "Driver": "Taleah McMullen",
               "F100Med": 6.61,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.35,
+              "F100FastQty": 17,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.59,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.69,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 2,
@@ -558,7 +859,15 @@
               "Barrier": "FR2",
               "Driver": "Ricky Gordon",
               "F100Med": 6.93,
-              "F100Qty": 55
+              "F100Qty": 55,
+              "F100Fast": 6.48,
+              "F100FastQty": 55,
+              "F100Avg123": 6.81,
+              "F100Avg123Qty": 22,
+              "F100Last5": 7.2,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.08,
+              "F100AvgQty": 55
             },
             {
               "Horse No": 3,
@@ -566,7 +875,15 @@
               "Barrier": "FR3",
               "Driver": "Jack Chapple",
               "F100Med": 6.8,
-              "F100Qty": 88
+              "F100Qty": 88,
+              "F100Fast": 6.48,
+              "F100FastQty": 88,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 66,
+              "F100Last5": 7.08,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.9,
+              "F100AvgQty": 88
             },
             {
               "Horse No": 4,
@@ -574,7 +891,15 @@
               "Barrier": "FR4",
               "Driver": "Angus Garrard",
               "F100Med": 7.19,
-              "F100Qty": 27
+              "F100Qty": 27,
+              "F100Fast": 6.6,
+              "F100FastQty": 27,
+              "F100Avg123": 7.12,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.71,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.26,
+              "F100AvgQty": 27
             },
             {
               "Horse No": 5,
@@ -582,7 +907,15 @@
               "Barrier": "FR5",
               "Driver": "Nathan Rothwell",
               "F100Med": 7.08,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.26,
+              "F100FastQty": 14,
+              "F100Avg123": 6.98,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.06,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 6,
@@ -590,7 +923,15 @@
               "Barrier": "FR6",
               "Driver": "Damon Watson",
               "F100Med": 6.75,
-              "F100Qty": 64
+              "F100Qty": 64,
+              "F100Fast": 6.26,
+              "F100FastQty": 64,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 28,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.84,
+              "F100AvgQty": 64
             },
             {
               "Horse No": 7,
@@ -598,7 +939,15 @@
               "Barrier": "SR1",
               "Driver": "Nathan Dawson",
               "F100Med": 7.03,
-              "F100Qty": 53
+              "F100Qty": 53,
+              "F100Fast": 6.22,
+              "F100FastQty": 53,
+              "F100Avg123": 6.91,
+              "F100Avg123Qty": 28,
+              "F100Last5": 6.81,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 53
             },
             {
               "Horse No": 8,
@@ -606,7 +955,15 @@
               "Barrier": "SR2",
               "Driver": "Luke Thirgood",
               "F100Med": 6.97,
-              "F100Qty": 83
+              "F100Qty": 83,
+              "F100Fast": 6.56,
+              "F100FastQty": 83,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 22,
+              "F100Last5": 7.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.0,
+              "F100AvgQty": 83
             },
             {
               "Horse No": 9,
@@ -614,7 +971,15 @@
               "Barrier": "SR3",
               "Driver": "Jordan Topping",
               "F100Med": 7.06,
-              "F100Qty": 48
+              "F100Qty": 48,
+              "F100Fast": 6.6,
+              "F100FastQty": 48,
+              "F100Avg123": 7.0,
+              "F100Avg123Qty": 23,
+              "F100Last5": 7.29,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.17,
+              "F100AvgQty": 48
             }
           ]
         },
@@ -633,7 +998,15 @@
               "Barrier": "FR1",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.7,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.39,
+              "F100FastQty": 67,
+              "F100Avg123": 6.67,
+              "F100Avg123Qty": 35,
+              "F100Last5": 6.86,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.81,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 2,
@@ -641,7 +1014,15 @@
               "Barrier": "FR2",
               "Driver": "Jack Chapple",
               "F100Med": 6.94,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.33,
+              "F100FastQty": 15,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.97,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 3,
@@ -649,7 +1030,15 @@
               "Barrier": "FR3",
               "Driver": "Angus Garrard",
               "F100Med": 6.93,
-              "F100Qty": 26
+              "F100Qty": 26,
+              "F100Fast": 6.15,
+              "F100FastQty": 26,
+              "F100Avg123": 7.25,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.06,
+              "F100AvgQty": 26
             },
             {
               "Horse No": 4,
@@ -657,7 +1046,15 @@
               "Barrier": "FR4",
               "Driver": "Adam Richardson",
               "F100Med": 6.69,
-              "F100Qty": 69
+              "F100Qty": 69,
+              "F100Fast": 6.16,
+              "F100FastQty": 69,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 54,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.73,
+              "F100AvgQty": 69
             },
             {
               "Horse No": 5,
@@ -665,7 +1062,15 @@
               "Barrier": "FR5",
               "Driver": "Nathan Dawson",
               "F100Med": 6.54,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.26,
+              "F100FastQty": 12,
+              "F100Avg123": 6.46,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.57,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.65,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 6,
@@ -673,7 +1078,15 @@
               "Barrier": "FR6",
               "Driver": "Mathew Neilson",
               "F100Med": 6.66,
-              "F100Qty": 103
+              "F100Qty": 103,
+              "F100Fast": 6.3,
+              "F100FastQty": 103,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 40,
+              "F100Last5": 6.66,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.91,
+              "F100AvgQty": 103
             },
             {
               "Horse No": 7,
@@ -681,7 +1094,15 @@
               "Barrier": "SR1",
               "Driver": "Layne Dwyer",
               "F100Med": 6.68,
-              "F100Qty": 80
+              "F100Qty": 80,
+              "F100Fast": 6.35,
+              "F100FastQty": 80,
+              "F100Avg123": 6.63,
+              "F100Avg123Qty": 31,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.0,
+              "F100AvgQty": 80
             },
             {
               "Horse No": 8,
@@ -689,7 +1110,15 @@
               "Barrier": "SR2",
               "Driver": "Trent Moffat",
               "F100Med": 6.74,
-              "F100Qty": 45
+              "F100Qty": 45,
+              "F100Fast": 6.27,
+              "F100FastQty": 45,
+              "F100Avg123": 6.65,
+              "F100Avg123Qty": 23,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.82,
+              "F100AvgQty": 45
             },
             {
               "Horse No": 9,
@@ -697,7 +1126,15 @@
               "Barrier": "SR3",
               "Driver": "Leonard Cain",
               "F100Med": 7.21,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.82,
+              "F100FastQty": 3,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 7.11,
+              "F100Last5Qty": 3,
+              "F100Avg": 7.11,
+              "F100AvgQty": 3
             }
           ]
         },
@@ -716,7 +1153,15 @@
               "Barrier": "FR1",
               "Driver": "Zac Chappenden",
               "F100Med": 7.07,
-              "F100Qty": 39
+              "F100Qty": 39,
+              "F100Fast": 6.33,
+              "F100FastQty": 39,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 15,
+              "F100Last5": 7.39,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 39
             },
             {
               "Horse No": 2,
@@ -724,7 +1169,15 @@
               "Barrier": "FR2",
               "Driver": "Jonah Hutchinson",
               "F100Med": 7.28,
-              "F100Qty": 25
+              "F100Qty": 25,
+              "F100Fast": 6.45,
+              "F100FastQty": 25,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 7,
+              "F100Last5": 7.64,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.24,
+              "F100AvgQty": 25
             },
             {
               "Horse No": 3,
@@ -732,7 +1185,15 @@
               "Barrier": "FR3",
               "Driver": "Holly Chalmers",
               "F100Med": 7.16,
-              "F100Qty": 35
+              "F100Qty": 35,
+              "F100Fast": 6.41,
+              "F100FastQty": 35,
+              "F100Avg123": 7.03,
+              "F100Avg123Qty": 10,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.16,
+              "F100AvgQty": 35
             },
             {
               "Horse No": 4,
@@ -740,7 +1201,15 @@
               "Barrier": "FR4",
               "Driver": "Taleah McMullen",
               "F100Med": 6.81,
-              "F100Qty": 73
+              "F100Qty": 73,
+              "F100Fast": 6.28,
+              "F100FastQty": 73,
+              "F100Avg123": 6.64,
+              "F100Avg123Qty": 30,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.93,
+              "F100AvgQty": 73
             },
             {
               "Horse No": 5,
@@ -748,7 +1217,15 @@
               "Barrier": "FR5",
               "Driver": "Tamara Battle",
               "F100Med": 6.88,
-              "F100Qty": 56
+              "F100Qty": 56,
+              "F100Fast": 6.49,
+              "F100FastQty": 56,
+              "F100Avg123": 7.11,
+              "F100Avg123Qty": 29,
+              "F100Last5": 6.97,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.16,
+              "F100AvgQty": 56
             },
             {
               "Horse No": 6,
@@ -756,7 +1233,15 @@
               "Barrier": "FR6",
               "Driver": "Angus Garrard",
               "F100Med": 6.85,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.55,
+              "F100FastQty": 9,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.93,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 7,
@@ -764,7 +1249,15 @@
               "Barrier": "SR1",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.68,
-              "F100Qty": 8
+              "F100Qty": 8,
+              "F100Fast": 6.35,
+              "F100FastQty": 8,
+              "F100Avg123": 6.76,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.65,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.67,
+              "F100AvgQty": 8
             },
             {
               "Horse No": 8,
@@ -772,7 +1265,15 @@
               "Barrier": "SR2",
               "Driver": "Jack Chapple",
               "F100Med": 6.81,
-              "F100Qty": 22
+              "F100Qty": 22,
+              "F100Fast": 6.44,
+              "F100FastQty": 22,
+              "F100Avg123": 6.67,
+              "F100Avg123Qty": 11,
+              "F100Last5": 6.77,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 22
             },
             {
               "Horse No": 9,
@@ -780,7 +1281,15 @@
               "Barrier": "SR3",
               "Driver": "Paige Bevan",
               "F100Med": 7.0,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.61,
+              "F100FastQty": 14,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.26,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.17,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 10,
@@ -788,7 +1297,170 @@
               "Barrier": "SR4",
               "Driver": "Nathan Dawson",
               "F100Med": 6.71,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.31,
+              "F100FastQty": 32,
+              "F100Avg123": 6.66,
+              "F100Avg123Qty": 14,
+              "F100Last5": 7.17,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.82,
+              "F100AvgQty": 32
+            }
+          ]
+        },
+        {
+          "raceKey": "qld_redcliffe_2026-04-16_r10",
+          "raceNo": "10",
+          "raceName": "STEVIE REDBACK PEST CONTROL PACE",
+          "distance": "1780",
+          "start": "Mobile",
+          "time": "5:52 PM",
+          "venue": "Redcliffe",
+          "runners": [
+            {
+              "Horse No": 1,
+              "Horse": "JO ROCKS",
+              "Barrier": "FR1",
+              "Driver": "Damon Watson",
+              "F100Med": 7.03,
+              "F100Qty": 25,
+              "F100Fast": 6.65,
+              "F100FastQty": 25,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 16,
+              "F100Last5": 7.08,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.15,
+              "F100AvgQty": 25
+            },
+            {
+              "Horse No": 2,
+              "Horse": "TIGER TOMMY NZ",
+              "Barrier": "FR2",
+              "Driver": "Paige Bevan",
+              "F100Med": 7.25,
+              "F100Qty": 35,
+              "F100Fast": 6.63,
+              "F100FastQty": 35,
+              "F100Avg123": 6.95,
+              "F100Avg123Qty": 16,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 35
+            },
+            {
+              "Horse No": 3,
+              "Horse": "ILLBEWATCHING",
+              "Barrier": "FR3",
+              "Driver": "Nathan Dawson",
+              "F100Med": 6.86,
+              "F100Qty": 82,
+              "F100Fast": 6.42,
+              "F100FastQty": 82,
+              "F100Avg123": 6.79,
+              "F100Avg123Qty": 38,
+              "F100Last5": 6.88,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.93,
+              "F100AvgQty": 82
+            },
+            {
+              "Horse No": 4,
+              "Horse": "MULLUM DOC",
+              "Barrier": "FR4",
+              "Driver": "Matt Crone",
+              "F100Med": 6.82,
+              "F100Qty": 73,
+              "F100Fast": 6.16,
+              "F100FastQty": 73,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 36,
+              "F100Last5": 6.94,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.95,
+              "F100AvgQty": 73
+            },
+            {
+              "Horse No": 5,
+              "Horse": "ART JESTER",
+              "Barrier": "FR5",
+              "Driver": "Tamara Battle",
+              "F100Med": 6.88,
+              "F100Qty": 67,
+              "F100Fast": 6.18,
+              "F100FastQty": 67,
+              "F100Avg123": 6.75,
+              "F100Avg123Qty": 28,
+              "F100Last5": 6.85,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.89,
+              "F100AvgQty": 67
+            },
+            {
+              "Horse No": 6,
+              "Horse": "BURNS BAY",
+              "Barrier": "FR6",
+              "Driver": "Taleah McMullen",
+              "F100Med": 6.93,
+              "F100Qty": 54,
+              "F100Fast": 6.35,
+              "F100FastQty": 54,
+              "F100Avg123": 6.82,
+              "F100Avg123Qty": 25,
+              "F100Last5": 7.18,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 54
+            },
+            {
+              "Horse No": 7,
+              "Horse": "SHEREACTS",
+              "Barrier": "SR1",
+              "Driver": "Zac Chappenden",
+              "F100Med": 6.8,
+              "F100Qty": 74,
+              "F100Fast": 6.39,
+              "F100FastQty": 74,
+              "F100Avg123": 6.75,
+              "F100Avg123Qty": 30,
+              "F100Last5": 7.07,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.85,
+              "F100AvgQty": 74
+            },
+            {
+              "Horse No": 8,
+              "Horse": "BETTYS GOLD CLASS",
+              "Barrier": "SR2",
+              "Driver": "Mathew Neilson",
+              "F100Med": 7.02,
+              "F100Qty": 76,
+              "F100Fast": 6.19,
+              "F100FastQty": 76,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 41,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.04,
+              "F100AvgQty": 76
+            },
+            {
+              "Horse No": 9,
+              "Horse": "THE HARRIS HAWK",
+              "Barrier": "SR3",
+              "Driver": "Jack Chapple",
+              "F100Med": 7.08,
+              "F100Qty": 64,
+              "F100Fast": 6.39,
+              "F100FastQty": 64,
+              "F100Avg123": 6.98,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.83,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.37,
+              "F100AvgQty": 64
             }
           ]
         }
@@ -816,7 +1488,15 @@
               "Barrier": "FR1",
               "Driver": "Adam Sanderson",
               "F100Med": 6.44,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.4,
+              "F100FastQty": 5,
+              "F100Avg123": 6.56,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.57,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.57,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 2,
@@ -824,7 +1504,15 @@
               "Barrier": "FR2",
               "Driver": "Grant Dixon",
               "F100Med": 6.96,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.56,
+              "F100FastQty": 12,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.97,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.09,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 3,
@@ -832,7 +1520,15 @@
               "Barrier": "FR3",
               "Driver": "Matt Elkins",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 4,
@@ -840,7 +1536,15 @@
               "Barrier": "FR4",
               "Driver": "Matt Elkins",
               "F100Med": 6.86,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.5,
+              "F100FastQty": 31,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 16,
+              "F100Last5": 6.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.82,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 5,
@@ -848,7 +1552,15 @@
               "Barrier": "FR5",
               "Driver": "Leonard Cain",
               "F100Med": 6.64,
-              "F100Qty": 44
+              "F100Qty": 44,
+              "F100Fast": 6.16,
+              "F100FastQty": 44,
+              "F100Avg123": 6.6,
+              "F100Avg123Qty": 20,
+              "F100Last5": 6.62,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.75,
+              "F100AvgQty": 44
             },
             {
               "Horse No": 6,
@@ -856,7 +1568,15 @@
               "Barrier": "FR6",
               "Driver": "Nathan Dawson",
               "F100Med": 6.88,
-              "F100Qty": 71
+              "F100Qty": 71,
+              "F100Fast": 6.41,
+              "F100FastQty": 71,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 25,
+              "F100Last5": 8.09,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.21,
+              "F100AvgQty": 71
             },
             {
               "Horse No": 7,
@@ -864,7 +1584,15 @@
               "Barrier": "FR7",
               "Driver": "Luke Thirgood",
               "F100Med": 6.67,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.41,
+              "F100FastQty": 9,
+              "F100Avg123": 6.59,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.68,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.71,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 8,
@@ -872,7 +1600,15 @@
               "Barrier": "SR1",
               "Driver": "Trent Dawson",
               "F100Med": 7.04,
-              "F100Qty": 34
+              "F100Qty": 34,
+              "F100Fast": 6.5,
+              "F100FastQty": 34,
+              "F100Avg123": 7.0,
+              "F100Avg123Qty": 13,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.04,
+              "F100AvgQty": 34
             }
           ]
         },
@@ -891,7 +1627,15 @@
               "Barrier": "FR1",
               "Driver": "Trent Dawson",
               "F100Med": 6.7,
-              "F100Qty": 22
+              "F100Qty": 22,
+              "F100Fast": 6.33,
+              "F100FastQty": 22,
+              "F100Avg123": 6.73,
+              "F100Avg123Qty": 10,
+              "F100Last5": 6.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.79,
+              "F100AvgQty": 22
             },
             {
               "Horse No": 2,
@@ -899,7 +1643,15 @@
               "Barrier": "FR2",
               "Driver": "Zac Chappenden",
               "F100Med": 7.17,
-              "F100Qty": 22
+              "F100Qty": 22,
+              "F100Fast": 6.46,
+              "F100FastQty": 22,
+              "F100Avg123": 6.86,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.24,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.12,
+              "F100AvgQty": 22
             },
             {
               "Horse No": 3,
@@ -907,7 +1659,15 @@
               "Barrier": "FR3",
               "Driver": "Leonard Cain",
               "F100Med": 6.87,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.27,
+              "F100FastQty": 32,
+              "F100Avg123": 6.76,
+              "F100Avg123Qty": 16,
+              "F100Last5": 7.33,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.88,
+              "F100AvgQty": 32
             },
             {
               "Horse No": 4,
@@ -915,7 +1675,15 @@
               "Barrier": "FR4",
               "Driver": "Leonard Cain",
               "F100Med": 6.83,
-              "F100Qty": 77
+              "F100Qty": 77,
+              "F100Fast": 6.42,
+              "F100FastQty": 77,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 31,
+              "F100Last5": 7.92,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.97,
+              "F100AvgQty": 77
             },
             {
               "Horse No": 5,
@@ -923,7 +1691,15 @@
               "Barrier": "FR5",
               "Driver": "Ben Battle",
               "F100Med": 7.14,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.59,
+              "F100FastQty": 14,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.16,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.12,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 6,
@@ -931,7 +1707,15 @@
               "Barrier": "FR6",
               "Driver": "Jack Chapple",
               "F100Med": 6.88,
-              "F100Qty": 74
+              "F100Qty": 74,
+              "F100Fast": 6.28,
+              "F100FastQty": 74,
+              "F100Avg123": 6.71,
+              "F100Avg123Qty": 29,
+              "F100Last5": 7.37,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.95,
+              "F100AvgQty": 74
             },
             {
               "Horse No": 7,
@@ -939,7 +1723,15 @@
               "Barrier": "FR7",
               "Driver": "Adam Sanderson",
               "F100Med": 6.56,
-              "F100Qty": 13
+              "F100Qty": 13,
+              "F100Fast": 6.32,
+              "F100FastQty": 13,
+              "F100Avg123": 6.66,
+              "F100Avg123Qty": 8,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.68,
+              "F100AvgQty": 13
             },
             {
               "Horse No": 8,
@@ -947,7 +1739,15 @@
               "Barrier": "SR1",
               "Driver": "Pete McMullen",
               "F100Med": 6.56,
-              "F100Qty": 19
+              "F100Qty": 19,
+              "F100Fast": 6.25,
+              "F100FastQty": 19,
+              "F100Avg123": 6.6,
+              "F100Avg123Qty": 7,
+              "F100Last5": 6.69,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.68,
+              "F100AvgQty": 19
             },
             {
               "Horse No": 9,
@@ -955,7 +1755,15 @@
               "Barrier": "SR2",
               "Driver": "Matt Elkins",
               "F100Med": 7.09,
-              "F100Qty": 44
+              "F100Qty": 44,
+              "F100Fast": 6.57,
+              "F100FastQty": 44,
+              "F100Avg123": 7.09,
+              "F100Avg123Qty": 14,
+              "F100Last5": 7.24,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 44
             },
             {
               "Horse No": 10,
@@ -963,7 +1771,15 @@
               "Barrier": "SR3",
               "Driver": "Pete McMullen",
               "F100Med": 6.84,
-              "F100Qty": 27
+              "F100Qty": 27,
+              "F100Fast": 6.61,
+              "F100FastQty": 27,
+              "F100Avg123": 6.85,
+              "F100Avg123Qty": 19,
+              "F100Last5": 6.81,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 27
             }
           ]
         },
@@ -982,7 +1798,15 @@
               "Barrier": "FR1",
               "Driver": "Jack Chapple",
               "F100Med": 6.77,
-              "F100Qty": 40
+              "F100Qty": 40,
+              "F100Fast": 6.27,
+              "F100FastQty": 40,
+              "F100Avg123": 6.77,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.19,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.87,
+              "F100AvgQty": 40
             },
             {
               "Horse No": 2,
@@ -990,7 +1814,15 @@
               "Barrier": "FR2",
               "Driver": "Jonah Hutchinson",
               "F100Med": 7.17,
-              "F100Qty": 11
+              "F100Qty": 11,
+              "F100Fast": 6.62,
+              "F100FastQty": 11,
+              "F100Avg123": 7.0,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.86,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 11
             },
             {
               "Horse No": 3,
@@ -998,7 +1830,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.68,
-              "F100Qty": 98
+              "F100Qty": 98,
+              "F100Fast": 6.21,
+              "F100FastQty": 98,
+              "F100Avg123": 6.62,
+              "F100Avg123Qty": 53,
+              "F100Last5": 6.95,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.83,
+              "F100AvgQty": 98
             },
             {
               "Horse No": 4,
@@ -1006,7 +1846,15 @@
               "Barrier": "FR4",
               "Driver": "Grant Dixon",
               "F100Med": 6.6,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.32,
+              "F100FastQty": 10,
+              "F100Avg123": 6.74,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.66,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.68,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 5,
@@ -1014,7 +1862,15 @@
               "Barrier": "FR5",
               "Driver": "Tamara Battle",
               "F100Med": 6.85,
-              "F100Qty": 59
+              "F100Qty": 59,
+              "F100Fast": 6.28,
+              "F100FastQty": 59,
+              "F100Avg123": 6.68,
+              "F100Avg123Qty": 32,
+              "F100Last5": 6.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.15,
+              "F100AvgQty": 59
             },
             {
               "Horse No": 6,
@@ -1022,7 +1878,15 @@
               "Barrier": "FR6",
               "Driver": "Leonard Cain",
               "F100Med": 7.3,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.83,
+              "F100FastQty": 14,
+              "F100Avg123": 7.26,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.16,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.34,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 7,
@@ -1030,7 +1894,15 @@
               "Barrier": "FR7",
               "Driver": "Matt Elkins",
               "F100Med": 6.71,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.6,
+              "F100FastQty": 3,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.79,
+              "F100Last5Qty": 3,
+              "F100Avg": 6.79,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 8,
@@ -1038,7 +1910,15 @@
               "Barrier": "SR1",
               "Driver": "Tom Callaghan",
               "F100Med": 6.78,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.46,
+              "F100FastQty": 31,
+              "F100Avg123": 6.76,
+              "F100Avg123Qty": 15,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.83,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 9,
@@ -1046,7 +1926,15 @@
               "Barrier": "SR2",
               "Driver": "Pete McMullen",
               "F100Med": 6.7,
-              "F100Qty": 27
+              "F100Qty": 27,
+              "F100Fast": 6.41,
+              "F100FastQty": 27,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 15,
+              "F100Last5": 8.19,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 27
             },
             {
               "Horse No": 10,
@@ -1054,7 +1942,15 @@
               "Barrier": "SR3",
               "Driver": "Leonard Cain",
               "F100Med": 7.0,
-              "F100Qty": 29
+              "F100Qty": 29,
+              "F100Fast": 6.14,
+              "F100FastQty": 29,
+              "F100Avg123": 6.88,
+              "F100Avg123Qty": 9,
+              "F100Last5": 7.12,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.13,
+              "F100AvgQty": 29
             }
           ]
         },
@@ -1073,7 +1969,15 @@
               "Barrier": "FR1",
               "Driver": "Adam Richardson",
               "F100Med": 6.74,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 6.34,
+              "F100FastQty": 36,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 28,
+              "F100Last5": 6.99,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.79,
+              "F100AvgQty": 36
             },
             {
               "Horse No": 2,
@@ -1081,7 +1985,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": 6.83,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.78,
+              "F100FastQty": 3,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.86,
+              "F100Last5Qty": 3,
+              "F100Avg": 6.86,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 3,
@@ -1089,7 +2001,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.99,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.67,
+              "F100FastQty": 9,
+              "F100Avg123": 6.91,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.01,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 4,
@@ -1097,7 +2017,15 @@
               "Barrier": "FR4",
               "Driver": "Damon Watson",
               "F100Med": 6.82,
-              "F100Qty": 92
+              "F100Qty": 92,
+              "F100Fast": 6.0,
+              "F100FastQty": 92,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 46,
+              "F100Last5": 7.16,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.98,
+              "F100AvgQty": 92
             },
             {
               "Horse No": 5,
@@ -1105,7 +2033,15 @@
               "Barrier": "FR5",
               "Driver": "Chris Watson",
               "F100Med": 6.92,
-              "F100Qty": 72
+              "F100Qty": 72,
+              "F100Fast": 6.45,
+              "F100FastQty": 72,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 31,
+              "F100Last5": 7.03,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.05,
+              "F100AvgQty": 72
             },
             {
               "Horse No": 6,
@@ -1113,7 +2049,15 @@
               "Barrier": "FR6",
               "Driver": "Leonard Cain",
               "F100Med": 6.87,
-              "F100Qty": 27
+              "F100Qty": 27,
+              "F100Fast": 6.63,
+              "F100FastQty": 27,
+              "F100Avg123": 6.82,
+              "F100Avg123Qty": 11,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 27
             },
             {
               "Horse No": 7,
@@ -1121,7 +2065,15 @@
               "Barrier": "FR7",
               "Driver": "Matt Elkins",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 8,
@@ -1129,7 +2081,15 @@
               "Barrier": "SR1",
               "Driver": "Jonah Hutchinson",
               "F100Med": 6.96,
-              "F100Qty": 42
+              "F100Qty": 42,
+              "F100Fast": 6.4,
+              "F100FastQty": 42,
+              "F100Avg123": 6.89,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.0,
+              "F100AvgQty": 42
             },
             {
               "Horse No": 9,
@@ -1137,7 +2097,15 @@
               "Barrier": "SR2",
               "Driver": "Alanah Richardson",
               "F100Med": 6.86,
-              "F100Qty": 33
+              "F100Qty": 33,
+              "F100Fast": 6.3,
+              "F100FastQty": 33,
+              "F100Avg123": 7.67,
+              "F100Avg123Qty": 15,
+              "F100Last5": 8.63,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.27,
+              "F100AvgQty": 33
             },
             {
               "Horse No": 10,
@@ -1145,7 +2113,15 @@
               "Barrier": "SR3",
               "Driver": "Layne Dwyer",
               "F100Med": 7.68,
-              "F100Qty": 8
+              "F100Qty": 8,
+              "F100Fast": 6.8,
+              "F100FastQty": 8,
+              "F100Avg123": 7.98,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.96,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.72,
+              "F100AvgQty": 8
             },
             {
               "Horse No": 11,
@@ -1153,7 +2129,15 @@
               "Barrier": "SR4",
               "Driver": "Grant Dixon",
               "F100Med": 7.1,
-              "F100Qty": 41
+              "F100Qty": 41,
+              "F100Fast": 6.56,
+              "F100FastQty": 41,
+              "F100Avg123": 7.02,
+              "F100Avg123Qty": 25,
+              "F100Last5": 7.32,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.19,
+              "F100AvgQty": 41
             }
           ]
         },
@@ -1172,7 +2156,15 @@
               "Barrier": "FR1",
               "Driver": "Taleah McMullen",
               "F100Med": 6.92,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.67,
+              "F100FastQty": 32,
+              "F100Avg123": 6.92,
+              "F100Avg123Qty": 23,
+              "F100Last5": 7.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.96,
+              "F100AvgQty": 32
             },
             {
               "Horse No": 2,
@@ -1180,7 +2172,15 @@
               "Barrier": "FR2",
               "Driver": "nan",
               "F100Med": 7.24,
-              "F100Qty": 63
+              "F100Qty": 63,
+              "F100Fast": 6.69,
+              "F100FastQty": 63,
+              "F100Avg123": 7.14,
+              "F100Avg123Qty": 30,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.25,
+              "F100AvgQty": 63
             },
             {
               "Horse No": 3,
@@ -1188,7 +2188,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Dawson",
               "F100Med": 6.88,
-              "F100Qty": 40
+              "F100Qty": 40,
+              "F100Fast": 6.56,
+              "F100FastQty": 40,
+              "F100Avg123": 6.85,
+              "F100Avg123Qty": 30,
+              "F100Last5": 7.19,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 40
             },
             {
               "Horse No": 4,
@@ -1196,7 +2204,15 @@
               "Barrier": "FR4",
               "Driver": "Gary Whitaker",
               "F100Med": 6.82,
-              "F100Qty": 46
+              "F100Qty": 46,
+              "F100Fast": 6.52,
+              "F100FastQty": 46,
+              "F100Avg123": 6.76,
+              "F100Avg123Qty": 21,
+              "F100Last5": 6.71,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.91,
+              "F100AvgQty": 46
             },
             {
               "Horse No": 5,
@@ -1204,7 +2220,15 @@
               "Barrier": "FR5",
               "Driver": "Alanah Richardson",
               "F100Med": 7.28,
-              "F100Qty": 57
+              "F100Qty": 57,
+              "F100Fast": 6.69,
+              "F100FastQty": 57,
+              "F100Avg123": 7.48,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.38,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.52,
+              "F100AvgQty": 57
             },
             {
               "Horse No": 6,
@@ -1212,7 +2236,15 @@
               "Barrier": "FR6",
               "Driver": "Jack Chapple",
               "F100Med": 7.12,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.5,
+              "F100FastQty": 67,
+              "F100Avg123": 7.09,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.36,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 7,
@@ -1220,7 +2252,15 @@
               "Barrier": "FR7",
               "Driver": "Adam Richardson",
               "F100Med": 6.99,
-              "F100Qty": 22
+              "F100Qty": 22,
+              "F100Fast": 6.62,
+              "F100FastQty": 22,
+              "F100Avg123": 7.64,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.29,
+              "F100AvgQty": 22
             },
             {
               "Horse No": 8,
@@ -1228,7 +2268,15 @@
               "Barrier": "SR1",
               "Driver": "Grant Dixon",
               "F100Med": 7.32,
-              "F100Qty": 38
+              "F100Qty": 38,
+              "F100Fast": 6.88,
+              "F100FastQty": 38,
+              "F100Avg123": 7.1,
+              "F100Avg123Qty": 10,
+              "F100Last5": 7.51,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.34,
+              "F100AvgQty": 38
             },
             {
               "Horse No": 9,
@@ -1236,7 +2284,15 @@
               "Barrier": "SR2",
               "Driver": "Adam Richardson",
               "F100Med": 7.31,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.39,
+              "F100FastQty": 9,
+              "F100Avg123": 6.82,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.2,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.28,
+              "F100AvgQty": 9
             }
           ]
         },
@@ -1255,7 +2311,15 @@
               "Barrier": "FR1",
               "Driver": "nan",
               "F100Med": 6.95,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.88,
+              "F100FastQty": 7,
+              "F100Avg123": 7.03,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.01,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 2,
@@ -1263,7 +2327,15 @@
               "Barrier": "FR2",
               "Driver": "nan",
               "F100Med": 6.77,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.77,
+              "F100FastQty": 3,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 3,
+              "F100Avg": 6.93,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 3,
@@ -1271,7 +2343,15 @@
               "Barrier": "FR3",
               "Driver": "Layne Dwyer",
               "F100Med": 7.09,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.98,
+              "F100FastQty": 2,
+              "F100Avg123": 6.98,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.09,
+              "F100Last5Qty": 2,
+              "F100Avg": 7.09,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 4,
@@ -1279,7 +2359,15 @@
               "Barrier": "FR4",
               "Driver": "Grant Dixon",
               "F100Med": 7.11,
-              "F100Qty": 13
+              "F100Qty": 13,
+              "F100Fast": 6.7,
+              "F100FastQty": 13,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.09,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.1,
+              "F100AvgQty": 13
             },
             {
               "Horse No": 5,
@@ -1287,7 +2375,15 @@
               "Barrier": "FR5",
               "Driver": "Narissa Elkins",
               "F100Med": 7.6,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.75,
+              "F100FastQty": 7,
+              "F100Avg123": 6.84,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.38,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.38,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 6,
@@ -1295,7 +2391,15 @@
               "Barrier": "FR6",
               "Driver": "Pete McMullen",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 7,
@@ -1303,7 +2407,15 @@
               "Barrier": "FR7",
               "Driver": "Leonard Cain",
               "F100Med": 7.39,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 7.25,
+              "F100FastQty": 2,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 7.39,
+              "F100Last5Qty": 2,
+              "F100Avg": 7.39,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 8,
@@ -1311,7 +2423,15 @@
               "Barrier": "SR1",
               "Driver": "Tamara Battle",
               "F100Med": 6.65,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.44,
+              "F100FastQty": 7,
+              "F100Avg123": 6.6,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.86,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 9,
@@ -1319,7 +2439,15 @@
               "Barrier": "SR2",
               "Driver": "Nathan Dawson",
               "F100Med": 6.96,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.64,
+              "F100FastQty": 4,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.92,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.92,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 10,
@@ -1327,7 +2455,15 @@
               "Barrier": "SR3",
               "Driver": "Angus Garrard",
               "F100Med": 6.72,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.64,
+              "F100FastQty": 4,
+              "F100Avg123": 6.73,
+              "F100Avg123Qty": 1,
+              "F100Last5": 6.72,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.72,
+              "F100AvgQty": 4
             }
           ]
         },
@@ -1346,7 +2482,15 @@
               "Barrier": "FR1",
               "Driver": "Tamara Battle",
               "F100Med": 7.14,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.87,
+              "F100FastQty": 10,
+              "F100Avg123": 6.97,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.07,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.2,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 2,
@@ -1354,7 +2498,15 @@
               "Barrier": "FR2",
               "Driver": "Matt Elkins",
               "F100Med": 7.02,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.92,
+              "F100FastQty": 5,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 3,
@@ -1362,7 +2514,15 @@
               "Barrier": "FR3",
               "Driver": "Pete McMullen",
               "F100Med": 6.79,
-              "F100Qty": 8
+              "F100Qty": 8,
+              "F100Fast": 6.26,
+              "F100FastQty": 8,
+              "F100Avg123": 6.41,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.23,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 8
             },
             {
               "Horse No": 4,
@@ -1370,7 +2530,15 @@
               "Barrier": "FR4",
               "Driver": "Leonard Cain",
               "F100Med": 7.5,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 7.15,
+              "F100FastQty": 4,
+              "F100Avg123": 7.15,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.49,
+              "F100Last5Qty": 4,
+              "F100Avg": 7.49,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 5,
@@ -1378,7 +2546,15 @@
               "Barrier": "FR5",
               "Driver": "Layne Dwyer",
               "F100Med": 7.36,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 7.07,
+              "F100FastQty": 7,
+              "F100Avg123": 7.25,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.41,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.36,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 6,
@@ -1386,7 +2562,15 @@
               "Barrier": "FR6",
               "Driver": "Nathan Rothwell",
               "F100Med": 7.08,
-              "F100Qty": 11
+              "F100Qty": 11,
+              "F100Fast": 6.55,
+              "F100FastQty": 11,
+              "F100Avg123": 6.79,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.9,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.05,
+              "F100AvgQty": 11
             },
             {
               "Horse No": 7,
@@ -1394,7 +2578,15 @@
               "Barrier": "FR7",
               "Driver": "Pete McMullen",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 8,
@@ -1402,7 +2594,15 @@
               "Barrier": "SR1",
               "Driver": "Nathan Dawson",
               "F100Med": 6.79,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.72,
+              "F100FastQty": 5,
+              "F100Avg123": 6.92,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.87,
+              "F100AvgQty": 5
             }
           ]
         },
@@ -1421,7 +2621,15 @@
               "Barrier": "FR1",
               "Driver": "Adam Richardson",
               "F100Med": 7.06,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.63,
+              "F100FastQty": 31,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 15,
+              "F100Last5": 6.89,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 2,
@@ -1429,7 +2637,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": 7.4,
-              "F100Qty": 33
+              "F100Qty": 33,
+              "F100Fast": 6.8,
+              "F100FastQty": 33,
+              "F100Avg123": 7.33,
+              "F100Avg123Qty": 24,
+              "F100Last5": 7.28,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.41,
+              "F100AvgQty": 33
             },
             {
               "Horse No": 3,
@@ -1437,7 +2653,15 @@
               "Barrier": "FR3",
               "Driver": "Matt Elkins",
               "F100Med": 7.05,
-              "F100Qty": 35
+              "F100Qty": 35,
+              "F100Fast": 6.53,
+              "F100FastQty": 35,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.54,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.1,
+              "F100AvgQty": 35
             },
             {
               "Horse No": 4,
@@ -1445,7 +2669,15 @@
               "Barrier": "FR4",
               "Driver": "Layne Dwyer",
               "F100Med": 7.16,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.88,
+              "F100FastQty": 17,
+              "F100Avg123": 7.17,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.32,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.19,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 5,
@@ -1453,7 +2685,15 @@
               "Barrier": "FR5",
               "Driver": "Edd Bailey",
               "F100Med": 6.73,
-              "F100Qty": 27
+              "F100Qty": 27,
+              "F100Fast": 6.38,
+              "F100FastQty": 27,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 18,
+              "F100Last5": 6.95,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.72,
+              "F100AvgQty": 27
             },
             {
               "Horse No": 6,
@@ -1461,7 +2701,15 @@
               "Barrier": "FR6",
               "Driver": "Alan Donohoe",
               "F100Med": 6.96,
-              "F100Qty": 34
+              "F100Qty": 34,
+              "F100Fast": 6.6,
+              "F100FastQty": 34,
+              "F100Avg123": 6.91,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.21,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.09,
+              "F100AvgQty": 34
             },
             {
               "Horse No": 7,
@@ -1469,7 +2717,15 @@
               "Barrier": "FR7",
               "Driver": "Darren McCall",
               "F100Med": 7.47,
-              "F100Qty": 39
+              "F100Qty": 39,
+              "F100Fast": 7.04,
+              "F100FastQty": 39,
+              "F100Avg123": 7.43,
+              "F100Avg123Qty": 22,
+              "F100Last5": 7.33,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.46,
+              "F100AvgQty": 39
             },
             {
               "Horse No": 8,
@@ -1477,7 +2733,15 @@
               "Barrier": "SR1",
               "Driver": "Zac Chappenden",
               "F100Med": 6.86,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.49,
+              "F100FastQty": 31,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.98,
+              "F100AvgQty": 31
             }
           ]
         },
@@ -1496,7 +2760,15 @@
               "Barrier": "FR1",
               "Driver": "Matt Elkins",
               "F100Med": 15.39,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 7.13,
+              "F100FastQty": 3,
+              "F100Avg123": 11.26,
+              "F100Avg123Qty": 2,
+              "F100Last5": 13.33,
+              "F100Last5Qty": 3,
+              "F100Avg": 13.33,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 2,
@@ -1504,7 +2776,15 @@
               "Barrier": "FR2",
               "Driver": "Layne Dwyer",
               "F100Med": 10.93,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 7.41,
+              "F100FastQty": 10,
+              "F100Avg123": 12.52,
+              "F100Avg123Qty": 2,
+              "F100Last5": 9.74,
+              "F100Last5Qty": 5,
+              "F100Avg": 11.26,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 3,
@@ -1512,7 +2792,15 @@
               "Barrier": "FR3",
               "Driver": "Adam Richardson",
               "F100Med": 10.59,
-              "F100Qty": 25
+              "F100Qty": 25,
+              "F100Fast": 7.04,
+              "F100FastQty": 25,
+              "F100Avg123": 10.42,
+              "F100Avg123Qty": 18,
+              "F100Last5": 8.75,
+              "F100Last5Qty": 5,
+              "F100Avg": 10.59,
+              "F100AvgQty": 25
             },
             {
               "Horse No": 4,
@@ -1520,7 +2808,15 @@
               "Barrier": "FR4",
               "Driver": "Angus Garrard",
               "F100Med": 10.14,
-              "F100Qty": 8
+              "F100Qty": 8,
+              "F100Fast": 6.68,
+              "F100FastQty": 8,
+              "F100Avg123": 6.99,
+              "F100Avg123Qty": 3,
+              "F100Last5": 8.37,
+              "F100Last5Qty": 5,
+              "F100Avg": 9.21,
+              "F100AvgQty": 8
             },
             {
               "Horse No": 5,
@@ -1528,7 +2824,15 @@
               "Barrier": "FR5",
               "Driver": "Leonard Cain",
               "F100Med": 9.65,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.76,
+              "F100FastQty": 9,
+              "F100Avg123": 9.12,
+              "F100Avg123Qty": 2,
+              "F100Last5": 8.46,
+              "F100Last5Qty": 5,
+              "F100Avg": 9.19,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 6,
@@ -1536,7 +2840,15 @@
               "Barrier": "FR6",
               "Driver": "Gavin Crone",
               "F100Med": 10.61,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 8.73,
+              "F100FastQty": 4,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 10.4,
+              "F100Last5Qty": 4,
+              "F100Avg": 10.4,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 7,
@@ -1544,7 +2856,15 @@
               "Barrier": "FR7",
               "Driver": "Adam Sanderson",
               "F100Med": 9.82,
-              "F100Qty": 11
+              "F100Qty": 11,
+              "F100Fast": 6.45,
+              "F100FastQty": 11,
+              "F100Avg123": 10.66,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.9,
+              "F100Last5Qty": 5,
+              "F100Avg": 10.49,
+              "F100AvgQty": 11
             },
             {
               "Horse No": 8,
@@ -1552,7 +2872,15 @@
               "Barrier": "SR1",
               "Driver": "Nathan Dawson",
               "F100Med": 10.64,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 7.11,
+              "F100FastQty": 36,
+              "F100Avg123": 11.31,
+              "F100Avg123Qty": 18,
+              "F100Last5": 10.02,
+              "F100Last5Qty": 5,
+              "F100Avg": 10.84,
+              "F100AvgQty": 36
             }
           ]
         }
@@ -1580,7 +2908,15 @@
               "Barrier": "FR1",
               "Driver": "Gary Bond",
               "F100Med": 6.86,
-              "F100Qty": 46
+              "F100Qty": 46,
+              "F100Fast": 6.42,
+              "F100FastQty": 46,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.21,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.91,
+              "F100AvgQty": 46
             },
             {
               "Horse No": 2,
@@ -1588,7 +2924,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": 7.01,
-              "F100Qty": 30
+              "F100Qty": 30,
+              "F100Fast": 6.72,
+              "F100FastQty": 30,
+              "F100Avg123": 7.04,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 30
             },
             {
               "Horse No": 3,
@@ -1596,7 +2940,15 @@
               "Barrier": "FR3",
               "Driver": "Grant Dixon",
               "F100Med": 6.56,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.46,
+              "F100FastQty": 2,
+              "F100Avg123": 6.56,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.56,
+              "F100Last5Qty": 2,
+              "F100Avg": 6.56,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 4,
@@ -1604,7 +2956,15 @@
               "Barrier": "FR4",
               "Driver": "Adam Sanderson",
               "F100Med": 6.68,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.46,
+              "F100FastQty": 17,
+              "F100Avg123": 6.6,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.82,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.77,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 5,
@@ -1612,7 +2972,15 @@
               "Barrier": "FR5",
               "Driver": "Adam Sanderson",
               "F100Med": 7.13,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.61,
+              "F100FastQty": 15,
+              "F100Avg123": 7.06,
+              "F100Avg123Qty": 10,
+              "F100Last5": 7.36,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.2,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 6,
@@ -1620,7 +2988,15 @@
               "Barrier": "FR6",
               "Driver": "Jayson Finnis",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 7,
@@ -1628,7 +3004,15 @@
               "Barrier": "FR7",
               "Driver": "Jonah Hutchinson",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 8,
@@ -1636,7 +3020,15 @@
               "Barrier": "SR1",
               "Driver": "Taleah McMullen",
               "F100Med": 6.78,
-              "F100Qty": 60
+              "F100Qty": 60,
+              "F100Fast": 6.44,
+              "F100FastQty": 60,
+              "F100Avg123": 6.83,
+              "F100Avg123Qty": 32,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.84,
+              "F100AvgQty": 60
             },
             {
               "Horse No": 9,
@@ -1644,7 +3036,15 @@
               "Barrier": "SR2",
               "Driver": "Jack Chapple",
               "F100Med": 6.96,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.56,
+              "F100FastQty": 12,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.96,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 10,
@@ -1652,7 +3052,15 @@
               "Barrier": "SR3",
               "Driver": "Mathew Neilson",
               "F100Med": 7.16,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 6.62,
+              "F100FastQty": 36,
+              "F100Avg123": 8.23,
+              "F100Avg123Qty": 15,
+              "F100Last5": 8.26,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.64,
+              "F100AvgQty": 36
             },
             {
               "Horse No": 11,
@@ -1660,7 +3068,15 @@
               "Barrier": "SR4",
               "Driver": "Trista Dixon",
               "F100Med": 6.96,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.68,
+              "F100FastQty": 5,
+              "F100Avg123": 8.72,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.96,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.96,
+              "F100AvgQty": 5
             }
           ]
         },
@@ -1679,7 +3095,15 @@
               "Barrier": "FR1",
               "Driver": "Grant Dixon",
               "F100Med": 6.8,
-              "F100Qty": 18
+              "F100Qty": 18,
+              "F100Fast": 6.51,
+              "F100FastQty": 18,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 8,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 18
             },
             {
               "Horse No": 2,
@@ -1687,7 +3111,15 @@
               "Barrier": "FR2",
               "Driver": "Taleah McMullen",
               "F100Med": 7.19,
-              "F100Qty": 26
+              "F100Qty": 26,
+              "F100Fast": 6.53,
+              "F100FastQty": 26,
+              "F100Avg123": 7.33,
+              "F100Avg123Qty": 5,
+              "F100Last5": 9.82,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.99,
+              "F100AvgQty": 26
             },
             {
               "Horse No": 3,
@@ -1695,7 +3127,15 @@
               "Barrier": "FR3",
               "Driver": "Angus Garrard",
               "F100Med": 6.91,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.46,
+              "F100FastQty": 15,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 7,
+              "F100Last5": 6.79,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.94,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 4,
@@ -1703,7 +3143,15 @@
               "Barrier": "FR4",
               "Driver": "Tom Callaghan",
               "F100Med": 6.61,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.5,
+              "F100FastQty": 4,
+              "F100Avg123": 6.57,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.62,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.62,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 5,
@@ -1711,7 +3159,15 @@
               "Barrier": "FR5",
               "Driver": "Jack Chapple",
               "F100Med": 7.37,
-              "F100Qty": 89
+              "F100Qty": 89,
+              "F100Fast": 6.3,
+              "F100FastQty": 89,
+              "F100Avg123": 7.27,
+              "F100Avg123Qty": 25,
+              "F100Last5": 7.45,
+              "F100Last5Qty": 5,
+              "F100Avg": 8.14,
+              "F100AvgQty": 89
             },
             {
               "Horse No": 6,
@@ -1719,7 +3175,15 @@
               "Barrier": "FR6",
               "Driver": "Nathan Dawson",
               "F100Med": 6.75,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.63,
+              "F100FastQty": 10,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.81,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.81,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 7,
@@ -1727,7 +3191,15 @@
               "Barrier": "FR7",
               "Driver": "Nathan Rothwell",
               "F100Med": 7.0,
-              "F100Qty": 66
+              "F100Qty": 66,
+              "F100Fast": 6.33,
+              "F100FastQty": 66,
+              "F100Avg123": 7.35,
+              "F100Avg123Qty": 28,
+              "F100Last5": 8.33,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.64,
+              "F100AvgQty": 66
             },
             {
               "Horse No": 8,
@@ -1735,7 +3207,15 @@
               "Barrier": "SR1",
               "Driver": "Matt Elkins",
               "F100Med": 6.54,
-              "F100Qty": 18
+              "F100Qty": 18,
+              "F100Fast": 6.17,
+              "F100FastQty": 18,
+              "F100Avg123": 6.47,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.67,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.62,
+              "F100AvgQty": 18
             },
             {
               "Horse No": 9,
@@ -1743,7 +3223,15 @@
               "Barrier": "SR2",
               "Driver": "Pete McMullen",
               "F100Med": 6.7,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.49,
+              "F100FastQty": 12,
+              "F100Avg123": 6.58,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.74,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 10,
@@ -1751,7 +3239,15 @@
               "Barrier": "SR3",
               "Driver": "Shane Graham",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             }
           ]
         },
@@ -1770,7 +3266,15 @@
               "Barrier": "FR1",
               "Driver": "Shane Graham",
               "F100Med": 6.64,
-              "F100Qty": 39
+              "F100Qty": 39,
+              "F100Fast": 6.34,
+              "F100FastQty": 39,
+              "F100Avg123": 7.14,
+              "F100Avg123Qty": 24,
+              "F100Last5": 7.36,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.38,
+              "F100AvgQty": 39
             },
             {
               "Horse No": 2,
@@ -1778,7 +3282,15 @@
               "Barrier": "FR2",
               "Driver": "Adam Richardson",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 3,
@@ -1786,7 +3298,15 @@
               "Barrier": "FR3",
               "Driver": "Bryse McElhinney",
               "F100Med": 6.82,
-              "F100Qty": 73
+              "F100Qty": 73,
+              "F100Fast": 6.36,
+              "F100FastQty": 73,
+              "F100Avg123": 7.02,
+              "F100Avg123Qty": 34,
+              "F100Last5": 7.52,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.22,
+              "F100AvgQty": 73
             },
             {
               "Horse No": 4,
@@ -1794,7 +3314,15 @@
               "Barrier": "FR4",
               "Driver": "Nathan Dawson",
               "F100Med": 6.75,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 6.27,
+              "F100FastQty": 36,
+              "F100Avg123": 6.62,
+              "F100Avg123Qty": 14,
+              "F100Last5": 8.55,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 36
             },
             {
               "Horse No": 5,
@@ -1802,7 +3330,15 @@
               "Barrier": "FR5",
               "Driver": "Grant Dixon",
               "F100Med": 6.5,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.46,
+              "F100FastQty": 5,
+              "F100Avg123": 6.48,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.7,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.7,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 6,
@@ -1810,7 +3346,15 @@
               "Barrier": "FR6",
               "Driver": "Trista Dixon",
               "F100Med": 6.98,
-              "F100Qty": 38
+              "F100Qty": 38,
+              "F100Fast": 6.43,
+              "F100FastQty": 38,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 13,
+              "F100Last5": 7.86,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.14,
+              "F100AvgQty": 38
             },
             {
               "Horse No": 7,
@@ -1818,7 +3362,15 @@
               "Barrier": "FR7",
               "Driver": "Angus Garrard",
               "F100Med": 6.58,
-              "F100Qty": 22
+              "F100Qty": 22,
+              "F100Fast": 6.19,
+              "F100FastQty": 22,
+              "F100Avg123": 6.53,
+              "F100Avg123Qty": 9,
+              "F100Last5": 6.78,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.79,
+              "F100AvgQty": 22
             },
             {
               "Horse No": 8,
@@ -1826,7 +3378,15 @@
               "Barrier": "SR1",
               "Driver": "Leonard Cain",
               "F100Med": 6.56,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.54,
+              "F100FastQty": 2,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.56,
+              "F100Last5Qty": 2,
+              "F100Avg": 6.56,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 9,
@@ -1834,7 +3394,15 @@
               "Barrier": "SR2",
               "Driver": "Matt Elkins",
               "F100Med": 7.02,
-              "F100Qty": 52
+              "F100Qty": 52,
+              "F100Fast": 6.4,
+              "F100FastQty": 52,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.08,
+              "F100AvgQty": 52
             }
           ]
         },
@@ -1853,7 +3421,15 @@
               "Barrier": "FR1",
               "Driver": "Matt Elkins",
               "F100Med": 7.04,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.52,
+              "F100FastQty": 15,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.08,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 2,
@@ -1861,7 +3437,15 @@
               "Barrier": "FR2",
               "Driver": "Narissa Elkins",
               "F100Med": 6.65,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.45,
+              "F100FastQty": 4,
+              "F100Avg123": 6.66,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.66,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.66,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 3,
@@ -1869,7 +3453,15 @@
               "Barrier": "FR3",
               "Driver": "Angus Garrard",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 4,
@@ -1877,7 +3469,15 @@
               "Barrier": "FR4",
               "Driver": "Pete McMullen",
               "F100Med": 6.64,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.43,
+              "F100FastQty": 4,
+              "F100Avg123": 6.62,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.63,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.63,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 5,
@@ -1885,7 +3485,15 @@
               "Barrier": "FR5",
               "Driver": "Trista Dixon",
               "F100Med": 6.76,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.36,
+              "F100FastQty": 17,
+              "F100Avg123": 7.05,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.99,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 6,
@@ -1893,7 +3501,15 @@
               "Barrier": "FR6",
               "Driver": "Adam Sanderson",
               "F100Med": 6.92,
-              "F100Qty": 29
+              "F100Qty": 29,
+              "F100Fast": 6.45,
+              "F100FastQty": 29,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 11,
+              "F100Last5": 6.74,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.89,
+              "F100AvgQty": 29
             },
             {
               "Horse No": 7,
@@ -1901,7 +3517,15 @@
               "Barrier": "FR7",
               "Driver": "Grant Dixon",
               "F100Med": 6.69,
-              "F100Qty": 1
+              "F100Qty": 1,
+              "F100Fast": 6.69,
+              "F100FastQty": 1,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 1,
+              "F100Last5": 6.69,
+              "F100Last5Qty": 1,
+              "F100Avg": 6.69,
+              "F100AvgQty": 1
             },
             {
               "Horse No": 8,
@@ -1909,7 +3533,15 @@
               "Barrier": "SR1",
               "Driver": "Nathan Dawson",
               "F100Med": 6.93,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.49,
+              "F100FastQty": 7,
+              "F100Avg123": 6.64,
+              "F100Avg123Qty": 2,
+              "F100Last5": 6.82,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.87,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 9,
@@ -1917,7 +3549,15 @@
               "Barrier": "SR2",
               "Driver": "Alanah Richardson",
               "F100Med": 6.82,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.7,
+              "F100FastQty": 3,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 1,
+              "F100Last5": 6.81,
+              "F100Last5Qty": 3,
+              "F100Avg": 6.81,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 10,
@@ -1925,7 +3565,15 @@
               "Barrier": "SR3",
               "Driver": "Tom Callaghan",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             }
           ]
         },
@@ -1944,7 +3592,15 @@
               "Barrier": "FR1",
               "Driver": "Taleah McMullen",
               "F100Med": 6.57,
-              "F100Qty": 81
+              "F100Qty": 81,
+              "F100Fast": 6.22,
+              "F100FastQty": 81,
+              "F100Avg123": 6.58,
+              "F100Avg123Qty": 40,
+              "F100Last5": 6.66,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.61,
+              "F100AvgQty": 81
             },
             {
               "Horse No": 2,
@@ -1952,7 +3608,15 @@
               "Barrier": "FR2",
               "Driver": "Lola Weidemann",
               "F100Med": 6.94,
-              "F100Qty": 18
+              "F100Qty": 18,
+              "F100Fast": 6.42,
+              "F100FastQty": 18,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.55,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.08,
+              "F100AvgQty": 18
             },
             {
               "Horse No": 3,
@@ -1960,7 +3624,15 @@
               "Barrier": "FR3",
               "Driver": "Dannielle McMullen",
               "F100Med": 6.57,
-              "F100Qty": 58
+              "F100Qty": 58,
+              "F100Fast": 6.34,
+              "F100FastQty": 58,
+              "F100Avg123": 6.54,
+              "F100Avg123Qty": 24,
+              "F100Last5": 6.62,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.62,
+              "F100AvgQty": 58
             },
             {
               "Horse No": 4,
@@ -1968,7 +3640,15 @@
               "Barrier": "FR4",
               "Driver": "Nathan Dawson",
               "F100Med": 7.09,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.86,
+              "F100FastQty": 9,
+              "F100Avg123": 7.06,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.17,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.1,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 5,
@@ -1976,7 +3656,15 @@
               "Barrier": "FR5",
               "Driver": "Trista Dixon",
               "F100Med": 7.26,
-              "F100Qty": 70
+              "F100Qty": 70,
+              "F100Fast": 6.48,
+              "F100FastQty": 70,
+              "F100Avg123": 8.53,
+              "F100Avg123Qty": 27,
+              "F100Last5": 8.4,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.75,
+              "F100AvgQty": 70
             },
             {
               "Horse No": 6,
@@ -1984,7 +3672,15 @@
               "Barrier": "FR6",
               "Driver": "Adam Sanderson",
               "F100Med": 7.25,
-              "F100Qty": 30
+              "F100Qty": 30,
+              "F100Fast": 6.49,
+              "F100FastQty": 30,
+              "F100Avg123": 7.55,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.25,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.34,
+              "F100AvgQty": 30
             },
             {
               "Horse No": 7,
@@ -1992,7 +3688,15 @@
               "Barrier": "FR7",
               "Driver": "Grant Dixon",
               "F100Med": 7.02,
-              "F100Qty": 21
+              "F100Qty": 21,
+              "F100Fast": 6.72,
+              "F100FastQty": 21,
+              "F100Avg123": 7.1,
+              "F100Avg123Qty": 7,
+              "F100Last5": 6.9,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.15,
+              "F100AvgQty": 21
             },
             {
               "Horse No": 8,
@@ -2000,7 +3704,15 @@
               "Barrier": "SR1",
               "Driver": "Leonard Cain",
               "F100Med": 7.08,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.44,
+              "F100FastQty": 12,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.12,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.06,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 9,
@@ -2008,7 +3720,15 @@
               "Barrier": "SR2",
               "Driver": "Pete McMullen",
               "F100Med": 6.76,
-              "F100Qty": 40
+              "F100Qty": 40,
+              "F100Fast": 6.27,
+              "F100FastQty": 40,
+              "F100Avg123": 6.64,
+              "F100Avg123Qty": 19,
+              "F100Last5": 6.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.81,
+              "F100AvgQty": 40
             },
             {
               "Horse No": 10,
@@ -2016,7 +3736,15 @@
               "Barrier": "SR3",
               "Driver": "Angus Garrard",
               "F100Med": 6.87,
-              "F100Qty": 13
+              "F100Qty": 13,
+              "F100Fast": 6.4,
+              "F100FastQty": 13,
+              "F100Avg123": 7.69,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.42,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.12,
+              "F100AvgQty": 13
             },
             {
               "Horse No": 11,
@@ -2024,7 +3752,15 @@
               "Barrier": "SR4",
               "Driver": "Mitch Cox",
               "F100Med": 7.14,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.63,
+              "F100FastQty": 14,
+              "F100Avg123": 7.09,
+              "F100Avg123Qty": 9,
+              "F100Last5": 7.54,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.22,
+              "F100AvgQty": 14
             }
           ]
         },
@@ -2043,7 +3779,15 @@
               "Barrier": "FR1",
               "Driver": "Matt Elkins",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 2,
@@ -2051,7 +3795,15 @@
               "Barrier": "FR2",
               "Driver": "Alanah Richardson",
               "F100Med": 7.06,
-              "F100Qty": 68
+              "F100Qty": 68,
+              "F100Fast": 6.54,
+              "F100FastQty": 68,
+              "F100Avg123": 6.9,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.06,
+              "F100AvgQty": 68
             },
             {
               "Horse No": 3,
@@ -2059,7 +3811,15 @@
               "Barrier": "FR3",
               "Driver": "Narissa Elkins",
               "F100Med": 6.58,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.37,
+              "F100FastQty": 10,
+              "F100Avg123": 6.56,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.84,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.66,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 4,
@@ -2067,7 +3827,15 @@
               "Barrier": "FR4",
               "Driver": "Jayson Finnis",
               "F100Med": 7.0,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.49,
+              "F100FastQty": 17,
+              "F100Avg123": 6.77,
+              "F100Avg123Qty": 7,
+              "F100Last5": 7.25,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.01,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 5,
@@ -2075,7 +3843,15 @@
               "Barrier": "FR5",
               "Driver": "Nathan Dawson",
               "F100Med": 6.5,
-              "F100Qty": 6
+              "F100Qty": 6,
+              "F100Fast": 6.4,
+              "F100FastQty": 6,
+              "F100Avg123": 6.55,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.53,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.52,
+              "F100AvgQty": 6
             },
             {
               "Horse No": 6,
@@ -2083,7 +3859,15 @@
               "Barrier": "FR6",
               "Driver": "Pete McMullen",
               "F100Med": 6.64,
-              "F100Qty": 14
+              "F100Qty": 14,
+              "F100Fast": 6.32,
+              "F100FastQty": 14,
+              "F100Avg123": 6.55,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.68,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.66,
+              "F100AvgQty": 14
             },
             {
               "Horse No": 7,
@@ -2091,7 +3875,15 @@
               "Barrier": "FR7",
               "Driver": "Pete McMullen",
               "F100Med": 6.39,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.19,
+              "F100FastQty": 12,
+              "F100Avg123": 6.32,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.55,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.48,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 8,
@@ -2099,7 +3891,15 @@
               "Barrier": "SR1",
               "Driver": "Adam Sanderson",
               "F100Med": 6.85,
-              "F100Qty": 66
+              "F100Qty": 66,
+              "F100Fast": 6.42,
+              "F100FastQty": 66,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 23,
+              "F100Last5": 6.72,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.91,
+              "F100AvgQty": 66
             },
             {
               "Horse No": 9,
@@ -2107,7 +3907,15 @@
               "Barrier": "SR2",
               "Driver": "Adam Sanderson",
               "F100Med": 6.95,
-              "F100Qty": 37
+              "F100Qty": 37,
+              "F100Fast": 6.26,
+              "F100FastQty": 37,
+              "F100Avg123": 6.84,
+              "F100Avg123Qty": 14,
+              "F100Last5": 6.95,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.0,
+              "F100AvgQty": 37
             },
             {
               "Horse No": 10,
@@ -2115,7 +3923,15 @@
               "Barrier": "SR3",
               "Driver": "Pete McMullen",
               "F100Med": 6.85,
-              "F100Qty": 16
+              "F100Qty": 16,
+              "F100Fast": 6.37,
+              "F100FastQty": 16,
+              "F100Avg123": 6.58,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.7,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.86,
+              "F100AvgQty": 16
             }
           ]
         },
@@ -2134,7 +3950,15 @@
               "Barrier": "FR1",
               "Driver": "Adam Richardson",
               "F100Med": 7.1,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.56,
+              "F100FastQty": 24,
+              "F100Avg123": 7.31,
+              "F100Avg123Qty": 13,
+              "F100Last5": 8.28,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.65,
+              "F100AvgQty": 24
             },
             {
               "Horse No": 2,
@@ -2142,7 +3966,15 @@
               "Barrier": "FR2",
               "Driver": "Angus Garrard",
               "F100Med": 10.66,
-              "F100Qty": 28
+              "F100Qty": 28,
+              "F100Fast": 6.68,
+              "F100FastQty": 28,
+              "F100Avg123": 10.05,
+              "F100Avg123Qty": 9,
+              "F100Last5": 8.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 10.47,
+              "F100AvgQty": 28
             },
             {
               "Horse No": 3,
@@ -2150,7 +3982,15 @@
               "Barrier": "FR3",
               "Driver": "Grant Dixon",
               "F100Med": 7.66,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.77,
+              "F100FastQty": 32,
+              "F100Avg123": 8.28,
+              "F100Avg123Qty": 14,
+              "F100Last5": 8.82,
+              "F100Last5Qty": 5,
+              "F100Avg": 8.74,
+              "F100AvgQty": 32
             },
             {
               "Horse No": 4,
@@ -2158,7 +3998,15 @@
               "Barrier": "FR4",
               "Driver": "Trista Dixon",
               "F100Med": 7.41,
-              "F100Qty": 69
+              "F100Qty": 69,
+              "F100Fast": 6.47,
+              "F100FastQty": 69,
+              "F100Avg123": 7.66,
+              "F100Avg123Qty": 21,
+              "F100Last5": 8.19,
+              "F100Last5Qty": 5,
+              "F100Avg": 8.89,
+              "F100AvgQty": 69
             },
             {
               "Horse No": 5,
@@ -2166,7 +4014,15 @@
               "Barrier": "FR5",
               "Driver": "Matt Elkins",
               "F100Med": 6.88,
-              "F100Qty": 8
+              "F100Qty": 8,
+              "F100Fast": 6.69,
+              "F100FastQty": 8,
+              "F100Avg123": 7.28,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.56,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.3,
+              "F100AvgQty": 8
             },
             {
               "Horse No": 6,
@@ -2174,7 +4030,15 @@
               "Barrier": "FR6",
               "Driver": "Nathan Dawson",
               "F100Med": 7.55,
-              "F100Qty": 25
+              "F100Qty": 25,
+              "F100Fast": 6.71,
+              "F100FastQty": 25,
+              "F100Avg123": 9.06,
+              "F100Avg123Qty": 9,
+              "F100Last5": 8.12,
+              "F100Last5Qty": 5,
+              "F100Avg": 8.82,
+              "F100AvgQty": 25
             },
             {
               "Horse No": 7,
@@ -2182,7 +4046,15 @@
               "Barrier": "FR7",
               "Driver": "Mathew Neilson",
               "F100Med": 8.89,
-              "F100Qty": 25
+              "F100Qty": 25,
+              "F100Fast": 6.73,
+              "F100FastQty": 25,
+              "F100Avg123": 12.08,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.81,
+              "F100Last5Qty": 5,
+              "F100Avg": 9.58,
+              "F100AvgQty": 25
             },
             {
               "Horse No": 8,
@@ -2190,7 +4062,15 @@
               "Barrier": "SR1",
               "Driver": "Shane Graham",
               "F100Med": 6.92,
-              "F100Qty": 25
+              "F100Qty": 25,
+              "F100Fast": 6.5,
+              "F100FastQty": 25,
+              "F100Avg123": 9.9,
+              "F100Avg123Qty": 10,
+              "F100Last5": 8.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 8.68,
+              "F100AvgQty": 25
             }
           ]
         },
@@ -2209,7 +4089,15 @@
               "Barrier": "FR1",
               "Driver": "Gary Bond",
               "F100Med": 7.06,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 7.05,
+              "F100FastQty": 3,
+              "F100Avg123": 7.06,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.1,
+              "F100Last5Qty": 3,
+              "F100Avg": 7.1,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 2,
@@ -2217,7 +4105,15 @@
               "Barrier": "FR2",
               "Driver": "Narissa Elkins",
               "F100Med": 6.98,
-              "F100Qty": 3
+              "F100Qty": 3,
+              "F100Fast": 6.91,
+              "F100FastQty": 3,
+              "F100Avg123": 6.91,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 3,
+              "F100Avg": 7.15,
+              "F100AvgQty": 3
             },
             {
               "Horse No": 3,
@@ -2225,7 +4121,15 @@
               "Barrier": "FR3",
               "Driver": "Taleah McMullen",
               "F100Med": 6.75,
-              "F100Qty": 58
+              "F100Qty": 58,
+              "F100Fast": 6.28,
+              "F100FastQty": 58,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 23,
+              "F100Last5": 7.01,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.77,
+              "F100AvgQty": 58
             },
             {
               "Horse No": 4,
@@ -2233,7 +4137,15 @@
               "Barrier": "FR4",
               "Driver": "Nathan Dawson",
               "F100Med": 6.87,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.44,
+              "F100FastQty": 31,
+              "F100Avg123": 6.71,
+              "F100Avg123Qty": 9,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.9,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 5,
@@ -2241,7 +4153,15 @@
               "Barrier": "FR5",
               "Driver": "Adam Richardson",
               "F100Med": 7.0,
-              "F100Qty": 13
+              "F100Qty": 13,
+              "F100Fast": 6.33,
+              "F100FastQty": 13,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.0,
+              "F100AvgQty": 13
             },
             {
               "Horse No": 6,
@@ -2249,7 +4169,15 @@
               "Barrier": "FR6",
               "Driver": "Angus Garrard",
               "F100Med": 7.04,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.88,
+              "F100FastQty": 2,
+              "F100Avg123": 7.04,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 2,
+              "F100Avg": 7.04,
+              "F100AvgQty": 2
             },
             {
               "Horse No": 7,
@@ -2257,7 +4185,15 @@
               "Barrier": "FR7",
               "Driver": "Jordan Topping",
               "F100Med": 7.02,
-              "F100Qty": 11
+              "F100Qty": 11,
+              "F100Fast": 6.55,
+              "F100FastQty": 11,
+              "F100Avg123": 6.84,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.14,
+              "F100AvgQty": 11
             },
             {
               "Horse No": 8,
@@ -2265,7 +4201,15 @@
               "Barrier": "SR1",
               "Driver": "Layne Dwyer",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 9,
@@ -2273,7 +4217,15 @@
               "Barrier": "SR2",
               "Driver": "Jayson Finnis",
               "F100Med": 6.7,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.68,
+              "F100FastQty": 5,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.83,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.83,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 10,
@@ -2281,7 +4233,15 @@
               "Barrier": "SR3",
               "Driver": "Taleah McMullen",
               "F100Med": 6.68,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.46,
+              "F100FastQty": 32,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 16,
+              "F100Last5": 6.77,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.73,
+              "F100AvgQty": 32
             }
           ]
         },
@@ -2300,7 +4260,15 @@
               "Barrier": "FR1",
               "Driver": "Pete McMullen",
               "F100Med": 6.78,
-              "F100Qty": 6
+              "F100Qty": 6,
+              "F100Fast": 6.5,
+              "F100FastQty": 6,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 1,
+              "F100Last5": 6.93,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.88,
+              "F100AvgQty": 6
             },
             {
               "Horse No": 2,
@@ -2308,7 +4276,15 @@
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
               "F100Med": 7.14,
-              "F100Qty": 56
+              "F100Qty": 56,
+              "F100Fast": 6.42,
+              "F100FastQty": 56,
+              "F100Avg123": 6.9,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.17,
+              "F100AvgQty": 56
             },
             {
               "Horse No": 3,
@@ -2316,7 +4292,15 @@
               "Barrier": "FR3",
               "Driver": "Mathew Neilson",
               "F100Med": 7.02,
-              "F100Qty": 47
+              "F100Qty": 47,
+              "F100Fast": 6.31,
+              "F100FastQty": 47,
+              "F100Avg123": 6.87,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 47
             },
             {
               "Horse No": 4,
@@ -2324,7 +4308,15 @@
               "Barrier": "FR4",
               "Driver": "Pete McMullen",
               "F100Med": 7.01,
-              "F100Qty": 19
+              "F100Qty": 19,
+              "F100Fast": 6.6,
+              "F100FastQty": 19,
+              "F100Avg123": 6.68,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.83,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.04,
+              "F100AvgQty": 19
             },
             {
               "Horse No": 5,
@@ -2332,7 +4324,15 @@
               "Barrier": "FR5",
               "Driver": "Grant Dixon",
               "F100Med": 6.87,
-              "F100Qty": 44
+              "F100Qty": 44,
+              "F100Fast": 6.33,
+              "F100FastQty": 44,
+              "F100Avg123": 6.61,
+              "F100Avg123Qty": 15,
+              "F100Last5": 7.12,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.94,
+              "F100AvgQty": 44
             },
             {
               "Horse No": 6,
@@ -2340,7 +4340,15 @@
               "Barrier": "FR6",
               "Driver": "Adam Richardson",
               "F100Med": 6.68,
-              "F100Qty": 71
+              "F100Qty": 71,
+              "F100Fast": 6.37,
+              "F100FastQty": 71,
+              "F100Avg123": 6.69,
+              "F100Avg123Qty": 35,
+              "F100Last5": 6.69,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.75,
+              "F100AvgQty": 71
             }
           ]
         }
@@ -2368,7 +4376,15 @@
               "Barrier": "FR1",
               "Driver": "Noel Parrish",
               "F100Med": 7.23,
-              "F100Qty": 41
+              "F100Qty": 41,
+              "F100Fast": 6.94,
+              "F100FastQty": 41,
+              "F100Avg123": 7.35,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.22,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.35,
+              "F100AvgQty": 41
             },
             {
               "Horse No": 2,
@@ -2376,7 +4392,15 @@
               "Barrier": "FR2",
               "Driver": "Adam Richardson",
               "F100Med": 7.07,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.75,
+              "F100FastQty": 4,
+              "F100Avg123": 7.02,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.12,
+              "F100Last5Qty": 4,
+              "F100Avg": 7.12,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 3,
@@ -2384,7 +4408,15 @@
               "Barrier": "FR3",
               "Driver": "Nathan Dawson",
               "F100Med": 7.23,
-              "F100Qty": 1
+              "F100Qty": 1,
+              "F100Fast": 7.23,
+              "F100FastQty": 1,
+              "F100Avg123": 7.23,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.23,
+              "F100Last5Qty": 1,
+              "F100Avg": 7.23,
+              "F100AvgQty": 1
             },
             {
               "Horse No": 4,
@@ -2392,7 +4424,15 @@
               "Barrier": "FR4",
               "Driver": "Taleah McMullen",
               "F100Med": 7.34,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 7.08,
+              "F100FastQty": 4,
+              "F100Avg123": 7.38,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.36,
+              "F100Last5Qty": 4,
+              "F100Avg": 7.36,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 5,
@@ -2400,7 +4440,15 @@
               "Barrier": "FR5",
               "Driver": "Lola Weidemann",
               "F100Med": 7.34,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 7.05,
+              "F100FastQty": 4,
+              "F100Avg123": 7.15,
+              "F100Avg123Qty": 1,
+              "F100Last5": 7.32,
+              "F100Last5Qty": 4,
+              "F100Avg": 7.32,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 6,
@@ -2408,7 +4456,15 @@
               "Barrier": "SR1",
               "Driver": "nan",
               "F100Med": 6.98,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.5,
+              "F100FastQty": 9,
+              "F100Avg123": 6.83,
+              "F100Avg123Qty": 5,
+              "F100Last5": 6.92,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.91,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 7,
@@ -2416,7 +4472,15 @@
               "Barrier": "SR2",
               "Driver": "nan",
               "F100Med": 7.3,
-              "F100Qty": 7
+              "F100Qty": 7,
+              "F100Fast": 6.76,
+              "F100FastQty": 7,
+              "F100Avg123": 7.27,
+              "F100Avg123Qty": 3,
+              "F100Last5": 7.8,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.53,
+              "F100AvgQty": 7
             },
             {
               "Horse No": 8,
@@ -2424,7 +4488,15 @@
               "Barrier": "SR3",
               "Driver": "Tamara Battle",
               "F100Med": 6.91,
-              "F100Qty": 1
+              "F100Qty": 1,
+              "F100Fast": 6.91,
+              "F100FastQty": 1,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.91,
+              "F100Last5Qty": 1,
+              "F100Avg": 6.91,
+              "F100AvgQty": 1
             },
             {
               "Horse No": 9,
@@ -2432,7 +4504,15 @@
               "Barrier": "SR4",
               "Driver": "Dayl March",
               "F100Med": 6.97,
-              "F100Qty": 2
+              "F100Qty": 2,
+              "F100Fast": 6.89,
+              "F100FastQty": 2,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.97,
+              "F100Last5Qty": 2,
+              "F100Avg": 6.97,
+              "F100AvgQty": 2
             }
           ]
         },
@@ -2451,7 +4531,15 @@
               "Barrier": "FR1",
               "Driver": "Jordan Topping",
               "F100Med": 7.01,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.51,
+              "F100FastQty": 12,
+              "F100Avg123": 6.86,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.99,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.03,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 2,
@@ -2459,7 +4547,15 @@
               "Barrier": "FR2",
               "Driver": "Taleah McMullen",
               "F100Med": 6.98,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.67,
+              "F100FastQty": 24,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 17,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.04,
+              "F100AvgQty": 24
             },
             {
               "Horse No": 3,
@@ -2467,7 +4563,15 @@
               "Barrier": "FR3",
               "Driver": "Noel Parrish",
               "F100Med": 7.21,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.7,
+              "F100FastQty": 12,
+              "F100Avg123": 7.05,
+              "F100Avg123Qty": 7,
+              "F100Last5": 7.86,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.34,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 4,
@@ -2475,7 +4579,15 @@
               "Barrier": "FR4",
               "Driver": "nan",
               "F100Med": 7.22,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.72,
+              "F100FastQty": 10,
+              "F100Avg123": 7.08,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.27,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.15,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 5,
@@ -2483,7 +4595,15 @@
               "Barrier": "FR5",
               "Driver": "Layne Dwyer",
               "F100Med": 7.14,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.82,
+              "F100FastQty": 9,
+              "F100Avg123": 7.08,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.2,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.16,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 6,
@@ -2491,7 +4611,15 @@
               "Barrier": "SR1",
               "Driver": "Gary Bond",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             },
             {
               "Horse No": 7,
@@ -2499,7 +4627,15 @@
               "Barrier": "SR2",
               "Driver": "Adam Richardson",
               "F100Med": 7.08,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.6,
+              "F100FastQty": 9,
+              "F100Avg123": 6.88,
+              "F100Avg123Qty": 5,
+              "F100Last5": 7.19,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.22,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 8,
@@ -2507,7 +4643,15 @@
               "Barrier": "SR3",
               "Driver": "Jayson Finnis",
               "F100Med": 6.82,
-              "F100Qty": 4
+              "F100Qty": 4,
+              "F100Fast": 6.46,
+              "F100FastQty": 4,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 3,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 4,
+              "F100Avg": 6.87,
+              "F100AvgQty": 4
             },
             {
               "Horse No": 9,
@@ -2515,7 +4659,15 @@
               "Barrier": "SR4",
               "Driver": "Clint Sneddon",
               "F100Med": 6.82,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.59,
+              "F100FastQty": 10,
+              "F100Avg123": 6.83,
+              "F100Avg123Qty": 7,
+              "F100Last5": 6.96,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.85,
+              "F100AvgQty": 10
             }
           ]
         },
@@ -2534,7 +4686,15 @@
               "Barrier": "FR1",
               "Driver": "David Stewart",
               "F100Med": 7.06,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.59,
+              "F100FastQty": 17,
+              "F100Avg123": 7.16,
+              "F100Avg123Qty": 8,
+              "F100Last5": 6.98,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 2,
@@ -2542,7 +4702,15 @@
               "Barrier": "FR2",
               "Driver": "nan",
               "F100Med": 7.02,
-              "F100Qty": 23
+              "F100Qty": 23,
+              "F100Fast": 6.73,
+              "F100FastQty": 23,
+              "F100Avg123": 7.06,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.07,
+              "F100AvgQty": 23
             },
             {
               "Horse No": 3,
@@ -2550,7 +4718,15 @@
               "Barrier": "FR3",
               "Driver": "nan",
               "F100Med": 7.19,
-              "F100Qty": 29
+              "F100Qty": 29,
+              "F100Fast": 6.82,
+              "F100FastQty": 29,
+              "F100Avg123": 7.19,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.45,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.29,
+              "F100AvgQty": 29
             },
             {
               "Horse No": 4,
@@ -2558,7 +4734,15 @@
               "Barrier": "FR4",
               "Driver": "Matt Elkins",
               "F100Med": 7.05,
-              "F100Qty": 35
+              "F100Qty": 35,
+              "F100Fast": 6.53,
+              "F100FastQty": 35,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.54,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.1,
+              "F100AvgQty": 35
             },
             {
               "Horse No": 5,
@@ -2566,7 +4750,15 @@
               "Barrier": "FR5",
               "Driver": "Adam Richardson",
               "F100Med": 6.94,
-              "F100Qty": 18
+              "F100Qty": 18,
+              "F100Fast": 6.39,
+              "F100FastQty": 18,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 10,
+              "F100Last5": 7.06,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.93,
+              "F100AvgQty": 18
             },
             {
               "Horse No": 6,
@@ -2574,7 +4766,15 @@
               "Barrier": "SR1",
               "Driver": "Zac Chappenden",
               "F100Med": 6.86,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.49,
+              "F100FastQty": 31,
+              "F100Avg123": 6.94,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.13,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.98,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 7,
@@ -2582,7 +4782,15 @@
               "Barrier": "SR2",
               "Driver": "Peter Greig",
               "F100Med": 7.22,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.39,
+              "F100FastQty": 10,
+              "F100Avg123": 7.32,
+              "F100Avg123Qty": 4,
+              "F100Last5": 6.95,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.22,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 8,
@@ -2590,7 +4798,15 @@
               "Barrier": "SR3",
               "Driver": "Dayl March",
               "F100Med": 6.93,
-              "F100Qty": 24
+              "F100Qty": 24,
+              "F100Fast": 6.42,
+              "F100FastQty": 24,
+              "F100Avg123": 6.82,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.76,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.1,
+              "F100AvgQty": 24
             }
           ]
         },
@@ -2609,7 +4825,15 @@
               "Barrier": "FR1",
               "Driver": "Dannielle McMullen",
               "F100Med": 6.81,
-              "F100Qty": 73
+              "F100Qty": 73,
+              "F100Fast": 6.28,
+              "F100FastQty": 73,
+              "F100Avg123": 6.64,
+              "F100Avg123Qty": 30,
+              "F100Last5": 6.87,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.93,
+              "F100AvgQty": 73
             },
             {
               "Horse No": 2,
@@ -2617,7 +4841,15 @@
               "Barrier": "FR2",
               "Driver": "Jayson Finnis",
               "F100Med": 6.88,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.18,
+              "F100FastQty": 67,
+              "F100Avg123": 6.75,
+              "F100Avg123Qty": 28,
+              "F100Last5": 6.85,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.89,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 3,
@@ -2625,7 +4857,15 @@
               "Barrier": "FR3",
               "Driver": "Jordan Topping",
               "F100Med": 7.1,
-              "F100Qty": 38
+              "F100Qty": 38,
+              "F100Fast": 6.41,
+              "F100FastQty": 38,
+              "F100Avg123": 7.14,
+              "F100Avg123Qty": 13,
+              "F100Last5": 7.25,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.22,
+              "F100AvgQty": 38
             },
             {
               "Horse No": 4,
@@ -2633,7 +4873,15 @@
               "Barrier": "FR4",
               "Driver": "Dayl March",
               "F100Med": 6.69,
-              "F100Qty": 68
+              "F100Qty": 68,
+              "F100Fast": 6.09,
+              "F100FastQty": 68,
+              "F100Avg123": 6.74,
+              "F100Avg123Qty": 34,
+              "F100Last5": 7.38,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.96,
+              "F100AvgQty": 68
             },
             {
               "Horse No": 5,
@@ -2641,7 +4889,15 @@
               "Barrier": "FR5",
               "Driver": "Taleah McMullen",
               "F100Med": 6.86,
-              "F100Qty": 35
+              "F100Qty": 35,
+              "F100Fast": 6.33,
+              "F100FastQty": 35,
+              "F100Avg123": 6.72,
+              "F100Avg123Qty": 9,
+              "F100Last5": 6.78,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.8,
+              "F100AvgQty": 35
             },
             {
               "Horse No": 6,
@@ -2649,7 +4905,15 @@
               "Barrier": "SR1",
               "Driver": "Jack Chapple",
               "F100Med": 7.08,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.71,
+              "F100FastQty": 9,
+              "F100Avg123": 6.9,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.26,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.14,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 7,
@@ -2657,7 +4921,15 @@
               "Barrier": "SR2",
               "Driver": "Matt Elkins",
               "F100Med": 7.09,
-              "F100Qty": 44
+              "F100Qty": 44,
+              "F100Fast": 6.57,
+              "F100FastQty": 44,
+              "F100Avg123": 7.09,
+              "F100Avg123Qty": 14,
+              "F100Last5": 7.24,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 44
             }
           ]
         },
@@ -2676,7 +4948,15 @@
               "Barrier": "FR1",
               "Driver": "Dallas Wilkins",
               "F100Med": 7.19,
-              "F100Qty": 21
+              "F100Qty": 21,
+              "F100Fast": 6.75,
+              "F100FastQty": 21,
+              "F100Avg123": 7.23,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.37,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 21
             },
             {
               "Horse No": 2,
@@ -2684,7 +4964,15 @@
               "Barrier": "FR2",
               "Driver": "Taleah McMullen",
               "F100Med": 7.31,
-              "F100Qty": 37
+              "F100Qty": 37,
+              "F100Fast": 6.8,
+              "F100FastQty": 37,
+              "F100Avg123": 7.26,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.4,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 37
             },
             {
               "Horse No": 3,
@@ -2692,7 +4980,15 @@
               "Barrier": "FR3",
               "Driver": "Zac Chappenden",
               "F100Med": 7.06,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.63,
+              "F100FastQty": 31,
+              "F100Avg123": 6.96,
+              "F100Avg123Qty": 15,
+              "F100Last5": 6.89,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 4,
@@ -2700,7 +4996,15 @@
               "Barrier": "FR4",
               "Driver": "nan",
               "F100Med": 7.1,
-              "F100Qty": 9
+              "F100Qty": 9,
+              "F100Fast": 6.7,
+              "F100FastQty": 9,
+              "F100Avg123": 7.04,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.23,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.17,
+              "F100AvgQty": 9
             },
             {
               "Horse No": 5,
@@ -2708,7 +5012,15 @@
               "Barrier": "FR5",
               "Driver": "Gary Bond",
               "F100Med": 7.14,
-              "F100Qty": 16
+              "F100Qty": 16,
+              "F100Fast": 6.75,
+              "F100FastQty": 16,
+              "F100Avg123": 8.15,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.07,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.95,
+              "F100AvgQty": 16
             },
             {
               "Horse No": 6,
@@ -2716,7 +5028,15 @@
               "Barrier": "SR1",
               "Driver": "Holly Chalmers",
               "F100Med": 7.28,
-              "F100Qty": 15
+              "F100Qty": 15,
+              "F100Fast": 6.68,
+              "F100FastQty": 15,
+              "F100Avg123": 7.24,
+              "F100Avg123Qty": 12,
+              "F100Last5": 7.53,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.31,
+              "F100AvgQty": 15
             },
             {
               "Horse No": 7,
@@ -2724,7 +5044,15 @@
               "Barrier": "SR2",
               "Driver": "Jayson Finnis",
               "F100Med": 7.15,
-              "F100Qty": 10
+              "F100Qty": 10,
+              "F100Fast": 6.81,
+              "F100FastQty": 10,
+              "F100Avg123": 7.11,
+              "F100Avg123Qty": 4,
+              "F100Last5": 7.15,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.3,
+              "F100AvgQty": 10
             },
             {
               "Horse No": 8,
@@ -2732,7 +5060,15 @@
               "Barrier": "SR3",
               "Driver": "Jack Chapple",
               "F100Med": 7.05,
-              "F100Qty": 5
+              "F100Qty": 5,
+              "F100Fast": 6.74,
+              "F100FastQty": 5,
+              "F100Avg123": 7.18,
+              "F100Avg123Qty": 2,
+              "F100Last5": 7.14,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.14,
+              "F100AvgQty": 5
             },
             {
               "Horse No": 9,
@@ -2740,7 +5076,15 @@
               "Barrier": "SR4",
               "Driver": "nan",
               "F100Med": 6.56,
-              "F100Qty": 1
+              "F100Qty": 1,
+              "F100Fast": 6.56,
+              "F100FastQty": 1,
+              "F100Avg123": null,
+              "F100Avg123Qty": 0,
+              "F100Last5": 6.56,
+              "F100Last5Qty": 1,
+              "F100Avg": 6.56,
+              "F100AvgQty": 1
             }
           ]
         },
@@ -2759,7 +5103,15 @@
               "Barrier": "FR1",
               "Driver": "Taleah McMullen",
               "F100Med": 7.21,
-              "F100Qty": 30
+              "F100Qty": 30,
+              "F100Fast": 6.77,
+              "F100FastQty": 30,
+              "F100Avg123": 7.41,
+              "F100Avg123Qty": 20,
+              "F100Last5": 7.33,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.38,
+              "F100AvgQty": 30
             },
             {
               "Horse No": 2,
@@ -2767,7 +5119,15 @@
               "Barrier": "FR2",
               "Driver": "Jack Chapple",
               "F100Med": 7.12,
-              "F100Qty": 59
+              "F100Qty": 59,
+              "F100Fast": 6.51,
+              "F100FastQty": 59,
+              "F100Avg123": 7.06,
+              "F100Avg123Qty": 22,
+              "F100Last5": 7.54,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.2,
+              "F100AvgQty": 59
             },
             {
               "Horse No": 3,
@@ -2775,7 +5135,15 @@
               "Barrier": "FR3",
               "Driver": "Zac Chappenden",
               "F100Med": 7.09,
-              "F100Qty": 52
+              "F100Qty": 52,
+              "F100Fast": 6.65,
+              "F100FastQty": 52,
+              "F100Avg123": 7.05,
+              "F100Avg123Qty": 27,
+              "F100Last5": 7.03,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.19,
+              "F100AvgQty": 52
             },
             {
               "Horse No": 4,
@@ -2783,7 +5151,15 @@
               "Barrier": "FR4",
               "Driver": "Nathan Rothwell",
               "F100Med": 7.2,
-              "F100Qty": 36
+              "F100Qty": 36,
+              "F100Fast": 6.63,
+              "F100FastQty": 36,
+              "F100Avg123": 7.18,
+              "F100Avg123Qty": 11,
+              "F100Last5": 7.44,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.26,
+              "F100AvgQty": 36
             },
             {
               "Horse No": 5,
@@ -2791,7 +5167,15 @@
               "Barrier": "FR5",
               "Driver": "Holly Chalmers",
               "F100Med": 7.01,
-              "F100Qty": 31
+              "F100Qty": 31,
+              "F100Fast": 6.64,
+              "F100FastQty": 31,
+              "F100Avg123": 6.86,
+              "F100Avg123Qty": 7,
+              "F100Last5": 7.34,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.14,
+              "F100AvgQty": 31
             },
             {
               "Horse No": 6,
@@ -2799,7 +5183,15 @@
               "Barrier": "SR1",
               "Driver": "Dallas Wilkins",
               "F100Med": 7.24,
-              "F100Qty": 37
+              "F100Qty": 37,
+              "F100Fast": 6.72,
+              "F100FastQty": 37,
+              "F100Avg123": 7.43,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.08,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.54,
+              "F100AvgQty": 37
             },
             {
               "Horse No": 7,
@@ -2807,7 +5199,15 @@
               "Barrier": "SR2",
               "Driver": "Hannah Anforth",
               "F100Med": 6.78,
-              "F100Qty": 57
+              "F100Qty": 57,
+              "F100Fast": 6.49,
+              "F100FastQty": 57,
+              "F100Avg123": 6.8,
+              "F100Avg123Qty": 29,
+              "F100Last5": 6.99,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.92,
+              "F100AvgQty": 57
             },
             {
               "Horse No": 8,
@@ -2815,7 +5215,15 @@
               "Barrier": "SR3",
               "Driver": "Adam Richardson",
               "F100Med": 7.0,
-              "F100Qty": 93
+              "F100Qty": 93,
+              "F100Fast": 6.52,
+              "F100FastQty": 93,
+              "F100Avg123": 6.99,
+              "F100Avg123Qty": 72,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.11,
+              "F100AvgQty": 93
             },
             {
               "Horse No": 9,
@@ -2823,7 +5231,15 @@
               "Barrier": "SR4",
               "Driver": "Noel Parrish",
               "F100Med": 6.97,
-              "F100Qty": 33
+              "F100Qty": 33,
+              "F100Fast": 6.54,
+              "F100FastQty": 33,
+              "F100Avg123": 6.86,
+              "F100Avg123Qty": 21,
+              "F100Last5": 7.35,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.02,
+              "F100AvgQty": 33
             }
           ]
         },
@@ -2842,7 +5258,15 @@
               "Barrier": "FR1",
               "Driver": "nan",
               "F100Med": 7.01,
-              "F100Qty": 67
+              "F100Qty": 67,
+              "F100Fast": 6.48,
+              "F100FastQty": 67,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 32,
+              "F100Last5": 7.4,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.15,
+              "F100AvgQty": 67
             },
             {
               "Horse No": 2,
@@ -2850,7 +5274,15 @@
               "Barrier": "FR2",
               "Driver": "Gary Bond",
               "F100Med": 6.85,
-              "F100Qty": 26
+              "F100Qty": 26,
+              "F100Fast": 6.46,
+              "F100FastQty": 26,
+              "F100Avg123": 6.71,
+              "F100Avg123Qty": 8,
+              "F100Last5": 7.07,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.98,
+              "F100AvgQty": 26
             },
             {
               "Horse No": 3,
@@ -2858,7 +5290,15 @@
               "Barrier": "FR3",
               "Driver": "nan",
               "F100Med": 7.02,
-              "F100Qty": 49
+              "F100Qty": 49,
+              "F100Fast": 6.42,
+              "F100FastQty": 49,
+              "F100Avg123": 7.1,
+              "F100Avg123Qty": 26,
+              "F100Last5": 7.5,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.17,
+              "F100AvgQty": 49
             },
             {
               "Horse No": 4,
@@ -2866,7 +5306,15 @@
               "Barrier": "FR4",
               "Driver": "Nathan Rothwell",
               "F100Med": 6.89,
-              "F100Qty": 73
+              "F100Qty": 73,
+              "F100Fast": 6.36,
+              "F100FastQty": 73,
+              "F100Avg123": 7.07,
+              "F100Avg123Qty": 37,
+              "F100Last5": 7.86,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.21,
+              "F100AvgQty": 73
             },
             {
               "Horse No": 5,
@@ -2874,7 +5322,15 @@
               "Barrier": "FR5",
               "Driver": "Peter Greig",
               "F100Med": 7.29,
-              "F100Qty": 12
+              "F100Qty": 12,
+              "F100Fast": 6.5,
+              "F100FastQty": 12,
+              "F100Avg123": 7.05,
+              "F100Avg123Qty": 6,
+              "F100Last5": 7.0,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.24,
+              "F100AvgQty": 12
             },
             {
               "Horse No": 6,
@@ -2882,7 +5338,15 @@
               "Barrier": "SR1",
               "Driver": "Dannielle McMullen",
               "F100Med": 6.61,
-              "F100Qty": 17
+              "F100Qty": 17,
+              "F100Fast": 6.35,
+              "F100FastQty": 17,
+              "F100Avg123": 6.7,
+              "F100Avg123Qty": 6,
+              "F100Last5": 6.59,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.69,
+              "F100AvgQty": 17
             },
             {
               "Horse No": 7,
@@ -2890,7 +5354,15 @@
               "Barrier": "SR2",
               "Driver": "nan",
               "F100Med": 7.09,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.57,
+              "F100FastQty": 32,
+              "F100Avg123": 7.13,
+              "F100Avg123Qty": 12,
+              "F100Last5": 8.11,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 32
             },
             {
               "Horse No": 8,
@@ -2898,7 +5370,15 @@
               "Barrier": "SR3",
               "Driver": "Jack Chapple",
               "F100Med": null,
-              "F100Qty": 0
+              "F100Qty": null,
+              "F100Fast": null,
+              "F100FastQty": null,
+              "F100Avg123": null,
+              "F100Avg123Qty": null,
+              "F100Last5": null,
+              "F100Last5Qty": null,
+              "F100Avg": null,
+              "F100AvgQty": null
             }
           ]
         },
@@ -2917,7 +5397,15 @@
               "Barrier": "FR1",
               "Driver": "Gary Whitaker",
               "F100Med": 6.92,
-              "F100Qty": 62
+              "F100Qty": 62,
+              "F100Fast": 6.39,
+              "F100FastQty": 62,
+              "F100Avg123": 6.77,
+              "F100Avg123Qty": 19,
+              "F100Last5": 7.58,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.13,
+              "F100AvgQty": 62
             },
             {
               "Horse No": 2,
@@ -2925,7 +5413,15 @@
               "Barrier": "FR2",
               "Driver": "Layne Dwyer",
               "F100Med": 7.24,
-              "F100Qty": 40
+              "F100Qty": 40,
+              "F100Fast": 6.32,
+              "F100FastQty": 40,
+              "F100Avg123": 7.04,
+              "F100Avg123Qty": 18,
+              "F100Last5": 7.72,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.26,
+              "F100AvgQty": 40
             },
             {
               "Horse No": 3,
@@ -2933,7 +5429,15 @@
               "Barrier": "FR3",
               "Driver": "Adam Richardson",
               "F100Med": 6.99,
-              "F100Qty": 23
+              "F100Qty": 23,
+              "F100Fast": 6.25,
+              "F100FastQty": 23,
+              "F100Avg123": 6.93,
+              "F100Avg123Qty": 13,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.03,
+              "F100AvgQty": 23
             },
             {
               "Horse No": 4,
@@ -2941,7 +5445,15 @@
               "Barrier": "FR4",
               "Driver": "Hannah Anforth",
               "F100Med": 7.28,
-              "F100Qty": 52
+              "F100Qty": 52,
+              "F100Fast": 6.63,
+              "F100FastQty": 52,
+              "F100Avg123": 7.07,
+              "F100Avg123Qty": 24,
+              "F100Last5": 7.31,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.33,
+              "F100AvgQty": 52
             },
             {
               "Horse No": 5,
@@ -2949,7 +5461,15 @@
               "Barrier": "FR5",
               "Driver": "Zac Chappenden",
               "F100Med": 6.82,
-              "F100Qty": 57
+              "F100Qty": 57,
+              "F100Fast": 5.63,
+              "F100FastQty": 57,
+              "F100Avg123": 6.76,
+              "F100Avg123Qty": 29,
+              "F100Last5": 7.04,
+              "F100Last5Qty": 5,
+              "F100Avg": 6.89,
+              "F100AvgQty": 57
             },
             {
               "Horse No": 6,
@@ -2957,7 +5477,15 @@
               "Barrier": "SR1",
               "Driver": "Gary Bond",
               "F100Med": 7.33,
-              "F100Qty": 32
+              "F100Qty": 32,
+              "F100Fast": 6.51,
+              "F100FastQty": 32,
+              "F100Avg123": 7.84,
+              "F100Avg123Qty": 17,
+              "F100Last5": 7.39,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.67,
+              "F100AvgQty": 32
             },
             {
               "Horse No": 7,
@@ -2965,7 +5493,15 @@
               "Barrier": "SR2",
               "Driver": "Lola Weidemann",
               "F100Med": 7.08,
-              "F100Qty": 89
+              "F100Qty": 89,
+              "F100Fast": 6.47,
+              "F100FastQty": 89,
+              "F100Avg123": 7.03,
+              "F100Avg123Qty": 50,
+              "F100Last5": 8.1,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.16,
+              "F100AvgQty": 89
             },
             {
               "Horse No": 8,
@@ -2973,7 +5509,15 @@
               "Barrier": "SR3",
               "Driver": "Lola Weidemann",
               "F100Med": 7.42,
-              "F100Qty": 68
+              "F100Qty": 68,
+              "F100Fast": 6.68,
+              "F100FastQty": 68,
+              "F100Avg123": 7.15,
+              "F100Avg123Qty": 29,
+              "F100Last5": 7.3,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.46,
+              "F100AvgQty": 68
             },
             {
               "Horse No": 9,
@@ -2981,7 +5525,15 @@
               "Barrier": "SR4",
               "Driver": "Nathan Rothwell",
               "F100Med": 7.01,
-              "F100Qty": 52
+              "F100Qty": 52,
+              "F100Fast": 6.4,
+              "F100FastQty": 52,
+              "F100Avg123": 7.61,
+              "F100Avg123Qty": 20,
+              "F100Last5": 8.51,
+              "F100Last5Qty": 5,
+              "F100Avg": 7.57,
+              "F100AvgQty": 52
             }
           ]
         }
