@@ -464,7 +464,7 @@ function getPostX() {
     case "100":
       return 520;
     case "200":
-      return 1040;
+      return 1000;
     default:
       return 760;
   }
