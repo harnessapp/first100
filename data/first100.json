@@ -174,7 +174,7 @@
               "Horse": "BETTOR BE BRONSKI",
               "Barrier": "FR2",
               "Driver": "Nathan Dawson",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -214,7 +214,7 @@
               "Horse": "ZORBA DAN",
               "Barrier": "SR1",
               "Driver": "Pete McMullen",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             }
           ]
@@ -831,7 +831,7 @@
               "Horse": "LOCHINVAR CAMARO",
               "Barrier": "FR3",
               "Driver": "Matt Elkins",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1120,7 +1120,7 @@
               "Horse": "ROSTOVA",
               "Barrier": "FR7",
               "Driver": "Matt Elkins",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1294,7 +1294,7 @@
               "Horse": "TILLY DUNNAGE NZ",
               "Barrier": "FR6",
               "Driver": "Pete McMullen",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1393,7 +1393,7 @@
               "Horse": "IMA BOOTY SHAKER NZ",
               "Barrier": "FR7",
               "Driver": "Pete McMullen",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1619,7 +1619,7 @@
               "Horse": "MY PURPLE PATCH",
               "Barrier": "FR6",
               "Driver": "Jayson Finnis",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1627,7 +1627,7 @@
               "Horse": "MY ULTIMATE MARIO NZ",
               "Barrier": "FR7",
               "Driver": "Jonah Hutchinson",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1750,7 +1750,7 @@
               "Horse": "OUR INDIFFERENCE NZ",
               "Barrier": "SR3",
               "Driver": "Shane Graham",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             }
           ]
@@ -1777,7 +1777,7 @@
               "Horse": "BIGGER THE BETTOR NZ",
               "Barrier": "FR2",
               "Driver": "Adam Richardson",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1868,7 +1868,7 @@
               "Horse": "RAKERO ICE NZ",
               "Barrier": "FR3",
               "Driver": "Angus Garrard",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -1924,7 +1924,7 @@
               "Horse": "SALLY BIGTIME",
               "Barrier": "SR3",
               "Driver": "Tom Callaghan",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             }
           ]
@@ -2042,7 +2042,7 @@
               "Horse": "MISSED CONSEQUENCES",
               "Barrier": "FR1",
               "Driver": "Matt Elkins",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -2264,7 +2264,7 @@
               "Horse": "SHES CRYSTAL NZ",
               "Barrier": "SR1",
               "Driver": "Layne Dwyer",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -2490,7 +2490,7 @@
               "Horse": "ONEANDONLY",
               "Barrier": "SR1",
               "Driver": "Gary Bond",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             },
             {
@@ -2897,7 +2897,7 @@
               "Horse": "THE REAL ROCKETMAN NZ",
               "Barrier": "SR3",
               "Driver": "Jack Chapple",
-              "F100Med": NaN,
+              "F100Med": null,
               "F100Qty": 0
             }
           ]
