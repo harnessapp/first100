@@ -320,5 +320,5 @@ body {
 
 /* YELLOW horses (BL ≥ 15% and Ld < 15% and Dth < 15%) */
 .pace-yellow .horse-icon {
-  filter: hue-rotate(200deg) saturate(2.5) brightness(1.2);
+  filter: hue-rotate(200deg) saturate(5) brightness(1.6);
 }
