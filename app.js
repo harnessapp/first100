@@ -656,8 +656,10 @@ function getPaceClass(r) {
   const dth = Number(r.dthPct);
 
   if (ld >= 15) return "pace-green";
-  if (dth >= 15) return "pace-red";
-  if (bl >= 15) return "pace-yellow";
+
+  if (dth >= 15 && ld < 15) return "pace-red";
+
+  if (bl >= 15 && ld < 15 && dth < 15) return "pace-yellow";
 
   return "";
 }
