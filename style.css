@@ -308,20 +308,17 @@ body {
   border-color: #111;
 }
 
-.pace-green .horse-wrap {
-  filter:
-    drop-shadow(0 0 8px rgba(90, 180, 90, 1))
-    drop-shadow(0 -2px 10px rgba(90, 180, 90, 0.75));
+/* GREEN horses (Ld ≥ 15%) */
+.pace-green .horse-icon {
+  filter: hue-rotate(90deg) saturate(3) brightness(1.2);
 }
 
-.pace-red .horse-wrap {
-  filter:
-    drop-shadow(0 0 8px rgba(220, 80, 80, 1))
-    drop-shadow(0 -2px 10px rgba(220, 80, 80, 0.75));
+/* RED horses (Dth ≥ 15% and Ld < 15%) */
+.pace-red .horse-icon {
+  filter: hue-rotate(-25deg) saturate(3) brightness(1.2);
 }
 
-.pace-yellow .horse-wrap {
-  filter:
-    drop-shadow(0 0 8px rgba(235, 190, 70, 1))
-    drop-shadow(0 -2px 10px rgba(235, 190, 70, 0.75));
+/* YELLOW horses (BL ≥ 15% and Ld < 15% and Dth < 15%) */
+.pace-yellow .horse-icon {
+  filter: hue-rotate(50deg) saturate(2.5) brightness(1.2);
 }
