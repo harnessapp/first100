@@ -7,6 +7,7 @@ let selectedMetric = "weighted";
 let selectedDistance = "100";
 
 let playTimer = null;
+let playRaf = null;
 let isPlaying = false;
 
 let currentMap = {
@@ -185,21 +186,32 @@ function rebuildRaceOptions() {
   renderSelectedRace();
 }
 
-function renderSelectedRace() {
-  const meeting = filteredMeetings.find((m) => m.meetingKey === selectedMeetingKey);
-  if (!meeting) return;
+function getCurrentMeeting() {
+  return filteredMeetings.find((m) => m.meetingKey === selectedMeetingKey) || null;
+}
+
+function getCurrentRace() {
+  const meeting = getCurrentMeeting();
+  if (!meeting) return null;
 
   const sortedRaces = [...meeting.races].sort(
     (a, b) => raceNoSortValue(a.raceNo) - raceNoSortValue(b.raceNo)
   );
 
-  const race = sortedRaces.find((r) => r.raceKey === selectedRaceKey);
-  if (!race) return;
+  return sortedRaces.find((r) => r.raceKey === selectedRaceKey) || null;
+}
 
-  document.getElementById("raceTitle").textContent =
-    `${buildRaceTitle(meeting, race)} — ${distanceTitle()} ${metricTitle()}`;
+function setRaceTitle(text) {
+  document.getElementById("raceTitle").textContent = text;
+}
 
-  renderEarlySpeedMap(race);
+function renderSelectedRace() {
+  const meeting = getCurrentMeeting();
+  const race = getCurrentRace();
+  if (!meeting || !race) return;
+
+  setRaceTitle(`${buildRaceTitle(meeting, race)} — ${distanceTitle()} ${metricTitle()}`);
+  renderEarlySpeedMap(race, selectedDistance);
 }
 
 function buildRaceTitle(meeting, race) {
@@ -222,48 +234,53 @@ function raceNoSortValue(v) {
   return Number.isFinite(n) ? n : 9999;
 }
 
-function currentPrefix() {
-  return `F${selectedDistance}`;
+function currentPrefix(distanceOverride = null) {
+  const d = distanceOverride || selectedDistance;
+  return `F${d}`;
 }
 
-function metricValueKey() {
+function metricValueKey(distanceOverride = null) {
+  const prefix = currentPrefix(distanceOverride);
+
   switch (selectedMetric) {
     case "fast":
-      return `${currentPrefix()}Fast`;
+      return `${prefix}Fast`;
     case "avg123":
-      return `${currentPrefix()}Avg123`;
+      return `${prefix}Avg123`;
     case "last5":
-      return `${currentPrefix()}Last5`;
+      return `${prefix}Last5`;
     case "avg":
-      return `${currentPrefix()}Avg`;
+      return `${prefix}Avg`;
     case "med":
-      return `${currentPrefix()}Med`;
+      return `${prefix}Med`;
     case "weighted":
     default:
       return null;
   }
 }
 
-function metricQtyKey() {
+function metricQtyKey(distanceOverride = null) {
+  const prefix = currentPrefix(distanceOverride);
+
   switch (selectedMetric) {
     case "fast":
-      return `${currentPrefix()}FastQty`;
+      return `${prefix}FastQty`;
     case "avg123":
-      return `${currentPrefix()}Avg123Qty`;
+      return `${prefix}Avg123Qty`;
     case "last5":
-      return `${currentPrefix()}Last5Qty`;
+      return `${prefix}Last5Qty`;
     case "avg":
-      return `${currentPrefix()}AvgQty`;
+      return `${prefix}AvgQty`;
     case "med":
-      return `${currentPrefix()}Qty`;
+      return `${prefix}Qty`;
     case "weighted":
     default:
       return null;
   }
 }
 
-function weightedMetric(r) {
-  const prefix = currentPrefix();
+function weightedMetric(r, distanceOverride = null) {
+  const prefix = currentPrefix(distanceOverride);
 
   const components = [
     { value: Number(r[`${prefix}Med`]), weight: 0.30, qty: Number(r[`${prefix}Qty`]) },
@@ -293,13 +310,13 @@ function weightedMetric(r) {
   };
 }
 
-function getMetricForRunner(r) {
+function getMetricForRunner(r, distanceOverride = null) {
   if (selectedMetric === "weighted") {
-    return weightedMetric(r);
+    return weightedMetric(r, distanceOverride);
   }
 
-  const valueKey = metricValueKey();
-  const qtyKey = metricQtyKey();
+  const valueKey = metricValueKey(distanceOverride);
+  const qtyKey = metricQtyKey(distanceOverride);
 
   return {
     value: Number(r[valueKey]),
@@ -331,12 +348,14 @@ function metricLabel() {
   }
 }
 
-function distanceTitle() {
-  return `${selectedDistance}m`;
+function distanceTitle(distanceOverride = null) {
+  return `${distanceOverride || selectedDistance}m`;
 }
 
-function getPostX() {
-  switch (selectedDistance) {
+function getPostX(distanceOverride = null) {
+  const d = distanceOverride || selectedDistance;
+
+  switch (d) {
     case "50":
       return 260;
     case "100":
@@ -363,7 +382,13 @@ function stopPlay() {
     clearTimeout(playTimer);
     playTimer = null;
   }
+  if (playRaf) {
+    cancelAnimationFrame(playRaf);
+    playRaf = null;
+  }
+
   isPlaying = false;
+  restoreMapTransitions();
   updatePlayButton();
 }
 
@@ -374,61 +399,6 @@ function updatePlayButton() {
   btn.textContent = isPlaying ? "Pause" : "▶ Play";
   btn.classList.toggle("active", isPlaying);
 }
-
-function playDistances() {
-  if (isPlaying) {
-    stopPlay();
-    return;
-  }
-
-  isPlaying = true;
-  updatePlayButton();
-
-  const MOVE_TIME = 5000;
-  const OVERLAP_MS = 400; // start next leg slightly before the first fully finishes
-
-  // Snap instantly to 50 first
-  const runnersNow = document.querySelectorAll(".map-runner");
-  const postNow = document.querySelector(".map-post");
-  const postLabelNow = document.querySelector(".map-post-label");
-
-  runnersNow.forEach((el) => {
-    el.style.transition = "none";
-  });
-  if (postNow) postNow.style.transition = "none";
-  if (postLabelNow) postLabelNow.style.transition = "none";
-
-  setSelectedDistance("50");
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      const runnersAfter = document.querySelectorAll(".map-runner");
-      const postAfter = document.querySelector(".map-post");
-      const postLabelAfter = document.querySelector(".map-post-label");
-
-      runnersAfter.forEach((el) => {
-        el.style.transition = "";
-      });
-      if (postAfter) postAfter.style.transition = "";
-      if (postLabelAfter) postLabelAfter.style.transition = "";
-
-      // Leg 1: 50 -> 100
-      setSelectedDistance("100");
-
-      playTimer = setTimeout(() => {
-        if (!isPlaying) return;
-
-        // Leg 2: begin just before leg 1 fully ends
-        setSelectedDistance("200");
-
-        playTimer = setTimeout(() => {
-          stopPlay();
-        }, MOVE_TIME);
-      }, MOVE_TIME - OVERLAP_MS);
-    });
-  });
-}
-
 
 function resetMapContainer(html) {
   const container = document.getElementById("mapContainer");
@@ -508,7 +478,7 @@ function createRunnerElement(r) {
   return el;
 }
 
-function updateRunnerElement(el, r) {
+function updateRunnerElement(el, r, distanceForTooltip = null) {
   el.classList.toggle("unknown", !r.isKnown);
 
   const cloth = el.querySelector(".cloth");
@@ -517,22 +487,37 @@ function updateRunnerElement(el, r) {
 
   el.querySelector(".tooltip-title").textContent = `${r.no}. ${r.name} (${r.barrier})`;
   el.querySelector(".metric-line").textContent =
-    `${distanceTitle()} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})`;
+    `${distanceTitle(distanceForTooltip)} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})`;
   el.querySelector(".driver-line").textContent = `Dr: ${r.driver || "-"}`;
 
   el.style.left = `${r.displayX}px`;
   el.style.top = `${r.displayY}px`;
 }
 
-function renderEarlySpeedMap(race) {
+function disableMapTransitions() {
+  Object.values(currentMap.runnersByKey).forEach((el) => {
+    el.style.transition = "none";
+  });
+  if (currentMap.post) currentMap.post.style.transition = "none";
+  if (currentMap.postLabel) currentMap.postLabel.style.transition = "none";
+}
+
+function restoreMapTransitions() {
+  Object.values(currentMap.runnersByKey).forEach((el) => {
+    el.style.transition = "";
+  });
+  if (currentMap.post) currentMap.post.style.transition = "";
+  if (currentMap.postLabel) currentMap.postLabel.style.transition = "";
+}
+
+function computeRaceLayout(race, distanceOverride) {
   const start = String(race.start || race.Start || "").toUpperCase();
   if (start !== "MOBILE") {
-    resetMapContainer(`<div class="empty">(only mobile-start races shown)</div>`);
-    return;
+    return { error: "(only mobile-start races shown)" };
   }
 
   const runners = (race.runners || []).map((r) => {
-    const metric = getMetricForRunner(r);
+    const metric = getMetricForRunner(r, distanceOverride);
 
     return {
       no: Number(r["Horse No"] ?? r.no),
@@ -545,24 +530,20 @@ function renderEarlySpeedMap(race) {
   }).filter((r) => r.barrier && r.barrier !== "SCR");
 
   if (!runners.length) {
-    resetMapContainer(`<div class="empty">(no runners)</div>`);
-    return;
+    return { error: "(no runners)" };
   }
 
   const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
   if (!valid.length) {
-    resetMapContainer(`<div class="empty">(no ${currentPrefix()} data)</div>`);
-    return;
+    return { error: `(no ${currentPrefix(distanceOverride)} data)` };
   }
-
-  ensureMapShell();
 
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
   const UNKNOWN_BACK_MARKER_M = 6;
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
-  const POST_X = getPostX();
+  const POST_X = getPostX(distanceOverride);
 
   const fastest = Math.min(...valid.map((r) => r.med));
 
@@ -616,15 +597,31 @@ function renderEarlySpeedMap(race) {
     }
   });
 
-  currentMap.post.style.left = `${POST_X}px`;
+  const runnersByKey = {};
+  runners.forEach((r) => {
+    runnersByKey[runnerKey(r)] = r;
+  });
+
+  return {
+    distance: distanceOverride,
+    postX: POST_X,
+    runners,
+    runnersByKey
+  };
+}
+
+function syncMapToLayout(layout, labelText = null, tooltipDistance = null) {
+  ensureMapShell();
+
+  currentMap.post.style.left = `${layout.postX}px`;
   currentMap.post.style.right = "auto";
 
-  currentMap.postLabel.textContent = selectedDistance;
-  currentMap.postLabel.style.left = `${POST_X}px`;
+  currentMap.postLabel.textContent = labelText || layout.distance;
+  currentMap.postLabel.style.left = `${layout.postX}px`;
   currentMap.postLabel.style.right = "auto";
   currentMap.postLabel.style.transform = "translateX(-50%)";
 
-  const nextKeys = new Set(runners.map((r) => runnerKey(r)));
+  const nextKeys = new Set(layout.runners.map((r) => runnerKey(r)));
 
   Object.keys(currentMap.runnersByKey).forEach((key) => {
     if (!nextKeys.has(key)) {
@@ -633,7 +630,7 @@ function renderEarlySpeedMap(race) {
     }
   });
 
-  runners.forEach((r) => {
+  layout.runners.forEach((r) => {
     const key = runnerKey(r);
     let el = currentMap.runnersByKey[key];
 
@@ -641,15 +638,154 @@ function renderEarlySpeedMap(race) {
       el = createRunnerElement(r);
       currentMap.runnersByKey[key] = el;
       currentMap.track.appendChild(el);
-
-      el.style.left = `${r.displayX}px`;
-      el.style.top = `${r.displayY}px`;
-
-      requestAnimationFrame(() => {
-        updateRunnerElement(el, r);
-      });
-    } else {
-      updateRunnerElement(el, r);
     }
+
+    updateRunnerElement(el, r, tooltipDistance || layout.distance);
   });
+}
+
+function interpolateRunner(a, b, t) {
+  return {
+    no: a?.no ?? b?.no ?? 0,
+    name: a?.name ?? b?.name ?? "",
+    barrier: a?.barrier ?? b?.barrier ?? "",
+    driver: a?.driver ?? b?.driver ?? "",
+    med: t < 0.5 ? (a?.med ?? b?.med) : (b?.med ?? a?.med),
+    qty: t < 0.5 ? (a?.qty ?? b?.qty) : (b?.qty ?? a?.qty),
+    isKnown: (a?.isKnown ?? false) || (b?.isKnown ?? false),
+    displayX: lerp(a?.displayX ?? b?.displayX ?? 0, b?.displayX ?? a?.displayX ?? 0, t),
+    displayY: lerp(a?.displayY ?? b?.displayY ?? 0, b?.displayY ?? a?.displayY ?? 0, t)
+  };
+}
+
+function lerp(a, b, t) {
+  return a + (b - a) * t;
+}
+
+function playDistances() {
+  if (isPlaying) {
+    stopPlay();
+    return;
+  }
+
+  const meeting = getCurrentMeeting();
+  const race = getCurrentRace();
+  if (!meeting || !race) return;
+
+  const layout50 = computeRaceLayout(race, "50");
+  const layout100 = computeRaceLayout(race, "100");
+  const layout200 = computeRaceLayout(race, "200");
+
+  if (layout50.error || layout100.error || layout200.error) {
+    const msg = layout50.error || layout100.error || layout200.error || "(play unavailable)";
+    resetMapContainer(`<div class="empty">${msg}</div>`);
+    return;
+  }
+
+  isPlaying = true;
+  updatePlayButton();
+
+  // Snap instantly to 50
+  selectedDistance = "50";
+  document.querySelectorAll("[data-distance]").forEach((b) => {
+    b.classList.toggle("active", b.dataset.distance === selectedDistance);
+  });
+
+  setRaceTitle(`${buildRaceTitle(meeting, race)} — Play`);
+  syncMapToLayout(layout50, "50", "50");
+  disableMapTransitions();
+
+  // Let the DOM paint, then animate with RAF
+  requestAnimationFrame(() => {
+    const SEGMENT_1_MS = 3200; // 50 -> 100
+    const SEGMENT_2_MS = 4200; // 100 -> 200
+
+    const totalMs = SEGMENT_1_MS + SEGMENT_2_MS;
+    const startTs = performance.now();
+
+    function frame(now) {
+      if (!isPlaying) return;
+
+      const elapsed = now - startTs;
+
+      let phase;
+      let t;
+
+      if (elapsed <= SEGMENT_1_MS) {
+        phase = "50-100";
+        t = elapsed / SEGMENT_1_MS;
+      } else {
+        phase = "100-200";
+        t = Math.min(1, (elapsed - SEGMENT_1_MS) / SEGMENT_2_MS);
+      }
+
+      const runnersByKey = {};
+      const allKeys = new Set([
+        ...Object.keys(layout50.runnersByKey),
+        ...Object.keys(layout100.runnersByKey),
+        ...Object.keys(layout200.runnersByKey)
+      ]);
+
+      if (phase === "50-100") {
+        allKeys.forEach((key) => {
+          runnersByKey[key] = interpolateRunner(layout50.runnersByKey[key], layout100.runnersByKey[key], t);
+        });
+
+        const interpLayout = {
+          distance: "100",
+          postX: lerp(layout50.postX, layout100.postX, t),
+          runners: Object.values(runnersByKey),
+          runnersByKey
+        };
+
+        const label = t < 0.5 ? "50" : "100";
+        const tooltipDistance = t < 0.5 ? "50" : "100";
+        syncMapToLayout(interpLayout, label, tooltipDistance);
+      } else {
+        allKeys.forEach((key) => {
+          runnersByKey[key] = interpolateRunner(layout100.runnersByKey[key], layout200.runnersByKey[key], t);
+        });
+
+        const interpLayout = {
+          distance: "200",
+          postX: lerp(layout100.postX, layout200.postX, t),
+          runners: Object.values(runnersByKey),
+          runnersByKey
+        };
+
+        const label = t < 0.25 ? "100" : "200";
+        const tooltipDistance = t < 0.25 ? "100" : "200";
+        syncMapToLayout(interpLayout, label, tooltipDistance);
+      }
+
+      if (elapsed < totalMs) {
+        playRaf = requestAnimationFrame(frame);
+      } else {
+        selectedDistance = "200";
+        document.querySelectorAll("[data-distance]").forEach((b) => {
+          b.classList.toggle("active", b.dataset.distance === selectedDistance);
+        });
+
+        syncMapToLayout(layout200, "200", "200");
+        restoreMapTransitions();
+        stopPlay();
+        setRaceTitle(`${buildRaceTitle(meeting, race)} — ${distanceTitle()} ${metricTitle()}`);
+      }
+    }
+
+    playRaf = requestAnimationFrame(frame);
+  });
+}
+
+function renderEarlySpeedMap(race, distanceOverride) {
+  const layout = computeRaceLayout(race, distanceOverride);
+
+  if (layout.error) {
+    resetMapContainer(`<div class="empty">${layout.error}</div>`);
+    return;
+  }
+
+  ensureMapShell();
+  restoreMapTransitions();
+  syncMapToLayout(layout, distanceOverride, distanceOverride);
 }
