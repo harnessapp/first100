@@ -6,6 +6,9 @@ let selectedRaceKey = "";
 let selectedMetric = "weighted";
 let selectedDistance = "100";
 
+let playTimer = null;
+let isPlaying = false;
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("./data/first100.json");
@@ -16,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     rawPayload = await response.json();
 
     document.getElementById("meetingSelect").addEventListener("change", (e) => {
+      stopPlay();
       selectedMeetingKey = e.target.value;
       selectedRaceKey = "";
       rebuildRaceOptions();
@@ -23,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.querySelectorAll("[data-metric]").forEach((btn) => {
       btn.addEventListener("click", () => {
+        stopPlay();
         selectedMetric = btn.dataset.metric || "weighted";
 
         document.querySelectorAll("[data-metric]").forEach((b) => {
@@ -35,20 +40,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.querySelectorAll("[data-distance]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        selectedDistance = btn.dataset.distance || "100";
-
-        document.querySelectorAll("[data-distance]").forEach((b) => {
-          b.classList.toggle("active", b.dataset.distance === selectedDistance);
-        });
-
-        renderSelectedRace();
+        stopPlay();
+        setSelectedDistance(btn.dataset.distance || "100");
       });
     });
+
+    const playBtn = document.getElementById("playToggle");
+    if (playBtn) {
+      playBtn.addEventListener("click", () => {
+        playDistances();
+      });
+    }
 
     selectedState = "QLD";
 
     buildStateOptions();
     rebuildMeetingOptions();
+    updatePlayButton();
   } catch (err) {
     console.error(err);
     document.getElementById("raceTitle").textContent = "Load error";
@@ -80,6 +88,7 @@ function makeStateBtn(label, value) {
   btn.textContent = label;
 
   btn.addEventListener("click", () => {
+    stopPlay();
     selectedState = value;
     selectedMeetingKey = "";
     selectedRaceKey = "";
@@ -155,6 +164,7 @@ function rebuildRaceOptions() {
     btn.textContent = race.raceNo || "?";
 
     btn.addEventListener("click", () => {
+      stopPlay();
       selectedRaceKey = race.raceKey;
       rebuildRaceOptions();
       renderSelectedRace();
@@ -316,6 +326,76 @@ function distanceTitle() {
   return `${selectedDistance}m`;
 }
 
+function getPostX() {
+  switch (selectedDistance) {
+    case "50":
+      return 260;
+    case "100":
+      return 520;
+    case "200":
+      return 1000;
+    default:
+      return 760;
+  }
+}
+
+function setSelectedDistance(distance) {
+  selectedDistance = distance;
+
+  document.querySelectorAll("[data-distance]").forEach((b) => {
+    b.classList.toggle("active", b.dataset.distance === selectedDistance);
+  });
+
+  renderSelectedRace();
+}
+
+function stopPlay() {
+  if (playTimer) {
+    clearTimeout(playTimer);
+    playTimer = null;
+  }
+  isPlaying = false;
+  updatePlayButton();
+}
+
+function updatePlayButton() {
+  const btn = document.getElementById("playToggle");
+  if (!btn) return;
+
+  btn.textContent = isPlaying ? "Pause" : "▶ Play";
+  btn.classList.toggle("active", isPlaying);
+}
+
+function playDistances() {
+  if (isPlaying) {
+    stopPlay();
+    return;
+  }
+
+  isPlaying = true;
+  updatePlayButton();
+
+  const sequence = ["50", "100", "200"];
+  let index = 0;
+
+  function step() {
+    if (!isPlaying) return;
+
+    setSelectedDistance(sequence[index]);
+    index += 1;
+
+    if (index < sequence.length) {
+      playTimer = setTimeout(step, 900);
+    } else {
+      playTimer = setTimeout(() => {
+        stopPlay();
+      }, 900);
+    }
+  }
+
+  step();
+}
+
 function renderEarlySpeedMap(race) {
   const container = document.getElementById("mapContainer");
   container.innerHTML = "";
@@ -420,6 +500,15 @@ function renderEarlySpeedMap(race) {
   `;
 
   const track = mapEl.querySelector(".map-track");
+  const post = mapEl.querySelector(".map-post");
+  const postLabel = mapEl.querySelector(".map-post-label");
+
+  post.style.left = `${POST_X}px`;
+  post.style.right = "auto";
+
+  postLabel.style.left = `${POST_X}px`;
+  postLabel.style.right = "auto";
+  postLabel.style.transform = "translateX(-50%)";
 
   runners.forEach((r) => {
     const el = document.createElement("div");
@@ -455,17 +544,4 @@ function renderEarlySpeedMap(race) {
   });
 
   container.appendChild(mapEl);
-}
-
-function getPostX() {
-  switch (selectedDistance) {
-    case "50":
-      return 260;
-    case "100":
-      return 520;
-    case "200":
-      return 1000;
-    default:
-      return 760;
-  }
 }

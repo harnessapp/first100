@@ -275,3 +275,35 @@ body {
 .speed-map {
   margin-left: 0;
 }
+
+.map-runner {
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    left 0.55s ease,
+    top 0.55s ease,
+    opacity 0.35s ease,
+    transform 0.55s ease;
+}
+
+.map-post,
+.map-post-label {
+  transition:
+    right 0.55s ease,
+    left 0.55s ease,
+    top 0.55s ease,
+    transform 0.55s ease;
+}
+
+#distanceTabs .play-tab {
+  width: 88px;
+  text-align: center;
+}
+
+#distanceTabs .play-tab.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
