@@ -387,8 +387,8 @@ function playDistances() {
   const sequence = ["50", "100", "200"];
   let index = 0;
 
-  const MOVE_TIME = 1400;   // slower travel
-  const HOLD_TIME = 250;    // shorter pause on each point
+  const MOVE_TIME = 3000;   // slower travel
+  const HOLD_TIME = 50;    // shorter pause on each point
 
   function step() {
     if (!isPlaying) return;
