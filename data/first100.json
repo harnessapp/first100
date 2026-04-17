@@ -11,6 +11,7 @@
       "meetingLabel": "Albion Park — 2026-04-17",
       "venue": "Albion Park",
       "date": "2026-04-17",
+      "firstRaceTime": "5:27 PM",
       "races": [
         {
           "raceKey": "qld_albion_park_2026-04-17_r1",
@@ -3239,6 +3240,7 @@
       "meetingLabel": "Geelong — 2026-04-17",
       "venue": "Geelong",
       "date": "2026-04-17",
+      "firstRaceTime": "6:33 PM",
       "races": [
         {
           "raceKey": "vic_geelong_2026-04-17_r1",
@@ -5392,6 +5394,7 @@
       "meetingLabel": "Mildura — 2026-04-17",
       "venue": "Mildura",
       "date": "2026-04-17",
+      "firstRaceTime": "1:47 PM",
       "races": [
         {
           "raceKey": "vic_mildura_2026-04-17_r1",
@@ -7818,6 +7821,7 @@
       "meetingLabel": "Newcastle — 2026-04-17",
       "venue": "Newcastle",
       "date": "2026-04-17",
+      "firstRaceTime": "5:52 PM",
       "races": [
         {
           "raceKey": "nsw_newcastle_2026-04-17_r1",
@@ -11319,6 +11323,7 @@
       "meetingLabel": "Parkes — 2026-04-17",
       "venue": "Parkes",
       "date": "2026-04-17",
+      "firstRaceTime": "6:37 PM",
       "races": [
         {
           "raceKey": "nsw_parkes_2026-04-17_r1",
@@ -14820,6 +14825,7 @@
       "meetingLabel": "Wagga — 2026-04-17",
       "venue": "Wagga",
       "date": "2026-04-17",
+      "firstRaceTime": "2:07 PM",
       "races": [
         {
           "raceKey": "nsw_wagga_2026-04-17_r1",
@@ -16806,6 +16812,7 @@
       "meetingLabel": "Albion Park — 2026-04-18",
       "venue": "Albion Park",
       "date": "2026-04-18",
+      "firstRaceTime": "5:04 PM",
       "races": [
         {
           "raceKey": "qld_albion_park_2026-04-18_r1",
@@ -20112,6 +20119,7 @@
       "meetingLabel": "Bendigo — 2026-04-18",
       "venue": "Bendigo",
       "date": "2026-04-18",
+      "firstRaceTime": "5:29 PM",
       "races": [
         {
           "raceKey": "vic_bendigo_2026-04-18_r1",
@@ -23652,6 +23660,7 @@
       "meetingLabel": "Menangle — 2026-04-18",
       "venue": "Menangle",
       "date": "2026-04-18",
+      "firstRaceTime": "5:18 PM",
       "races": [
         {
           "raceKey": "nsw_menangle_2026-04-18_r1",
@@ -27231,6 +27240,7 @@
       "meetingLabel": "Canberra — 2026-04-19",
       "venue": "Canberra",
       "date": "2026-04-19",
+      "firstRaceTime": "5:35 PM",
       "races": [
         {
           "raceKey": "nsw_canberra_2026-04-19_r1",
@@ -30771,6 +30781,7 @@
       "meetingLabel": "Coolamon — 2026-04-19",
       "venue": "Coolamon",
       "date": "2026-04-19",
+      "firstRaceTime": "12:25 PM",
       "races": [
         {
           "raceKey": "nsw_coolamon_2026-04-19_r1",
@@ -33832,6 +33843,7 @@
       "meetingLabel": "Cranbourne — 2026-04-19",
       "venue": "Cranbourne",
       "date": "2026-04-19",
+      "firstRaceTime": "5:26 PM",
       "races": [
         {
           "raceKey": "vic_cranbourne_2026-04-19_r1",
@@ -35751,6 +35763,7 @@
       "meetingLabel": "Marburg — 2026-04-19",
       "venue": "Marburg",
       "date": "2026-04-19",
+      "firstRaceTime": "12:13 PM",
       "races": [
         {
           "raceKey": "qld_marburg_2026-04-19_r1",
@@ -38422,6 +38435,7 @@
       "meetingLabel": "Maryborough — 2026-04-20",
       "venue": "Maryborough",
       "date": "2026-04-20",
+      "firstRaceTime": "12:15 PM",
       "races": [
         {
           "raceKey": "vic_maryborough_2026-04-20_r1",
@@ -41923,6 +41937,7 @@
       "meetingLabel": "Newcastle — 2026-04-20",
       "venue": "Newcastle",
       "date": "2026-04-20",
+      "firstRaceTime": "1:25 PM",
       "races": [
         {
           "raceKey": "nsw_newcastle_2026-04-20_r1",
@@ -44544,6 +44559,7 @@
       "meetingLabel": "Albion Park — 2026-04-21",
       "venue": "Albion Park",
       "date": "2026-04-21",
+      "firstRaceTime": "1:07 PM",
       "races": [
         {
           "raceKey": "qld_albion_park_2026-04-21_r1",
@@ -46892,6 +46908,7 @@
       "meetingLabel": "Menangle — 2026-04-21",
       "venue": "Menangle",
       "date": "2026-04-21",
+      "firstRaceTime": "1:25 PM",
       "races": [
         {
           "raceKey": "nsw_menangle_2026-04-21_r1",
@@ -50070,6 +50087,7 @@
       "meetingLabel": "Shepparton — 2026-04-21",
       "venue": "Shepparton",
       "date": "2026-04-21",
+      "firstRaceTime": "5:30 PM",
       "races": [
         {
           "raceKey": "vic_shepparton_2026-04-21_r1",
@@ -52301,6 +52319,7 @@
       "meetingLabel": "Bendigo — 2026-04-22",
       "venue": "Bendigo",
       "date": "2026-04-22",
+      "firstRaceTime": "5:52 PM",
       "races": [
         {
           "raceKey": "vic_bendigo_2026-04-22_r1",
