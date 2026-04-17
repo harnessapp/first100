@@ -387,6 +387,9 @@ function playDistances() {
   const sequence = ["50", "100", "200"];
   let index = 0;
 
+  const MOVE_TIME = 1400;   // slower travel
+  const HOLD_TIME = 250;    // shorter pause on each point
+
   function step() {
     if (!isPlaying) return;
 
@@ -394,11 +397,11 @@ function playDistances() {
     index += 1;
 
     if (index < sequence.length) {
-      playTimer = setTimeout(step, 1500);
+      playTimer = setTimeout(step, MOVE_TIME + HOLD_TIME);
     } else {
       playTimer = setTimeout(() => {
         stopPlay();
-      }, 1500);
+      }, MOVE_TIME + HOLD_TIME);
     }
   }
 

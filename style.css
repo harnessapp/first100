@@ -282,19 +282,19 @@ body {
   text-align: center;
   cursor: pointer;
   transition:
-    left 0.55s ease,
-    top 0.55s ease,
+    left 1.4s ease,
+    top 1.4s ease,
     opacity 0.35s ease,
-    transform 0.55s ease;
+    transform 1.4s ease;
 }
 
 .map-post,
 .map-post-label {
   transition:
-    right 0.55s ease,
-    left 0.55s ease,
-    top 0.55s ease,
-    transform 0.55s ease;
+    right 1.4s ease,
+    left 1.4s ease,
+    top 1.4s ease,
+    transform 1.4s ease;
 }
 
 #distanceTabs .play-tab {
