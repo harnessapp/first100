@@ -138,10 +138,8 @@ function rebuildMeetingOptions() {
   for (const meeting of filteredMeetings) {
     const option = document.createElement("option");
     option.value = meeting.meetingKey;
-
-    // Format label
-    option.textContent = `${meeting.venue} - ${formatMeetingLabel(meeting.date)}`;
-
+    const dayLabel = formatMeetingLabel(meeting.date);
+    option.textContent = `${meeting.venue} (${meeting.state}) - ${dayLabel}`;
     meetingSelect.appendChild(option);
   }
 
