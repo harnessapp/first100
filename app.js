@@ -486,6 +486,16 @@ el.innerHTML = `
 function updateRunnerElement(el, r, distanceForTooltip = null) {
   el.classList.toggle("unknown", !r.isKnown);
 
+  // Always reset pace classes first
+  el.classList.remove("pace-green", "pace-red", "pace-yellow");
+
+  // Only apply pace colouring if the runner has real data
+  if (r.isKnown) {
+    const paceClass = getPaceClass(r);
+    if (paceClass) {
+      el.classList.add(paceClass);
+    }
+  }
   const cloth = el.querySelector(".cloth");
   cloth.className = `cloth cloth-${r.no}`;
   cloth.textContent = r.no;
@@ -638,6 +648,18 @@ const runners = (race.runners || []).map((r) => {
     runners,
     runnersByKey
   };
+}
+
+function getPaceClass(r) {
+  const ld = Number(r.ldPct);
+  const bl = Number(r.blPct);
+  const dth = Number(r.dthPct);
+
+  if (ld >= 15) return "pace-green";
+  if (dth >= 15) return "pace-red";
+  if (bl >= 15) return "pace-yellow";
+
+  return "";
 }
 
 function syncMapToLayout(layout, labelText = null, tooltipDistance = null) {
