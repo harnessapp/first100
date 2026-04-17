@@ -388,7 +388,7 @@ function playDistances() {
   let index = 0;
 
   const MOVE_TIME = 1000;   // slower travel
-  const HOLD_TIME = 500;    // shorter pause on each point
+  const HOLD_TIME = 0;    // shorter pause on each point
 
   function step() {
     if (!isPlaying) return;
