@@ -387,8 +387,8 @@ function playDistances() {
   const sequence = ["50", "100", "200"];
   let index = 0;
 
-  const MOVE_TIME = 5000;   // slower travel
-  const HOLD_TIME = 0;    // shorter pause on each point
+  const MOVE_TIME = 5000;
+  const HOLD_TIME = 50;
 
   function step() {
     if (!isPlaying) return;
@@ -407,7 +407,6 @@ function playDistances() {
 
   step();
 }
-
 function resetMapContainer(html) {
   const container = document.getElementById("mapContainer");
   container.innerHTML = html;
