@@ -385,45 +385,46 @@ function playDistances() {
   updatePlayButton();
 
   const MOVE_TIME = 5000;
+  const OVERLAP_MS = 400; // start next leg slightly before the first fully finishes
 
-  // Jump instantly to 50 first
-  const oldRunnerTransition = document.querySelectorAll(".map-runner");
-  const oldPost = document.querySelector(".map-post");
-  const oldPostLabel = document.querySelector(".map-post-label");
+  // Snap instantly to 50 first
+  const runnersNow = document.querySelectorAll(".map-runner");
+  const postNow = document.querySelector(".map-post");
+  const postLabelNow = document.querySelector(".map-post-label");
 
-  oldRunnerTransition.forEach((el) => {
+  runnersNow.forEach((el) => {
     el.style.transition = "none";
   });
-  if (oldPost) oldPost.style.transition = "none";
-  if (oldPostLabel) oldPostLabel.style.transition = "none";
+  if (postNow) postNow.style.transition = "none";
+  if (postLabelNow) postLabelNow.style.transition = "none";
 
   setSelectedDistance("50");
 
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      const newRunnerTransition = document.querySelectorAll(".map-runner");
-      const newPost = document.querySelector(".map-post");
-      const newPostLabel = document.querySelector(".map-post-label");
+      const runnersAfter = document.querySelectorAll(".map-runner");
+      const postAfter = document.querySelector(".map-post");
+      const postLabelAfter = document.querySelector(".map-post-label");
 
-      newRunnerTransition.forEach((el) => {
+      runnersAfter.forEach((el) => {
         el.style.transition = "";
       });
-      if (newPost) newPost.style.transition = "";
-      if (newPostLabel) newPostLabel.style.transition = "";
+      if (postAfter) postAfter.style.transition = "";
+      if (postLabelAfter) postLabelAfter.style.transition = "";
 
-      // Animate to 100
+      // Leg 1: 50 -> 100
       setSelectedDistance("100");
 
       playTimer = setTimeout(() => {
         if (!isPlaying) return;
 
-        // Then animate straight to 200
+        // Leg 2: begin just before leg 1 fully ends
         setSelectedDistance("200");
 
         playTimer = setTimeout(() => {
           stopPlay();
         }, MOVE_TIME);
-      }, MOVE_TIME);
+      }, MOVE_TIME - OVERLAP_MS);
     });
   });
 }
