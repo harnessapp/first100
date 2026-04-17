@@ -9,6 +9,15 @@ let selectedDistance = "100";
 let playTimer = null;
 let isPlaying = false;
 
+let currentMap = {
+  container: null,
+  mapEl: null,
+  track: null,
+  post: null,
+  postLabel: null,
+  runnersByKey: {}
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("./data/first100.json");
@@ -113,7 +122,7 @@ function rebuildMeetingOptions() {
   if (!filteredMeetings.length) {
     document.getElementById("raceTabs").innerHTML = "";
     document.getElementById("raceTitle").textContent = "No meeting selected";
-    document.getElementById("mapContainer").innerHTML = `<div class="empty">(no meetings found)</div>`;
+    resetMapContainer(`<div class="empty">(no meetings found)</div>`);
     return;
   }
 
@@ -140,7 +149,7 @@ function rebuildRaceOptions() {
 
   if (!meeting || !Array.isArray(meeting.races) || !meeting.races.length) {
     document.getElementById("raceTitle").textContent = "No race selected";
-    document.getElementById("mapContainer").innerHTML = `<div class="empty">(no races found)</div>`;
+    resetMapContainer(`<div class="empty">(no races found)</div>`);
     return;
   }
 
@@ -385,24 +394,115 @@ function playDistances() {
     index += 1;
 
     if (index < sequence.length) {
-      playTimer = setTimeout(step, 900);
+      playTimer = setTimeout(step, 1500);
     } else {
       playTimer = setTimeout(() => {
         stopPlay();
-      }, 900);
+      }, 1500);
     }
   }
 
   step();
 }
 
-function renderEarlySpeedMap(race) {
+function resetMapContainer(html) {
   const container = document.getElementById("mapContainer");
+  container.innerHTML = html;
+  currentMap = {
+    container: null,
+    mapEl: null,
+    track: null,
+    post: null,
+    postLabel: null,
+    runnersByKey: {}
+  };
+}
+
+function ensureMapShell() {
+  const container = document.getElementById("mapContainer");
+
+  if (currentMap.container === container && currentMap.mapEl && currentMap.track) {
+    return;
+  }
+
   container.innerHTML = "";
 
+  const mapEl = document.createElement("div");
+  mapEl.className = "speed-map";
+
+  mapEl.innerHTML = `
+    <div class="map-track">
+      <div class="map-post"></div>
+      <div class="map-post-label"></div>
+    </div>
+  `;
+
+  container.appendChild(mapEl);
+
+  currentMap = {
+    container,
+    mapEl,
+    track: mapEl.querySelector(".map-track"),
+    post: mapEl.querySelector(".map-post"),
+    postLabel: mapEl.querySelector(".map-post-label"),
+    runnersByKey: {}
+  };
+}
+
+function runnerKey(r) {
+  return `${r.no}__${r.name}`;
+}
+
+function createRunnerElement(r) {
+  const el = document.createElement("div");
+  el.className = "map-runner";
+  el.dataset.runnerKey = runnerKey(r);
+
+  el.innerHTML = `
+    <div class="horse-wrap">
+      <div class="cloth cloth-${r.no}">${r.no}</div>
+      <img class="horse-icon" src="horse.png" alt="">
+    </div>
+    <div class="tooltip">
+      <div class="tooltip-title"></div>
+      <div class="tooltip-body metric-line"></div>
+      <div class="tooltip-body driver-line"></div>
+    </div>
+  `;
+
+  const tip = el.querySelector(".tooltip");
+  el.addEventListener("mouseenter", () => {
+    tip.style.display = "block";
+    tip.style.left = "78px";
+    tip.style.top = "-8px";
+  });
+  el.addEventListener("mouseleave", () => {
+    tip.style.display = "none";
+  });
+
+  return el;
+}
+
+function updateRunnerElement(el, r) {
+  el.classList.toggle("unknown", !r.isKnown);
+
+  const cloth = el.querySelector(".cloth");
+  cloth.className = `cloth cloth-${r.no}`;
+  cloth.textContent = r.no;
+
+  el.querySelector(".tooltip-title").textContent = `${r.no}. ${r.name} (${r.barrier})`;
+  el.querySelector(".metric-line").textContent =
+    `${distanceTitle()} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})`;
+  el.querySelector(".driver-line").textContent = `Dr: ${r.driver || "-"}`;
+
+  el.style.left = `${r.displayX}px`;
+  el.style.top = `${r.displayY}px`;
+}
+
+function renderEarlySpeedMap(race) {
   const start = String(race.start || race.Start || "").toUpperCase();
   if (start !== "MOBILE") {
-    container.innerHTML = `<div class="empty">(only mobile-start races shown)</div>`;
+    resetMapContainer(`<div class="empty">(only mobile-start races shown)</div>`);
     return;
   }
 
@@ -420,12 +520,17 @@ function renderEarlySpeedMap(race) {
   }).filter((r) => r.barrier && r.barrier !== "SCR");
 
   if (!runners.length) {
-    container.innerHTML = `<div class="empty">(no runners)</div>`;
+    resetMapContainer(`<div class="empty">(no runners)</div>`);
     return;
   }
 
-  const mapEl = document.createElement("div");
-  mapEl.className = "speed-map";
+  const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
+  if (!valid.length) {
+    resetMapContainer(`<div class="empty">(no ${currentPrefix()} data)</div>`);
+    return;
+  }
+
+  ensureMapShell();
 
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
@@ -433,12 +538,6 @@ function renderEarlySpeedMap(race) {
   const HORSE_WIDTH_PX = 96;
   const SAME_LANE_Y_OFFSET = -14;
   const POST_X = getPostX();
-
-  const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
-  if (!valid.length) {
-    container.innerHTML = `<div class="empty">(no ${currentPrefix()} data)</div>`;
-    return;
-  }
 
   const fastest = Math.min(...valid.map((r) => r.med));
 
@@ -466,7 +565,7 @@ function renderEarlySpeedMap(race) {
       r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
     }
 
-    const laneY = r.slot * LANE_GAP;
+    const laneY = (r.slot || 1) * LANE_GAP;
     r.displayY = laneY + SAME_LANE_Y_OFFSET;
 
     if (r.row === "FR") {
@@ -492,56 +591,40 @@ function renderEarlySpeedMap(race) {
     }
   });
 
-  mapEl.innerHTML = `
-    <div class="map-track">
-      <div class="map-post"></div>
-      <div class="map-post-label">${selectedDistance}</div>
-    </div>
-  `;
+  currentMap.post.style.left = `${POST_X}px`;
+  currentMap.post.style.right = "auto";
 
-  const track = mapEl.querySelector(".map-track");
-  const post = mapEl.querySelector(".map-post");
-  const postLabel = mapEl.querySelector(".map-post-label");
+  currentMap.postLabel.textContent = selectedDistance;
+  currentMap.postLabel.style.left = `${POST_X}px`;
+  currentMap.postLabel.style.right = "auto";
+  currentMap.postLabel.style.transform = "translateX(-50%)";
 
-  post.style.left = `${POST_X}px`;
-  post.style.right = "auto";
+  const nextKeys = new Set(runners.map((r) => runnerKey(r)));
 
-  postLabel.style.left = `${POST_X}px`;
-  postLabel.style.right = "auto";
-  postLabel.style.transform = "translateX(-50%)";
-
-  runners.forEach((r) => {
-    const el = document.createElement("div");
-    el.className = "map-runner";
-    if (!r.isKnown) el.classList.add("unknown");
-
-    el.style.left = `${r.displayX}px`;
-    el.style.top = `${r.displayY}px`;
-
-    el.innerHTML = `
-      <div class="horse-wrap">
-        <div class="cloth cloth-${r.no}">${r.no}</div>
-        <img class="horse-icon" src="horse.png" alt="">
-      </div>
-      <div class="tooltip">
-        <div class="tooltip-title">${r.no}. ${r.name} (${r.barrier})</div>
-        <div class="tooltip-body">${distanceTitle()} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})</div>
-        <div class="tooltip-body">Dr: ${r.driver || "-"}</div>
-      </div>
-    `;
-
-    const tip = el.querySelector(".tooltip");
-    el.addEventListener("mouseenter", () => {
-      tip.style.display = "block";
-      tip.style.left = "78px";
-      tip.style.top = "-8px";
-    });
-    el.addEventListener("mouseleave", () => {
-      tip.style.display = "none";
-    });
-
-    track.appendChild(el);
+  Object.keys(currentMap.runnersByKey).forEach((key) => {
+    if (!nextKeys.has(key)) {
+      currentMap.runnersByKey[key].remove();
+      delete currentMap.runnersByKey[key];
+    }
   });
 
-  container.appendChild(mapEl);
+  runners.forEach((r) => {
+    const key = runnerKey(r);
+    let el = currentMap.runnersByKey[key];
+
+    if (!el) {
+      el = createRunnerElement(r);
+      currentMap.runnersByKey[key] = el;
+      currentMap.track.appendChild(el);
+
+      el.style.left = `${r.displayX}px`;
+      el.style.top = `${r.displayY}px`;
+
+      requestAnimationFrame(() => {
+        updateRunnerElement(el, r);
+      });
+    } else {
+      updateRunnerElement(el, r);
+    }
+  });
 }
