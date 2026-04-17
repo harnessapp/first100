@@ -617,12 +617,21 @@ function computeRaceLayout(race, distanceOverride) {
 function syncMapToLayout(layout, labelText = null, tooltipDistance = null) {
   ensureMapShell();
 
-  currentMap.post.style.left = `${layout.postX}px`;
+  // Find right-most horse
+  const maxX = Math.max(...layout.runners.map(r => r.displayX));
+
+  // Offset so post sits just to the right
+  const POST_OFFSET = 140; // tweak this if needed
+
+  const dynamicPostX = maxX + POST_OFFSET;
+
+  currentMap.post.style.left = `${dynamicPostX}px`;
   currentMap.post.style.right = "auto";
 
   currentMap.postLabel.textContent = labelText || layout.distance;
-  currentMap.postLabel.style.left = `${layout.postX}px`;
+  currentMap.postLabel.style.left = `${dynamicPostX}px`;
   currentMap.postLabel.style.right = "auto";
+
   currentMap.postLabel.style.transform = "translateX(-50%)";
 
   const nextKeys = new Set(layout.runners.map((r) => runnerKey(r)));
