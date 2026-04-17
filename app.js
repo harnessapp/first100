@@ -384,29 +384,51 @@ function playDistances() {
   isPlaying = true;
   updatePlayButton();
 
-  const sequence = ["50", "100", "200"];
-  let index = 0;
-
   const MOVE_TIME = 5000;
-  const HOLD_TIME = 50;
 
-  function step() {
-    if (!isPlaying) return;
+  // Jump instantly to 50 first
+  const oldRunnerTransition = document.querySelectorAll(".map-runner");
+  const oldPost = document.querySelector(".map-post");
+  const oldPostLabel = document.querySelector(".map-post-label");
 
-    setSelectedDistance(sequence[index]);
-    index += 1;
+  oldRunnerTransition.forEach((el) => {
+    el.style.transition = "none";
+  });
+  if (oldPost) oldPost.style.transition = "none";
+  if (oldPostLabel) oldPostLabel.style.transition = "none";
 
-    if (index < sequence.length) {
-      playTimer = setTimeout(step, MOVE_TIME + HOLD_TIME);
-    } else {
+  setSelectedDistance("50");
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const newRunnerTransition = document.querySelectorAll(".map-runner");
+      const newPost = document.querySelector(".map-post");
+      const newPostLabel = document.querySelector(".map-post-label");
+
+      newRunnerTransition.forEach((el) => {
+        el.style.transition = "";
+      });
+      if (newPost) newPost.style.transition = "";
+      if (newPostLabel) newPostLabel.style.transition = "";
+
+      // Animate to 100
+      setSelectedDistance("100");
+
       playTimer = setTimeout(() => {
-        stopPlay();
-      }, MOVE_TIME + HOLD_TIME);
-    }
-  }
+        if (!isPlaying) return;
 
-  step();
+        // Then animate straight to 200
+        setSelectedDistance("200");
+
+        playTimer = setTimeout(() => {
+          stopPlay();
+        }, MOVE_TIME);
+      }, MOVE_TIME);
+    });
+  });
 }
+
+
 function resetMapContainer(html) {
   const container = document.getElementById("mapContainer");
   container.innerHTML = html;
