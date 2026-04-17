@@ -556,9 +556,7 @@ const runners = (race.runners || []).map((r) => {
   }
 
   const valid = runners.filter((r) => Number.isFinite(r.med) && r.qty > 0);
-  if (!valid.length) {
-    return { error: `(no ${currentPrefix(distanceOverride)} data)` };
-  }
+  const hasKnownData = valid.length > 0;
 
   const PX_PER_METRE = 11;
   const LANE_GAP = 52;
@@ -567,15 +565,15 @@ const runners = (race.runners || []).map((r) => {
   const SAME_LANE_Y_OFFSET = -14;
   const POST_X = getPostX(distanceOverride);
 
-  const fastest = Math.min(...valid.map((r) => r.med));
+  const fastest = hasKnownData ? Math.min(...valid.map((r) => r.med)) : null;
 
   const parseBarrier = (b) => {
     const m = String(b || "").trim().toUpperCase().match(/(FR|SR)(\d+)/);
     return m ? { row: m[1], slot: parseInt(m[2], 10) } : { row: "", slot: null };
   };
 
-  const knownGaps = valid.map((r) => (r.med - fastest) * 14.5);
-  const slowestKnownGap = Math.max(...knownGaps);
+  const knownGaps = hasKnownData ? valid.map((r) => (r.med - fastest) * 14.5) : [];
+  const slowestKnownGap = hasKnownData ? Math.max(...knownGaps) : 0;
 
   const frMap = {};
   const srList = [];
@@ -587,10 +585,20 @@ const runners = (race.runners || []).map((r) => {
 
     r.isKnown = Number.isFinite(r.med) && r.qty > 0;
 
-    if (r.isKnown) {
-      r.rawGap = (r.med - fastest) * 14.5;
+    if (hasKnownData) {
+      if (r.isKnown) {
+        r.rawGap = (r.med - fastest) * 14.5;
+      } else {
+        r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
+      }
     } else {
-      r.rawGap = slowestKnownGap + UNKNOWN_BACK_MARKER_M;
+      // Whole race has no sectional data:
+      // keep runners visible in a simple greyed-out formation
+      if (r.row === "FR") {
+        r.rawGap = 0;
+      } else {
+        r.rawGap = UNKNOWN_BACK_MARKER_M;
+      }
     }
 
     const laneY = (r.slot || 1) * LANE_GAP;
