@@ -109,11 +109,10 @@ body {
 
 .map-post {
   position: absolute;
-  right: 90px;
   top: 20px;
-  width: 6px;
+  width: 2px;
   height: 380px;
-  background: black;
+  background: rgba(0,0,0,0.5);
   border-radius: 2px;
 }
 
@@ -282,19 +281,20 @@ body {
   text-align: center;
   cursor: pointer;
   transition:
-    left 1.4s ease,
-    top 1.4s ease,
+    left 5s linear,
+    top 5s linear,
     opacity 0.35s ease,
-    transform 1.4s ease;
+    transform 5s linear;
 }
 
 .map-post,
 .map-post-label {
   transition:
-    right 1.4s ease,
-    left 1.4s ease,
-    top 1.4s ease,
-    transform 1.4s ease;
+    right 5s linear,
+    left 5s linear,
+    top 5s linear,
+    transform 5s linear,
+    opacity 0.25s ease;
 }
 
 #distanceTabs .play-tab {
@@ -306,4 +306,22 @@ body {
   background: #111;
   color: #fff;
   border-color: #111;
+}
+
+.pace-green .horse-wrap {
+  filter:
+    drop-shadow(0 0 8px rgba(90, 180, 90, 1))
+    drop-shadow(0 -2px 10px rgba(90, 180, 90, 0.75));
+}
+
+.pace-red .horse-wrap {
+  filter:
+    drop-shadow(0 0 8px rgba(220, 80, 80, 1))
+    drop-shadow(0 -2px 10px rgba(220, 80, 80, 0.75));
+}
+
+.pace-yellow .horse-wrap {
+  filter:
+    drop-shadow(0 0 8px rgba(235, 190, 70, 1))
+    drop-shadow(0 -2px 10px rgba(235, 190, 70, 0.75));
 }
