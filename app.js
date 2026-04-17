@@ -388,6 +388,10 @@ function stopPlay() {
   }
 
   isPlaying = false;
+
+  if (currentMap.post) currentMap.post.style.opacity = "1";
+  if (currentMap.postLabel) currentMap.postLabel.style.opacity = "1";
+
   restoreMapTransitions();
   updatePlayButton();
 }
@@ -684,6 +688,9 @@ function playDistances() {
 
   isPlaying = true;
   updatePlayButton();
+
+  if (currentMap.post) currentMap.post.style.opacity = "0";
+  if (currentMap.postLabel) currentMap.postLabel.style.opacity = "0";
 
   // Snap instantly to 50
   selectedDistance = "50";
