@@ -310,15 +310,15 @@ body {
 
 /* GREEN horses (Ld ≥ 15%) */
 .pace-green .horse-icon {
-  filter: hue-rotate(140deg) saturate(3) brightness(1.2);
+  filter: hue-rotate(260deg) saturate(3) brightness(1.2);
 }
 
 /* RED horses (Dth ≥ 15% and Ld < 15%) */
 .pace-red .horse-icon {
-  filter: hue-rotate(-10deg) saturate(3) brightness(1.2);
+  filter: hue-rotate(140deg) saturate(3) brightness(1.2);
 }
 
 /* YELLOW horses (BL ≥ 15% and Ld < 15% and Dth < 15%) */
 .pace-yellow .horse-icon {
-  filter: hue-rotate(30deg) saturate(2.5) brightness(1.2);
+  filter: hue-rotate(200deg) saturate(2.5) brightness(1.2);
 }
