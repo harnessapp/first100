@@ -457,17 +457,18 @@ function createRunnerElement(r) {
   el.className = "map-runner";
   el.dataset.runnerKey = runnerKey(r);
 
-  el.innerHTML = `
-    <div class="horse-wrap">
-      <div class="cloth cloth-${r.no}">${r.no}</div>
-      <img class="horse-icon" src="horse.png" alt="">
-    </div>
-    <div class="tooltip">
-      <div class="tooltip-title"></div>
-      <div class="tooltip-body metric-line"></div>
-      <div class="tooltip-body driver-line"></div>
-    </div>
-  `;
+el.innerHTML = `
+  <div class="horse-wrap">
+    <div class="cloth cloth-${r.no}">${r.no}</div>
+    <img class="horse-icon" src="horse.png" alt="">
+  </div>
+  <div class="tooltip">
+    <div class="tooltip-title"></div>
+    <div class="tooltip-body pace-line"></div>
+    <div class="tooltip-body metric-line"></div>
+    <div class="tooltip-body driver-line"></div>
+  </div>
+`;
 
   const tip = el.querySelector(".tooltip");
   el.addEventListener("mouseenter", () => {
@@ -490,8 +491,21 @@ function updateRunnerElement(el, r, distanceForTooltip = null) {
   cloth.textContent = r.no;
 
   el.querySelector(".tooltip-title").textContent = `${r.no}. ${r.name} (${r.barrier})`;
+
+  const ld = formatPct(r.ldPct);
+  const bl = formatPct(r.blPct);
+  const dth = formatPct(r.dthPct);
+
+  const paceParts = [];
+  if (ld) paceParts.push(`Ld ${ld}`);
+  if (bl) paceParts.push(`BL ${bl}`);
+  if (dth) paceParts.push(`Dth ${dth}`);
+
+  el.querySelector(".pace-line").textContent = paceParts.join(" | ");
+
   el.querySelector(".metric-line").textContent =
     `${distanceTitle(distanceForTooltip)} ${metricLabel()}: ${r.isKnown ? r.med.toFixed(2) : "-"} (n=${r.qty || 0})`;
+
   el.querySelector(".driver-line").textContent = `Dr: ${r.driver || "-"}`;
 
   el.style.left = `${r.displayX}px`;
@@ -520,18 +534,22 @@ function computeRaceLayout(race, distanceOverride) {
     return { error: "(only mobile-start races shown)" };
   }
 
-  const runners = (race.runners || []).map((r) => {
-    const metric = getMetricForRunner(r, distanceOverride);
+const runners = (race.runners || []).map((r) => {
+  const metric = getMetricForRunner(r, distanceOverride);
 
-    return {
-      no: Number(r["Horse No"] ?? r.no),
-      name: r["Horse"] ?? r.name,
-      barrier: r["Barrier"] ?? r.barrier,
-      driver: r["Driver"] ?? r.driver,
-      med: metric.value,
-      qty: metric.qty
-    };
-  }).filter((r) => r.barrier && r.barrier !== "SCR");
+  return {
+    no: Number(r["Horse No"] ?? r.no),
+    name: r["Horse"] ?? r.name,
+    barrier: r["Barrier"] ?? r.barrier,
+    driver: r["Driver"] ?? r.driver,
+    ldPct: Number(r["LdPct"]),
+    blPct: Number(r["BLPct"]),
+    dthPct: Number(r["DthPct"]),
+    med: metric.value,
+    qty: metric.qty
+  };
+}).filter((r) => r.barrier && r.barrier !== "SCR");
+
 
   if (!runners.length) {
     return { error: "(no runners)" };
@@ -792,6 +810,14 @@ function playDistances() {
     playRaf = requestAnimationFrame(frame);
   });
 }
+
+
+function formatPct(v) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return null;
+  return `${Math.round(n)}%`;
+}
+
 
 function renderEarlySpeedMap(race, distanceOverride) {
   const layout = computeRaceLayout(race, distanceOverride);
