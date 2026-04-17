@@ -308,29 +308,17 @@ body {
   border-color: #111;
 }
 
-/* GREEN (Lead) */
+/* GREEN horses (Ld ≥ 15%) */
 .pace-green .horse-icon {
-  filter:
-    brightness(0) invert(1)
-    sepia(1) saturate(5)
-    hue-rotate(90deg)
-    brightness(0.9);
+  filter: hue-rotate(90deg) saturate(3) brightness(1.2);
 }
 
-/* RED (Death) */
+/* RED horses (Dth ≥ 15% and Ld < 15%) */
 .pace-red .horse-icon {
-  filter:
-    brightness(0) invert(1)
-    sepia(1) saturate(6)
-    hue-rotate(0deg)
-    brightness(0.9);
+  filter: hue-rotate(-25deg) saturate(3) brightness(1.2);
 }
 
-/* YELLOW (Backline) */
+/* YELLOW horses (BL ≥ 15% and Ld < 15% and Dth < 15%) */
 .pace-yellow .horse-icon {
-  filter:
-    brightness(0) invert(1)
-    sepia(1) saturate(6)
-    hue-rotate(40deg)
-    brightness(1.0);
+  filter: hue-rotate(50deg) saturate(2.5) brightness(1.2);
 }
