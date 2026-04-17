@@ -118,19 +118,30 @@ function rebuildMeetingOptions() {
     return (m.state || "") === selectedState;
   });
 
-  meetingSelect.innerHTML = "";
-
   if (!filteredMeetings.length) {
+    meetingSelect.innerHTML = "";
     document.getElementById("raceTabs").innerHTML = "";
     document.getElementById("raceTitle").textContent = "No meeting selected";
     resetMapContainer(`<div class="empty">(no meetings found)</div>`);
     return;
   }
 
+  // Sort by date first, then Race 1 time for same day
+  filteredMeetings.sort((a, b) => {
+    const dateA = new Date(`${a.date}T${a.races[0]?.time || '00:00'}`);
+    const dateB = new Date(`${b.date}T${b.races[0]?.time || '00:00'}`);
+    return dateA - dateB;
+  });
+
+  meetingSelect.innerHTML = "";
+
   for (const meeting of filteredMeetings) {
     const option = document.createElement("option");
     option.value = meeting.meetingKey;
-    option.textContent = meeting.meetingLabel;
+
+    // Format label
+    option.textContent = `${meeting.venue} - ${formatMeetingLabel(meeting.date)}`;
+
     meetingSelect.appendChild(option);
   }
 
@@ -140,6 +151,22 @@ function rebuildMeetingOptions() {
 
   meetingSelect.value = selectedMeetingKey;
   rebuildRaceOptions();
+}
+
+// Helper function to convert date to Today/Tomorrow/Weekday
+function formatMeetingLabel(meetingDateStr) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // normalize
+
+  const meetingDate = new Date(meetingDateStr);
+  meetingDate.setHours(0, 0, 0, 0);
+
+  const diffDays = Math.floor((meetingDate - today) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return "Today";
+  if (diffDays === 1) return "Tomorrow";
+
+  return meetingDate.toLocaleDateString(undefined, { weekday: 'long' });
 }
 
 function rebuildRaceOptions() {
